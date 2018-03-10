@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>brainstrom</title>
+    <link rel="icon" href="{{ static_url('images/yellow-hex.png') }}">
+    <link rel="stylesheet" href="{{ static_url('lib/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/common.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Spectral+SC" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9309e82b92.js"></script>
+
+    <script type="text/javascript" src="{{ static_url('lib/jquery/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('lib/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/common.js') }}"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="signup-wrapper">
+            <form name="user_form" method="post" class="user-signup-form">
+                <div class="header">
+                    <img class="logo" src="{{ static_url('images/logo.png') }}">
+                </div>
+                <hr>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-10">
+                        <p>Choose a Profile Picture</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p id="drop-down" class="pull-right drop-button"><span id="profile-button" class="glyphicon glyphicon-chevron-down"></span></p>
+                    </div>
+                </div>
+                <div class="container border" id="profile">
+                    <div class="row img-row">
+                        <input type="radio" class="radio-item" value="profile-1.jpeg" name="profile-image" id="img1">
+                        <label for="img1"><img src="{{ static_url('images/profile-1.jpeg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-2.jpg" name="profile-image" id="img2">
+                        <label for="img2"><img src="{{ static_url('images/profile-2.jpg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-3.jpeg" name="profile-image" id="img3">
+                        <label for="img3"><img src="{{ static_url('images/profile-3.jpeg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-4.jpg" name="profile-image" id="img4">
+                        <label for="img4"><img src="{{ static_url('images/profile-4.jpg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-5.jpg" name="profile-image" id="img5">
+                        <label for="img5"><img src="{{ static_url('images/profile-5.jpg') }}"></label>
+                        <span class="stretch"></span>
+                    </div>
+                    <div class="row img-row">
+                        <input type="radio" class="radio-item" value="profile-6.jpg" name="profile-image" id="img6">
+                        <label for="img6"><img src="{{ static_url('images/profile-6.jpg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-7.jpeg" name="profile-image" id="img7">
+                        <label for="img7"><img src="{{ static_url('images/profile-7.jpeg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-8.jpg" name="profile-image" id="img8">
+                        <label for="img8"><img src="{{ static_url('images/profile-8.jpg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-9.jpeg" name="profile-image" id="img9">
+                        <label for="img9"><img src="{{ static_url('images/profile-9.jpeg') }}"></label>
+                        <input type="radio" class="radio-item" value="profile-10.jpg" name="profile-image" id="img10">
+                        <label for="img10"><img src="{{ static_url('images/profile-10.jpg') }}"></label>
+                        <span class="stretch"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Username</p> <input class="form-control" type="text" name="user_name" id="u_name" maxlength="10"  placeholder="Username"><br>
+                        <p>Password</p> <input class="form-control" type="password" name="password" id="u_pass" maxlength="40" placeholder="Password" required><br>
+                        <p>Email</p> <input class="form-control" type="email" name="user_email" id="u_email" maxlength="40" placeholder="Email" required><br>
+
+                        <p>Country</p><input class="form-control"  type="text" name="country" id="u_country" maxlength="20" placeholder="Country"><br>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <p>First Name</p> <input class="form-control" type="text" name="first_name" id="u_first" maxlength="40" placeholder="First Name" ><br>
+                        <p>Last Name</p> <input class="form-control" type="text" name="last_name" id="u_last" maxlength="40" placeholder="Last Name"><br>
+                        <p>Date of birth</p> <input class="form-control" style="padding: 12px" name="d_o_b" id="u_dob"  placeholder="Date of birth" readonly><br>
+                        <p>Gender</p><br> &nbsp;&nbsp;&nbsp;
+                        Male&nbsp;<input type="radio" name="gender" value="male" checked/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Female&nbsp;<input type="radio" name="gender" value="female"/><br>
+                        <!--<p>Date of birth</p> <input class="form-control" style="padding: 3px" type="date" name="d_o_b" id="u_dob" maxlength="9" ><br>-->
+<!--
+                        <p>Country</p><input class="form-control"  type="text" name="country" id="u_country" maxlength="20" placeholder="Country"><br>
+-->
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-block" type="submit" id="signup_btn">Submit</button><br>
+                <p class="pull-right">Already a user ? <a href="/user/login" id="login">Login</a><br></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
