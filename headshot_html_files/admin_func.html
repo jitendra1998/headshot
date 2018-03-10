@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="{{ static_url('lib/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/admin_func.css') }}">
+
+    <script type="text/javascript" src="{{ static_url('lib/jquery/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('lib/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/admin_func.js') }}"></script>
+<!--
+    <script>
+        {% for Game_Rooms_Active in Game_Rooms_Actives %}
+            connect_game('{{ escape(Game_Rooms_Active) }}');
+        {% end %}
+    </script>
+-->
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper admin">
+            <div class="admin-header">
+                <h4>Admin Portal</h4>
+            </div>
+            <hr>
+            <div>
+                {% for Game_Rooms_Active in Game_Rooms_Actives %}
+                <li>
+                    <h5> Game Room {{ escape(Game_Rooms_Active) }}</h5>
+                    <div class="btn-group">
+                        <button class="button" id="connect_game_{{ escape(Game_Rooms_Active) }}" onclick="connect_game('{{ escape(Game_Rooms_Active) }}')">CONNECT</button>
+                        <button class="button" id="start_game_{{ escape(Game_Rooms_Active) }}" onclick="start_game('{{ escape(Game_Rooms_Active) }}')" >START GAME</button>
+                        <button class="button" id="end_game_{{ escape(Game_Rooms_Active) }}" onclick="alert('Game has not started');" >END GAME</button>
+                    </div>
+                </li>
+                <hr>
+                {% end %}
+            </div>
+        </div>
+    </div>
+
+
+<div onclick="upload()">upload banner</div>
+
+
+</body>
+</html>
