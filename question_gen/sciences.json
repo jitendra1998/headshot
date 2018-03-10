@@ -1,0 +1,5522 @@
+{
+  "40148": {
+    "ans": [
+      "Nickel",
+      "Selenium",
+      "Sodium",
+      "Osmium"
+    ],
+    "question": [
+      "My chemical symbol is Na; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40002": {
+    "ans": [
+      "Helium",
+      "Nitrogen",
+      "Oxygen",
+      "Carbon Dioxide"
+    ],
+    "question": [
+      "What is the most abundant gas in Earth's atmosphere?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40028": {
+    "ans": [
+      "Fr",
+      "F",
+      "Fe",
+      "Fl"
+    ],
+    "question": [
+      "What is the chemical symbol of fluorine?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40112": {
+    "ans": [
+      "Np",
+      "Nh",
+      "N",
+      "Ne"
+    ],
+    "question": [
+      "What is the chemical symbol of neptunium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40119": {
+    "ans": [
+      "Fr",
+      "F",
+      "Fm",
+      "Fe"
+    ],
+    "question": [
+      "What is the chemical symbol of fermium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40181": {
+    "ans": [
+      "Ruthenium",
+      "Roentgenium",
+      "Rubidium",
+      "Rutherfordium"
+    ],
+    "question": [
+      "My chemical symbol is Ru; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40129": {
+    "ans": [
+      "Ds",
+      "Dy",
+      "Db",
+      "Sm"
+    ],
+    "question": [
+      "What is the chemical symbol of darmstadtium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40195": {
+    "ans": [
+      "Chlorine",
+      "Caesium",
+      "Cerium",
+      "Copper"
+    ],
+    "question": [
+      "My chemical symbol is Ce; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40162": {
+    "ans": [
+      "Manganese",
+      "Magnesium",
+      "Mendelevium",
+      "Mercury"
+    ],
+    "question": [
+      "My chemical symbol is Mn; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40111": {
+    "ans": [
+      "U",
+      "V",
+      "Eu",
+      "Uus"
+    ],
+    "question": [
+      "What is the chemical symbol of uranium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40228": {
+    "ans": [
+      "Proctatinium",
+      "Potassium",
+      "Palladium",
+      "Platinium"
+    ],
+    "question": [
+      "My chemical symbol is Pa; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40141": {
+    "ans": [
+      "Beryllium",
+      "Boron",
+      "Bromine",
+      "Barium"
+    ],
+    "question": [
+      "My chemical symbol is Be; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40182": {
+    "ans": [
+      "Thorium",
+      "Rutherfordium",
+      "Ruthenium",
+      "Rhodium"
+    ],
+    "question": [
+      "My chemical symbol is Rh; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40236": {
+    "ans": [
+      "Einsteinium",
+      "Europium",
+      "Eribium",
+      "Tennessine"
+    ],
+    "question": [
+      "My chemical symbol is Es; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40261": {
+    "ans": [
+      "H2O",
+      "O2",
+      "W",
+      "CO2"
+    ],
+    "question": [
+      "What is the chemical formula of water?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40081": {
+    "ans": [
+      "S",
+      "Sr",
+      "Si",
+      "Sm"
+    ],
+    "question": [
+      "What is the chemical symbol of samarium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40009": {
+    "ans": [
+      "For which no radioactive decay has yet been observed",
+      "With an equal number of electrons and protons",
+      "With an equal number of photons and neutrons",
+      "With an atomic weight of less than 100"
+    ],
+    "question": [
+      "Stable isotopes are those\u2026"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40231": {
+    "ans": [
+      "Phosphorus",
+      "Platinium",
+      "Plutonium",
+      "Potassium"
+    ],
+    "question": [
+      "My chemical symbol is Pu; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40003": {
+    "ans": [
+      "Oxygen",
+      "Hydrogen",
+      "Nitrogen",
+      "Carbon"
+    ],
+    "question": [
+      "What is the second most abundant gas in Earth's atmosphere?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40024": {
+    "ans": [
+      "B",
+      "Be",
+      "Bh",
+      "Br"
+    ],
+    "question": [
+      "What is the chemical symbol of boron?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40084": {
+    "ans": [
+      "Tb",
+      "Rb",
+      "Te",
+      "Ti"
+    ],
+    "question": [
+      "What is the chemical symbol of terbium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40223": {
+    "ans": [
+      "Rhenium",
+      "Ruthenium",
+      "Radon",
+      "Radium"
+    ],
+    "question": [
+      "My chemical symbol is Rn; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40264": {
+    "ans": [
+      "Nitric acid",
+      "Carbon monoxyde",
+      "Carbon dioxyde",
+      "Water"
+    ],
+    "question": [
+      "CO2 is the chemical formula of\u2026"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40007": {
+    "ans": [
+      "Hydrogen",
+      "Carbon",
+      "Oxygen",
+      "Uranium"
+    ],
+    "question": [
+      "What is the lighest chemical element?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40090": {
+    "ans": [
+      "La",
+      "Lu",
+      "Lv",
+      "Li"
+    ],
+    "question": [
+      "What is the chemical symbol of lutetium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40166": {
+    "ans": [
+      "Copper",
+      "Carbon",
+      "Cobalt",
+      "Curium"
+    ],
+    "question": [
+      "My chemical symbol is Cu; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40230": {
+    "ans": [
+      "Nitrogen",
+      "Sulfur",
+      "Uranium",
+      "Neptunium"
+    ],
+    "question": [
+      "My chemical symbol is Np; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40270": {
+    "ans": [
+      "0\u00b0C",
+      "32\u00b0C",
+      "100\u00b0C",
+      "-273.15\u00b0C"
+    ],
+    "question": [
+      "What is the freezing point of water?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Phase"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40151": {
+    "ans": [
+      "Tin",
+      "Selenium",
+      "Scandium",
+      "Silicon"
+    ],
+    "question": [
+      "My chemical symbol is Si; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40153": {
+    "ans": [
+      "Strontium",
+      "Sulfur",
+      "Sodium",
+      "Antimony"
+    ],
+    "question": [
+      "My chemical symbol is S; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40042": {
+    "ans": [
+      "U",
+      "V",
+      "Md",
+      "Lv"
+    ],
+    "question": [
+      "What is the chemical symbol of vanadium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40117": {
+    "ans": [
+      "Cl",
+      "Co",
+      "Cf",
+      "Ca"
+    ],
+    "question": [
+      "What is the chemical symbol of californium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40144": {
+    "ans": [
+      "Selenium",
+      "Nickel",
+      "Nitrogen",
+      "Sodium"
+    ],
+    "question": [
+      "My chemical symbol is N; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40004": {
+    "ans": [
+      "Carbon",
+      "Oxygen",
+      "Hydrogen",
+      "Argon"
+    ],
+    "question": [
+      "What is the third most abundant gas in Earth's atmosphere?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40060": {
+    "ans": [
+      "Ni",
+      "Nh",
+      "Nb",
+      "N"
+    ],
+    "question": [
+      "What is the chemical symbol of niobium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40173": {
+    "ans": [
+      "Rhenium",
+      "Potassium",
+      "Chromium",
+      "Krypton"
+    ],
+    "question": [
+      "My chemical symbol is Kr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40069": {
+    "ans": [
+      "Ti",
+      "Sn",
+      "Ni",
+      "Si"
+    ],
+    "question": [
+      "What is the chemical symbol of tin?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40218": {
+    "ans": [
+      "Titanium",
+      "Thulium",
+      "Tantalum",
+      "Thallium"
+    ],
+    "question": [
+      "My chemical symbol is Tl; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40100": {
+    "ans": [
+      "Ts",
+      "Ta",
+      "Tl",
+      "Ti"
+    ],
+    "question": [
+      "What is the chemical symbol of thallium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40120": {
+    "ans": [
+      "V",
+      "Mn",
+      "Md",
+      "Mt"
+    ],
+    "question": [
+      "What is the chemical symbol of mendelevium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40246": {
+    "ans": [
+      "Meitnerium",
+      "Magnesium",
+      "Manganese",
+      "Mendelevium"
+    ],
+    "question": [
+      "My chemical symbol is Mt; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40190": {
+    "ans": [
+      "Iodine",
+      "Iron",
+      "Indium",
+      "Iridium"
+    ],
+    "question": [
+      "My chemical symbol is I; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40133": {
+    "ans": [
+      "Fl",
+      "Fe",
+      "Fr",
+      "F"
+    ],
+    "question": [
+      "What is the chemical symbol of flerovium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40193": {
+    "ans": [
+      "Palladium",
+      "Barium",
+      "Cobalt",
+      "Vanadium"
+    ],
+    "question": [
+      "My chemical symbol is Ba; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40080": {
+    "ans": [
+      "Pm",
+      "P",
+      "Pr",
+      "Pt"
+    ],
+    "question": [
+      "What is the chemical symbol of promethium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40248": {
+    "ans": [
+      "Roentgenium",
+      "Rubidium",
+      "Argon",
+      "Germanium"
+    ],
+    "question": [
+      "My chemical symbol is Rg; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40077": {
+    "ans": [
+      "Cu",
+      "Ce",
+      "C",
+      "Cr"
+    ],
+    "question": [
+      "What is the chemical symbol of cerium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40135": {
+    "ans": [
+      "Lv",
+      "Lr",
+      "Ho",
+      "Li"
+    ],
+    "question": [
+      "What is the chemical symbol of livermomium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40061": {
+    "ans": [
+      "Mo",
+      "Mn",
+      "Li",
+      "Yb"
+    ],
+    "question": [
+      "What is the chemical symbol of molybdenum?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40256": {
+    "ans": [
+      6.0,
+      100.0,
+      235.0,
+      1.0
+    ],
+    "question": [
+      "What is the atomic number of carbon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40156": {
+    "ans": [
+      "Sodium",
+      "Cobalt",
+      "Krypton",
+      "Potassium"
+    ],
+    "question": [
+      "My chemical symbol is K; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40036": {
+    "ans": [
+      "Co",
+      "Cl",
+      "C",
+      "Cu"
+    ],
+    "question": [
+      "What is the chemical symbol of chlorine?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40191": {
+    "ans": [
+      "Neon",
+      "Lead",
+      "Zinc",
+      "Xenon"
+    ],
+    "question": [
+      "My chemical symbol is Xe; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40164": {
+    "ans": [
+      "Carbon",
+      "Copper",
+      "Cobalt",
+      "Potassium"
+    ],
+    "question": [
+      "My chemical symbol is Co; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40208": {
+    "ans": [
+      "Lithium",
+      "Lanthanum",
+      "Lutetium",
+      "Livermomium"
+    ],
+    "question": [
+      "My chemical symbol is Lu; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40216": {
+    "ans": [
+      "Gold",
+      "Silver",
+      "Mercury",
+      "Aluminium"
+    ],
+    "question": [
+      "My chemical symbol is Au; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40052": {
+    "ans": [
+      "Ar",
+      "Al",
+      "Sn",
+      "As"
+    ],
+    "question": [
+      "What is the chemical symbol of arsenic?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40023": {
+    "ans": [
+      "B",
+      "Br",
+      "Be",
+      "Ba"
+    ],
+    "question": [
+      "What is the chemical symbol of berylium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40087": {
+    "ans": [
+      "Be",
+      "Er",
+      "Rb",
+      "Eu"
+    ],
+    "question": [
+      "What is the chemical symbol of erbium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40082": {
+    "ans": [
+      "Eu",
+      "Er",
+      "Re",
+      "Fr"
+    ],
+    "question": [
+      "What is the chemical symbol of europium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40176": {
+    "ans": [
+      "Tungsten",
+      "Ytterbium",
+      "Yttrium",
+      "Iridium"
+    ],
+    "question": [
+      "My chemical symbol is Y; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40026": {
+    "ans": [
+      "Na",
+      "Ni",
+      "N",
+      "Sn"
+    ],
+    "question": [
+      "What is the chemical symbol of nitrogen?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40072": {
+    "ans": [
+      "Nd",
+      "I",
+      "In",
+      "No"
+    ],
+    "question": [
+      "What is the chemical symbol of iodine?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40260": {
+    "ans": [
+      "Dmitri Mendeleev",
+      "Albert Einstein",
+      "Marie Curie",
+      "Thomas Edison"
+    ],
+    "question": [
+      "Who is credited for the invention of the periodic table?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40079": {
+    "ans": [
+      "No",
+      "Ne",
+      "N",
+      "Nd"
+    ],
+    "question": [
+      "What is the chemical symbol of neodymium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40185": {
+    "ans": [
+      "Oganesson",
+      "Cadmium",
+      "Gadolinium",
+      "Germanium"
+    ],
+    "question": [
+      "My chemical symbol is Cd; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40095": {
+    "ans": [
+      "Os",
+      "Si",
+      "O",
+      "No"
+    ],
+    "question": [
+      "What is the chemical symbol of osmium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40263": {
+    "ans": [
+      "Hydrogen monoxyde",
+      "Carbon monoxyde",
+      "Carbon dioxyde",
+      "Chlorhydric Acid"
+    ],
+    "question": [
+      "CO is the chemical formula of\u2026"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40247": {
+    "ans": [
+      "Darmstadtium",
+      "Strontium",
+      "Dubnium",
+      "Dysprosium"
+    ],
+    "question": [
+      "My chemical symbol is Ds; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40267": {
+    "ans": [
+      94.0,
+      118.0,
+      24.0,
+      70.0
+    ],
+    "question": [
+      "How many identified chemical elements are synthetic elements?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Origin of the Elements"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40257": {
+    "ans": [
+      12.0,
+      8.0,
+      1.0,
+      6.0
+    ],
+    "question": [
+      "What is the atomic number of hydrogen?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40049": {
+    "ans": [
+      "Sn",
+      "Zn",
+      "S",
+      "Si"
+    ],
+    "question": [
+      "What is the chemical symbol of zinc?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40013": {
+    "ans": [
+      "T",
+      "Z",
+      "N",
+      "A"
+    ],
+    "question": [
+      "What is the symbol for atomic number?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40155": {
+    "ans": [
+      "Aluminium",
+      "Americium",
+      "Argon",
+      "Silver"
+    ],
+    "question": [
+      "My chemical symbol is Ar; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40037": {
+    "ans": [
+      "Ga",
+      "Ag",
+      "Ar",
+      "Am"
+    ],
+    "question": [
+      "What is the chemical symbol of argon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40221": {
+    "ans": [
+      "Lead",
+      "Protactinium",
+      "Potassium",
+      "Polonium"
+    ],
+    "question": [
+      "My chemical symbol is Po; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40167": {
+    "ans": [
+      "Silicon",
+      "Strontium",
+      "Zinc",
+      "Gold"
+    ],
+    "question": [
+      "My chemical symbol is Zn; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40161": {
+    "ans": [
+      "Copper",
+      "Cobalt",
+      "Carbon",
+      "Chromium"
+    ],
+    "question": [
+      "My chemical symbol is Cr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40252": {
+    "ans": [
+      "Molybdenum",
+      "Meitnerium",
+      "Mercury",
+      "Moscovium"
+    ],
+    "question": [
+      "My chemical symbol is Mc; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40073": {
+    "ans": [
+      "Ce",
+      "Ne",
+      "Xe",
+      "Zn"
+    ],
+    "question": [
+      "What is the chemical symbol of xenon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40147": {
+    "ans": [
+      "Sodium",
+      "Nitrogen",
+      "Neon",
+      "Nickel"
+    ],
+    "question": [
+      "My chemical symbol is Ne; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40106": {
+    "ans": [
+      "F",
+      "Eu",
+      "Fr",
+      "Fe"
+    ],
+    "question": [
+      "What is the chemical symbol of francium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40034": {
+    "ans": [
+      "Pr",
+      "P",
+      "Po",
+      "Pd"
+    ],
+    "question": [
+      "What is the chemical symbol of phosphorus?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40014": {
+    "ans": [
+      "Solid",
+      "Gas",
+      "Fluid",
+      "Liquid"
+    ],
+    "question": [
+      "Which answer is NOT an element's state of matter?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40128": {
+    "ans": [
+      "Mt",
+      "Rn",
+      "Te",
+      "Mn"
+    ],
+    "question": [
+      "What is the chemical symbol of meitnerium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40139": {
+    "ans": [
+      "Holmium",
+      "Helium",
+      "Hydrogen",
+      "Hafnium"
+    ],
+    "question": [
+      "My chemical symbol is He; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40108": {
+    "ans": [
+      "Ca",
+      "Ti",
+      "Am",
+      "Ac"
+    ],
+    "question": [
+      "What is the chemical symbol of actinium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40174": {
+    "ans": [
+      "Ytterbium",
+      "Rhodium",
+      "Rubidium",
+      "Erbium"
+    ],
+    "question": [
+      "My chemical symbol is Rb; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40213": {
+    "ans": [
+      "Oganesson",
+      "Oxygen",
+      "Silver",
+      "Osmium"
+    ],
+    "question": [
+      "My chemical symbol is Os; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40033": {
+    "ans": [
+      "Si",
+      "Se",
+      "Sc",
+      "Sn"
+    ],
+    "question": [
+      "What is the chemical symbol of silicon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40059": {
+    "ans": [
+      "Sm",
+      "Zr",
+      "Sn",
+      "Zn"
+    ],
+    "question": [
+      "What is the chemical symbol of zirconium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40199": {
+    "ans": [
+      "Sodium",
+      "Tin",
+      "Samarium",
+      "Selenium"
+    ],
+    "question": [
+      "My chemical symbol is Sm; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40169": {
+    "ans": [
+      "Germanium",
+      "Gallium",
+      "Mercury",
+      "Gold"
+    ],
+    "question": [
+      "My chemical symbol is Ge; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40051": {
+    "ans": [
+      "Mn",
+      "Ga",
+      "Mg",
+      "Ge"
+    ],
+    "question": [
+      "What is the chemical symbol of germanium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40186": {
+    "ans": [
+      "Indium",
+      "Iron",
+      "Tin",
+      "Nickel"
+    ],
+    "question": [
+      "My chemical symbol is In; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40177": {
+    "ans": [
+      "Zirconium",
+      "Yttrium",
+      "Tin",
+      "Zinc"
+    ],
+    "question": [
+      "My chemical symbol is Zr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40118": {
+    "ans": [
+      "Eu",
+      "Es",
+      "Tn",
+      "Sn"
+    ],
+    "question": [
+      "What is the chemical symbol of einsteinium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40142": {
+    "ans": [
+      "Bismuth",
+      "Beryllium",
+      "Bromine",
+      "Boron"
+    ],
+    "question": [
+      "My chemical symbol is B; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40211": {
+    "ans": [
+      "Uranium",
+      "Tungsten",
+      "Nitrogen",
+      "Vanadium"
+    ],
+    "question": [
+      "My chemical symbol is W; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40232": {
+    "ans": [
+      "Actinium",
+      "Aluminium",
+      "Gold",
+      "Americium"
+    ],
+    "question": [
+      "My chemical symbol is Am; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40227": {
+    "ans": [
+      "Thulium",
+      "Thallium",
+      "Tellurium",
+      "Thorium"
+    ],
+    "question": [
+      "My chemical symbol is Th; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40040": {
+    "ans": [
+      "Ca",
+      "S",
+      "Sc",
+      "Cd"
+    ],
+    "question": [
+      "What is the chemical symbol of scandium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40215": {
+    "ans": [
+      "Plutonium",
+      "Potassium",
+      "Platinum",
+      "Uranium"
+    ],
+    "question": [
+      "My chemical symbol is Pt; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40245": {
+    "ans": [
+      "Hydrogen",
+      "Arsenic",
+      "Helium",
+      "Hassium"
+    ],
+    "question": [
+      "My chemical symbol is Hs; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40157": {
+    "ans": [
+      "Potassium",
+      "Carbon",
+      "Chlorine",
+      "Calcium"
+    ],
+    "question": [
+      "My chemical symbol is Ca; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40102": {
+    "ans": [
+      "Bh",
+      "Bi",
+      "Sb",
+      "B"
+    ],
+    "question": [
+      "What is the chemical symbol of bismuth?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40150": {
+    "ans": [
+      "Aluminum",
+      "Americium",
+      "Silver",
+      "Arsenic"
+    ],
+    "question": [
+      "My chemical symbol is Al; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40068": {
+    "ans": [
+      "In",
+      "I",
+      "Ir",
+      "Nd"
+    ],
+    "question": [
+      "What is the chemical symbol of indium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40219": {
+    "ans": [
+      "Gold",
+      "Lead",
+      "Mercury",
+      "Silver"
+    ],
+    "question": [
+      "My chemical symbol is Pb; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40064": {
+    "ans": [
+      "Rh",
+      "Cs",
+      "Rn",
+      "Te"
+    ],
+    "question": [
+      "What is the chemical symbol of rhodium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40259": {
+    "ans": [
+      "Periodic table",
+      "Atomic table",
+      "Radioactivity table",
+      "Curie table"
+    ],
+    "question": [
+      "What is the name of the table in which the chemical elements are classified?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40163": {
+    "ans": [
+      "Sodium",
+      "Iron",
+      "Flerovium",
+      "Fluorine"
+    ],
+    "question": [
+      "My chemical symbol is Fe; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40131": {
+    "ans": [
+      "Co",
+      "C",
+      "Cu",
+      "Cn"
+    ],
+    "question": [
+      "What is the chemical symbol of copernicium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40241": {
+    "ans": [
+      "Rhodium",
+      "Ruthenium",
+      "Rubidium",
+      "Rutherfordium"
+    ],
+    "question": [
+      "My chemical symbol is Rf; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40092": {
+    "ans": [
+      "Tn",
+      "Ta",
+      "Tm",
+      "Te"
+    ],
+    "question": [
+      "What is the chemical symbol of tantalum?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40214": {
+    "ans": [
+      "Iridium",
+      "Ytterbium",
+      "Iodine",
+      "Iron"
+    ],
+    "question": [
+      "My chemical symbol is Ir; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40192": {
+    "ans": [
+      "Silicon",
+      "Caesium",
+      "Copper",
+      "Scandium"
+    ],
+    "question": [
+      "My chemical symbol is Cs; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40217": {
+    "ans": [
+      "Gold",
+      "Hydrogen",
+      "Mercury",
+      "Krypton"
+    ],
+    "question": [
+      "My chemical symbol is Hg; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40269": {
+    "ans": [
+      "100\u00b0C",
+      "0\u00b0C",
+      "273\u00b0C",
+      "32\u00b0C"
+    ],
+    "question": [
+      "What is the boiling point of water?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Phase"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40275": {
+    "ans": [
+      "32\u00b0C",
+      "100\u00b0C",
+      "-100\u00b0C",
+      "0\u00b0C"
+    ],
+    "question": [
+      "How much is 273.15K?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Principles",
+      "Phase"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40116": {
+    "ans": [
+      "Be",
+      "Bk",
+      "Br",
+      "B"
+    ],
+    "question": [
+      "What is the chemical symbol of berkelium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40222": {
+    "ans": [
+      "Silver",
+      "Antimony",
+      "Astatine",
+      "Actinium"
+    ],
+    "question": [
+      "My chemical symbol is At; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40109": {
+    "ans": [
+      "In",
+      "Th",
+      "Ti",
+      "V"
+    ],
+    "question": [
+      "What is the chemical symbol of thorium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40137": {
+    "ans": [
+      "No",
+      "O",
+      "Ga",
+      "Og"
+    ],
+    "question": [
+      "What is the chemical symbol of oganesson?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40017": {
+    "ans": [
+      "Ohm",
+      "Kelvin",
+      "Candela",
+      "Joule"
+    ],
+    "question": [
+      "Which of the following is a unit of temperature"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40197": {
+    "ans": [
+      "Neodynium",
+      "Vanadium",
+      "Nitrogen",
+      "Niobium"
+    ],
+    "question": [
+      "My chemical symbol is Nd; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40011": {
+    "ans": [
+      "Level of radioactivity",
+      "Atomic number",
+      "Density",
+      "Boiling point"
+    ],
+    "question": [
+      "The number of protons in an atom define the element's\u2026"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40114": {
+    "ans": [
+      "Ar",
+      "As",
+      "Am",
+      "Cu"
+    ],
+    "question": [
+      "What is the chemical symbol of americium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40097": {
+    "ans": [
+      "P",
+      "Pt",
+      "Ag",
+      "Pm"
+    ],
+    "question": [
+      "What is the chemical symbol of platinum?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40075": {
+    "ans": [
+      "Bu",
+      "Ar",
+      "Br",
+      "Ba"
+    ],
+    "question": [
+      "What is the chemical symbol of barium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40201": {
+    "ans": [
+      "Gold",
+      "Gadolinium",
+      "Argon",
+      "Cadmium"
+    ],
+    "question": [
+      "My chemical symbol is Gd; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40008": {
+    "ans": [
+      "Hydrogen",
+      "Lithium",
+      "Oxygen",
+      "Helium"
+    ],
+    "question": [
+      "Which chemical element has the smallest density?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40130": {
+    "ans": [
+      "Re",
+      "Rg",
+      "Og",
+      "Rn"
+    ],
+    "question": [
+      "What is the chemical symbol of roentgenium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40101": {
+    "ans": [
+      "Li",
+      "Po",
+      "La",
+      "Pb"
+    ],
+    "question": [
+      "What is the chemical symbol of lead?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40198": {
+    "ans": [
+      "Proctatinium",
+      "Promethium",
+      "Potassium",
+      "Praseodynium"
+    ],
+    "question": [
+      "My chemical symbol is Pm; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40063": {
+    "ans": [
+      "Pr",
+      "Rh",
+      "Ru",
+      "Rn"
+    ],
+    "question": [
+      "What is the chemical symbol of ruthenium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40152": {
+    "ans": [
+      "Polomium",
+      "Palladium",
+      "Phosphorus",
+      "Potassium"
+    ],
+    "question": [
+      "My chemical symbol is P; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40057": {
+    "ans": [
+      "Si",
+      "Sn",
+      "S",
+      "Sr"
+    ],
+    "question": [
+      "What is the chemical symbol of strontium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40258": {
+    "ans": [
+      8.0,
+      6.0,
+      1.0,
+      20.0
+    ],
+    "question": [
+      "What is the atomic number of oxygen?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40165": {
+    "ans": [
+      "Nobelium",
+      "Nickel",
+      "Neon",
+      "Nitrogen"
+    ],
+    "question": [
+      "My chemical symbol is Ni; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40047": {
+    "ans": [
+      "N",
+      "Ne",
+      "Na",
+      "Ni"
+    ],
+    "question": [
+      "What is the chemical symbol of nickel?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40058": {
+    "ans": [
+      "Tm",
+      "Ru",
+      "Y",
+      "Yb"
+    ],
+    "question": [
+      "What is the chemical symbol of yttrium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40025": {
+    "ans": [
+      "Cu",
+      "C",
+      "Cr",
+      "Ca"
+    ],
+    "question": [
+      "What is the chemical symbol of carbon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40099": {
+    "ans": [
+      "Mo",
+      "Rn",
+      "Hg",
+      "Mg"
+    ],
+    "question": [
+      "What is the chemical symbol of mercury?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40149": {
+    "ans": [
+      "Magnesium",
+      "Manganese",
+      "Mendelevium",
+      "Molybdenum"
+    ],
+    "question": [
+      "My chemical symbol is Mg; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40178": {
+    "ans": [
+      "Nobelium",
+      "Niobium",
+      "Nihonium",
+      "Bromine"
+    ],
+    "question": [
+      "My chemical symbol is Nb; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40016": {
+    "ans": [
+      "Becquerel",
+      "Watt",
+      "Fahrenheit",
+      "Volt"
+    ],
+    "question": [
+      "Which of the following is a unit of temperature"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40038": {
+    "ans": [
+      "N",
+      "Pa",
+      "K",
+      "Po"
+    ],
+    "question": [
+      "What is the chemical symbol of potassium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40055": {
+    "ans": [
+      "K",
+      "Cr",
+      "Kr",
+      "Pt"
+    ],
+    "question": [
+      "What is the chemical symbol of krypton?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40274": {
+    "ans": [
+      "100\u00b0C",
+      "-32\u00b0C",
+      "0\u00b0C",
+      "-273.15\u00b0C"
+    ],
+    "question": [
+      "How much is 32\u00b0F?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Principles",
+      "Phase"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40005": {
+    "ans": [
+      "Plutonium",
+      "Proctatinium",
+      "Uranium",
+      "Neptunium"
+    ],
+    "question": [
+      "What is the heaviest natural element on earth?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40121": {
+    "ans": [
+      "Ni",
+      "N",
+      "Nb",
+      "No"
+    ],
+    "question": [
+      "What is the chemical symbol of nobelium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40203": {
+    "ans": [
+      "Molybdenum",
+      "Rubidium",
+      "Dubnium",
+      "Dysprosium"
+    ],
+    "question": [
+      "My chemical symbol is Dy; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40031": {
+    "ans": [
+      "Mo",
+      "Mg",
+      "Md",
+      "Mn"
+    ],
+    "question": [
+      "What is the chemical symbol of magnesium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40030": {
+    "ans": [
+      "Se",
+      "Na",
+      "Os",
+      "Ni"
+    ],
+    "question": [
+      "What is the chemical symbol of sodium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40098": {
+    "ans": [
+      "Hg",
+      "Gd",
+      "Au",
+      "Ag"
+    ],
+    "question": [
+      "What is the chemical symbol of gold?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40045": {
+    "ans": [
+      "F",
+      "Fe",
+      "In",
+      "Ir"
+    ],
+    "question": [
+      "What is the chemical symbol of iron?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40113": {
+    "ans": [
+      "P",
+      "Pt",
+      "Pu",
+      "Po"
+    ],
+    "question": [
+      "What is the chemical symbol of plutonium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40138": {
+    "ans": [
+      "Hydrogen",
+      "Holmium",
+      "Helium",
+      "Mercury"
+    ],
+    "question": [
+      "My chemical symbol is H; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40010": {
+    "ans": [
+      "Tesla",
+      "Angstrom",
+      "Kelvin",
+      "Half-life"
+    ],
+    "question": [
+      "What is the unit of radioactive decay?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40154": {
+    "ans": [
+      "Copper",
+      "Chlorine",
+      "Cobalt",
+      "Carbon"
+    ],
+    "question": [
+      "My chemical symbol is Cl; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40015": {
+    "ans": [
+      "Celsius",
+      "Fahrenheit",
+      "Kelvin",
+      "Ohm"
+    ],
+    "question": [
+      "Which of the following is NOT a unit of temperature"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40172": {
+    "ans": [
+      "Beryllium",
+      "Barium",
+      "Boron",
+      "Bromine"
+    ],
+    "question": [
+      "My chemical symbol is Br; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40265": {
+    "ans": [
+      134.0,
+      118.0,
+      57.0,
+      98.0
+    ],
+    "question": [
+      "How many chemical elements have been identified?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Origin of the Elements"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40210": {
+    "ans": [
+      "Titanium",
+      "Potassium",
+      "Tantalum",
+      "Thallium"
+    ],
+    "question": [
+      "My chemical symbol is Ta; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40107": {
+    "ans": [
+      "Rh",
+      "Au",
+      "Ra",
+      "Ir"
+    ],
+    "question": [
+      "What is the chemical symbol of radium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40188": {
+    "ans": [
+      "Seaborgium",
+      "Bismuth",
+      "Magnesium",
+      "Antimony"
+    ],
+    "question": [
+      "My chemical symbol is Sb; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40158": {
+    "ans": [
+      "Scandium",
+      "Sulfur",
+      "Cadmium",
+      "Arsenic"
+    ],
+    "question": [
+      "My chemical symbol is Sc; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40032": {
+    "ans": [
+      "As",
+      "Am",
+      "Al",
+      "Ag"
+    ],
+    "question": [
+      "What is the chemical symbol of aluminum?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40237": {
+    "ans": [
+      "Francium",
+      "Iron",
+      "Fermium",
+      "Fluorine"
+    ],
+    "question": [
+      "My chemical symbol is Fm; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40039": {
+    "ans": [
+      "K",
+      "Ca",
+      "Cl",
+      "C"
+    ],
+    "question": [
+      "What is the chemical symbol of calcium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40179": {
+    "ans": [
+      "Magnesium",
+      "Molybdenum",
+      "Mercury",
+      "Moscovium"
+    ],
+    "question": [
+      "My chemical symbol is Mo; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40043": {
+    "ans": [
+      "C",
+      "Cr",
+      "Cu",
+      "Co"
+    ],
+    "question": [
+      "What is the chemical symbol of chromium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40071": {
+    "ans": [
+      "Te",
+      "Ta",
+      "Ti",
+      "Ts"
+    ],
+    "question": [
+      "What is the chemical symbol of tellurium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40170": {
+    "ans": [
+      "Silver",
+      "Aluminium",
+      "Arsenic",
+      "Astatine"
+    ],
+    "question": [
+      "My chemical symbol is As; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40183": {
+    "ans": [
+      "Phosphorus",
+      "Platinium",
+      "Dysprosium",
+      "Palladium"
+    ],
+    "question": [
+      "My chemical symbol is Pd; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40044": {
+    "ans": [
+      "Hg",
+      "Sn",
+      "Mn",
+      "Mg"
+    ],
+    "question": [
+      "What is the chemical symbol of manganese?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40070": {
+    "ans": [
+      "Sn",
+      "Sb",
+      "Al",
+      "Ag"
+    ],
+    "question": [
+      "What is the chemical symbol of antimony?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40244": {
+    "ans": [
+      "Bromine",
+      "Rhodium",
+      "Berkelium",
+      "Bohrium"
+    ],
+    "question": [
+      "My chemical symbol is Bh; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40001": {
+    "ans": [
+      "Oxygen",
+      "Uranium",
+      "Hydrogen",
+      "Carbon"
+    ],
+    "question": [
+      "What is the most common element in the crust of the earth?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40240": {
+    "ans": [
+      "Lanthanum",
+      "Lawrencium",
+      "Flerovium",
+      "Livermomium"
+    ],
+    "question": [
+      "My chemical symbol is Lr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40273": {
+    "ans": [
+      "Absolute zero",
+      "The freezing point of water?",
+      "The freezing point of mercury?",
+      "The average temperature of the moon"
+    ],
+    "question": [
+      "What is -273.15\u00b0C?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Principles",
+      "Phase"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40056": {
+    "ans": [
+      "Rb",
+      "Ru",
+      "Rn",
+      "Rh"
+    ],
+    "question": [
+      "What is the chemical symbol of rubidium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40224": {
+    "ans": [
+      "Fermium",
+      "Iron",
+      "Fluorine",
+      "Francium"
+    ],
+    "question": [
+      "My chemical symbol is Fr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40076": {
+    "ans": [
+      "Li",
+      "Na",
+      "Lu",
+      "La"
+    ],
+    "question": [
+      "What is the chemical symbol of lanthanum?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40065": {
+    "ans": [
+      "Ba",
+      "Pd",
+      "Po",
+      "P"
+    ],
+    "question": [
+      "What is the chemical symbol of palladium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40234": {
+    "ans": [
+      "Berkelium",
+      "Bromine",
+      "Beryllium",
+      "Boron"
+    ],
+    "question": [
+      "My chemical symbol is Bk; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40262": {
+    "ans": [
+      "CO2",
+      "O2",
+      "O3",
+      "CO"
+    ],
+    "question": [
+      "What is the chemical formula of ozone"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40189": {
+    "ans": [
+      "Technetium",
+      "Tellurium",
+      "Tungsten",
+      "Terbium"
+    ],
+    "question": [
+      "My chemical symbol is Te; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40180": {
+    "ans": [
+      "Cobalt",
+      "Titanium",
+      "Tungsten",
+      "Technetium"
+    ],
+    "question": [
+      "My chemical symbol is Tc; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40006": {
+    "ans": [
+      "~5%",
+      "~98%",
+      "~74%",
+      "~23%"
+    ],
+    "question": [
+      "What fraction of the total mass of the universe do atoms represent?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40220": {
+    "ans": [
+      "Berkelium",
+      "Bismuth",
+      "Barium",
+      "Bromine"
+    ],
+    "question": [
+      "My chemical symbol is Bi; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40067": {
+    "ans": [
+      "Cu",
+      "Ca",
+      "Cd",
+      "C"
+    ],
+    "question": [
+      "What is the chemical symbol of cadmium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40126": {
+    "ans": [
+      "Bh",
+      "Rh",
+      "B",
+      "Br"
+    ],
+    "question": [
+      "What is the chemical symbol of bohrium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40122": {
+    "ans": [
+      "La",
+      "Li",
+      "Lr",
+      "Lu"
+    ],
+    "question": [
+      "What is the chemical symbol of lawrencium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40105": {
+    "ans": [
+      "Db",
+      "Ar",
+      "Rn",
+      "Ra"
+    ],
+    "question": [
+      "What is the chemical symbol of radon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40091": {
+    "ans": [
+      "Am",
+      "H",
+      "Hf",
+      "Ho"
+    ],
+    "question": [
+      "What is the chemical symbol of hafnium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40078": {
+    "ans": [
+      "Pr",
+      "Pm",
+      "Pd",
+      "P"
+    ],
+    "question": [
+      "What is the chemical symbol of praseodymium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40019": {
+    "ans": [
+      "Hydrogen",
+      "Water",
+      "Bromine",
+      "Sulfur"
+    ],
+    "question": [
+      "Which element is a liquid at 0\u00b0C?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40207": {
+    "ans": [
+      "Lead",
+      "Gold",
+      "Molybdenum",
+      "Ytterbium"
+    ],
+    "question": [
+      "My chemical symbol is Yb; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40212": {
+    "ans": [
+      "Rhenium",
+      "Ruthenium",
+      "Radon",
+      "Radium"
+    ],
+    "question": [
+      "My chemical symbol is Re; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40086": {
+    "ans": [
+      "Au",
+      "Ho",
+      "H",
+      "Lu"
+    ],
+    "question": [
+      "What is the chemical symbol of holmium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40029": {
+    "ans": [
+      "Ne",
+      "Na",
+      "Ni",
+      "N"
+    ],
+    "question": [
+      "What is the chemical symbol of neon?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40171": {
+    "ans": [
+      "Silicon",
+      "Sulfur",
+      "Seaborgium",
+      "Selenium"
+    ],
+    "question": [
+      "My chemical symbol is Se; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40046": {
+    "ans": [
+      "C",
+      "Ca",
+      "Co",
+      "Cu"
+    ],
+    "question": [
+      "What is the chemical symbol of cobalt?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40062": {
+    "ans": [
+      "Ti",
+      "Ts",
+      "Te",
+      "Tc"
+    ],
+    "question": [
+      "What is the chemical symbol of technetium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40134": {
+    "ans": [
+      "Sm",
+      "Mc",
+      "Ru",
+      "Mo"
+    ],
+    "question": [
+      "What is the chemical symbol of moscovium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40012": {
+    "ans": [
+      "Electrons",
+      "Crystals",
+      "Allotropes",
+      "Isotopes"
+    ],
+    "question": [
+      "Atoms of the same element having a different number of neutrons are known as\u2026"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40205": {
+    "ans": [
+      "Europium",
+      "Fermium",
+      "Erbium",
+      "Lawrencium"
+    ],
+    "question": [
+      "My chemical symbol is Er; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40271": {
+    "ans": [
+      "-273.15\u00b0C",
+      "-100\u00b0C",
+      "-32\u00b0C",
+      "It isn't have one"
+    ],
+    "question": [
+      "What is the freezing point of helium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Phase"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40184": {
+    "ans": [
+      "Silver",
+      "Gold",
+      "Argon",
+      "Antimony"
+    ],
+    "question": [
+      "My chemical symbol is Ag; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40175": {
+    "ans": [
+      "Silver",
+      "Sulfur",
+      "Sodium",
+      "Strontium"
+    ],
+    "question": [
+      "My chemical symbol is Sr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40255": {
+    "ans": [
+      "Gallium",
+      "Oganesson",
+      "Oxygen",
+      "Nobelium"
+    ],
+    "question": [
+      "My chemical symbol is Og; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40093": {
+    "ans": [
+      "Y",
+      "W",
+      "Tn",
+      "Ts"
+    ],
+    "question": [
+      "What is the chemical symbol of tungsten?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40085": {
+    "ans": [
+      "Pr",
+      "Ds",
+      "Y",
+      "Dy"
+    ],
+    "question": [
+      "What is the chemical symbol of dyprosium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40140": {
+    "ans": [
+      "Lutetium",
+      "Lithium",
+      "Livermomium",
+      "Lanthanum"
+    ],
+    "question": [
+      "My chemical symbol is Li; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40233": {
+    "ans": [
+      "Curium",
+      "Cadmium",
+      "Chromium",
+      "Copernicium"
+    ],
+    "question": [
+      "My chemical symbol is Cm; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40041": {
+    "ans": [
+      "Ti",
+      "Ta",
+      "Sn",
+      "Te"
+    ],
+    "question": [
+      "What is the chemical symbol of titanium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40202": {
+    "ans": [
+      "Bismuth",
+      "Terbium",
+      "Hassium",
+      "Actinium"
+    ],
+    "question": [
+      "My chemical symbol is Tb; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40096": {
+    "ans": [
+      "I",
+      "In",
+      "Ir",
+      "Y"
+    ],
+    "question": [
+      "What is the chemical symbol of iridium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40250": {
+    "ans": [
+      "Nickel",
+      "Nihonium",
+      "Nitrogen",
+      "Nobelium"
+    ],
+    "question": [
+      "My chemical symbol is Nh; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40253": {
+    "ans": [
+      "Lithium",
+      "Livermorium",
+      "Lawrencium",
+      "Lutetium"
+    ],
+    "question": [
+      "My chemical symbol is Lv; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40266": {
+    "ans": [
+      70.0,
+      24.0,
+      94.0,
+      118.0
+    ],
+    "question": [
+      "How many identified chemical elements occur naturally on Earth?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Origin of the Elements"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40115": {
+    "ans": [
+      "Cr",
+      "Cu",
+      "C",
+      "Cm"
+    ],
+    "question": [
+      "What is the chemical symbol of curium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40027": {
+    "ans": [
+      "O2",
+      "Ge",
+      "O",
+      "Og"
+    ],
+    "question": [
+      "What is the chemical symbol of oxygen?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40053": {
+    "ans": [
+      "Sn",
+      "Se",
+      "Si",
+      "S"
+    ],
+    "question": [
+      "What is the chemical symbol of selenium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40229": {
+    "ans": [
+      "Europium",
+      "Uranium",
+      "Tungsten",
+      "Vanadium"
+    ],
+    "question": [
+      "My chemical symbol is U; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40242": {
+    "ans": [
+      "Dysprosium",
+      "Darmstadtium",
+      "Dubnium",
+      "Rubidium"
+    ],
+    "question": [
+      "My chemical symbol is Db; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40088": {
+    "ans": [
+      "Tm",
+      "Lu",
+      "He",
+      "Ts"
+    ],
+    "question": [
+      "What is the chemical symbol of thulium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40124": {
+    "ans": [
+      "Ds",
+      "Bh",
+      "Dy",
+      "Db"
+    ],
+    "question": [
+      "What is the chemical symbol of dubnium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40022": {
+    "ans": [
+      "Li",
+      "Lv",
+      "Lu",
+      "La"
+    ],
+    "question": [
+      "What is the chemical symbol of lithium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40136": {
+    "ans": [
+      "Ts",
+      "Mt",
+      "Tn",
+      "Te"
+    ],
+    "question": [
+      "What is the chemical symbol of tennessine?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40238": {
+    "ans": [
+      "Mendelevium",
+      "Manganese",
+      "Meitnerium",
+      "Molybdenum"
+    ],
+    "question": [
+      "My chemical symbol is Md; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40206": {
+    "ans": [
+      "Thorium",
+      "Tin",
+      "Thulium",
+      "Tellurium"
+    ],
+    "question": [
+      "My chemical symbol is Tm; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40089": {
+    "ans": [
+      "Rb",
+      "Yb",
+      "Lr",
+      "Y"
+    ],
+    "question": [
+      "What is the chemical symbol of ytterbium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40021": {
+    "ans": [
+      "He",
+      "Ho",
+      "Hf",
+      "H"
+    ],
+    "question": [
+      "What is the chemical symbol of helium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40196": {
+    "ans": [
+      "Copernicium",
+      "Praseodynium",
+      "Proctatinium",
+      "Phosphorus"
+    ],
+    "question": [
+      "My chemical symbol is Pr; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40239": {
+    "ans": [
+      "Nickel",
+      "Nitrogen",
+      "Niobium",
+      "Nobelium"
+    ],
+    "question": [
+      "My chemical symbol is No; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40204": {
+    "ans": [
+      "Holmium",
+      "Helium",
+      "Mercury",
+      "Hydrogen"
+    ],
+    "question": [
+      "My chemical symbol is Ho; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40187": {
+    "ans": [
+      "Silicon",
+      "Sodium",
+      "Tin",
+      "Selenium"
+    ],
+    "question": [
+      "My chemical symbol is Sn; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40251": {
+    "ans": [
+      "Flerovium",
+      "Flerovium",
+      "Iron",
+      "Fluorine"
+    ],
+    "question": [
+      "My chemical symbol is Fl; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40050": {
+    "ans": [
+      "Gd",
+      "Ag",
+      "Ga",
+      "Ge"
+    ],
+    "question": [
+      "What is the chemical symbol of gallium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40254": {
+    "ans": [
+      "Tellurium",
+      "Tin",
+      "Tennessine",
+      "Tungsten"
+    ],
+    "question": [
+      "My chemical symbol is Ts; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40200": {
+    "ans": [
+      "Europium",
+      "Einsteinium",
+      "Uranium",
+      "Eribium"
+    ],
+    "question": [
+      "My chemical symbol is Eu; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40243": {
+    "ans": [
+      "Seaborgium",
+      "Selenium",
+      "Samarium",
+      "Mercury"
+    ],
+    "question": [
+      "My chemical symbol is Sg; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40146": {
+    "ans": [
+      "Iron",
+      "Fluorine",
+      "Francium",
+      "Flerovium"
+    ],
+    "question": [
+      "My chemical symbol is F; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40125": {
+    "ans": [
+      "Se",
+      "Sm",
+      "Sg",
+      "Rb"
+    ],
+    "question": [
+      "What is the chemical symbol of seaborgium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40110": {
+    "ans": [
+      "Po",
+      "Pt",
+      "Pa",
+      "Pm"
+    ],
+    "question": [
+      "What is the chemical symbol of protactinium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40083": {
+    "ans": [
+      "Og",
+      "Ga",
+      "Gd",
+      "Ag"
+    ],
+    "question": [
+      "What is the chemical symbol of gadolinium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40132": {
+    "ans": [
+      "N",
+      "No",
+      "Nh",
+      "Ni"
+    ],
+    "question": [
+      "What is the chemical symbol of nihonium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40000": {
+    "ans": [
+      "Iron",
+      "Oxygen",
+      "Lead",
+      "Carbon"
+    ],
+    "question": [
+      "What is the most abundant element (by mass) making up the earth?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Abundance"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40249": {
+    "ans": [
+      "Carbon",
+      "Cooper",
+      "Cerium",
+      "Copernicium"
+    ],
+    "question": [
+      "My chemical symbol is Cn; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40127": {
+    "ans": [
+      "Hs",
+      "H",
+      "As",
+      "Nh"
+    ],
+    "question": [
+      "What is the chemical symbol of hassium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40272": {
+    "ans": [
+      "Aluminium",
+      "Calcium",
+      "Iron",
+      "Carbon"
+    ],
+    "question": [
+      "Graphite and diamond are allotropes of\u2026"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Phase"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40209": {
+    "ans": [
+      "Hafnium",
+      "Rutherfordium",
+      "Gold",
+      "Mercury"
+    ],
+    "question": [
+      "My chemical symbol is Hf; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40094": {
+    "ans": [
+      "Rh",
+      "Ru",
+      "Rn",
+      "Re"
+    ],
+    "question": [
+      "What is the chemical symbol of rhenium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40235": {
+    "ans": [
+      "Copper",
+      "Chlorine",
+      "Calcium",
+      "Californium"
+    ],
+    "question": [
+      "My chemical symbol is Cf; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40074": {
+    "ans": [
+      "Cs",
+      "Ca",
+      "Cu",
+      "Ce"
+    ],
+    "question": [
+      "What is the chemical symbol of caesium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40123": {
+    "ans": [
+      "Rf",
+      "Rn",
+      "Rh",
+      "Ru"
+    ],
+    "question": [
+      "What is the chemical symbol of rutherfordium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40018": {
+    "ans": [
+      "Nitrogen",
+      "Plutonium",
+      "Water",
+      "Mercury"
+    ],
+    "question": [
+      "Which element is a liquid at 0\u00b0C?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Description"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40225": {
+    "ans": [
+      "Argon",
+      "Radon",
+      "Barium",
+      "Radium"
+    ],
+    "question": [
+      "My chemical symbol is Ra; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40054": {
+    "ans": [
+      "Br",
+      "B",
+      "Bh",
+      "Bi"
+    ],
+    "question": [
+      "What is the chemical symbol of bromine?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40143": {
+    "ans": [
+      "Chromium",
+      "Copper",
+      "Calcium",
+      "Carbon"
+    ],
+    "question": [
+      "My chemical symbol is C; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40048": {
+    "ans": [
+      "Co",
+      "Cr",
+      "Cu",
+      "C"
+    ],
+    "question": [
+      "What is the chemical symbol of copper?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40160": {
+    "ans": [
+      "Iron",
+      "Uranium",
+      "Tungsten",
+      "Vanadium"
+    ],
+    "question": [
+      "My chemical symbol is V; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40145": {
+    "ans": [
+      "Gold",
+      "Osmium",
+      "Oxygen",
+      "Oganesson"
+    ],
+    "question": [
+      "My chemical symbol is O; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40268": {
+    "ans": [
+      "Ultraviolet exposure",
+      "Infrared exposure",
+      "Nuclear reaction",
+      "High-frequency resonance"
+    ],
+    "question": [
+      "How are the 24 synthetic elements artificially produced?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Origin of the Elements"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40103": {
+    "ans": [
+      "Po",
+      "P",
+      "Pm",
+      "Pu"
+    ],
+    "question": [
+      "What is the chemical symbol of polunium?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40194": {
+    "ans": [
+      "Platinum",
+      "Lanthanum",
+      "Lead",
+      "Lawrencium"
+    ],
+    "question": [
+      "My chemical symbol is La; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40020": {
+    "ans": [
+      "Hg",
+      "H",
+      "Ho",
+      "He"
+    ],
+    "question": [
+      "What is the chemical symbol of hydrogen?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "40104": {
+    "ans": [
+      "Na",
+      "As",
+      "At",
+      "Tn"
+    ],
+    "question": [
+      "What is the chemical symbol of astatine?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40159": {
+    "ans": [
+      "Tellurium",
+      "Tin",
+      "Thulium",
+      "Titanium"
+    ],
+    "question": [
+      "My chemical symbol is Ti; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40168": {
+    "ans": [
+      "Gallium",
+      "Californium",
+      "Germanium",
+      "Silver"
+    ],
+    "question": [
+      "My chemical symbol is Ga; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "40226": {
+    "ans": [
+      "Calcium",
+      "Arsenic",
+      "Actinium",
+      "Cadmium"
+    ],
+    "question": [
+      "My chemical symbol is Ac; what am I?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "40066": {
+    "ans": [
+      "S",
+      "Ar",
+      "Si",
+      "Ag"
+    ],
+    "question": [
+      "What is the chemical symbol of silver?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "40035": {
+    "ans": [
+      "Sm",
+      "Sr",
+      "S",
+      "Na"
+    ],
+    "question": [
+      "What is the chemical symbol of sulfur?"
+    ],
+    "d1": [
+      "Sciences",
+      "Chemistry",
+      "Chemical Elements",
+      "Nomenclature and Symbols"
+    ],
+    "c_ans": [
+      2
+    ]
+  }
+}

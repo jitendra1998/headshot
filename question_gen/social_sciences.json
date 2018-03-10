@@ -1,0 +1,9342 @@
+{
+  "30398": {
+    "ans": [
+      "Ollei",
+      "Elab",
+      "Ngerulmud",
+      "Klouklubed"
+    ],
+    "question": [
+      "What is the capital of Palau?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30247": {
+    "ans": [
+      "Greenville",
+      "Columbia",
+      "Charleston",
+      "Savannah"
+    ],
+    "question": [
+      "What is the capital of South Carolina?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30092": {
+    "ans": [
+      "North Korean dollar",
+      "North Korean yen",
+      "North Korean won",
+      "North Korean yuan"
+    ],
+    "question": [
+      "What is the currency in North Korea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30407": {
+    "ans": [
+      "Abu Dhabi",
+      "Riyadh",
+      "Doha",
+      "Dubai"
+    ],
+    "question": [
+      "What is the capital of Qatar?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30019": {
+    "ans": [
+      "Benin kwanza",
+      "West African CFA franc",
+      "Central African CFA franc",
+      "Benin franc"
+    ],
+    "question": [
+      "What is the currency in Benin?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30228": {
+    "ans": [
+      "Worcester",
+      "Springlfield",
+      "Salem",
+      "Boston"
+    ],
+    "question": [
+      "What is the capital of Massachussets?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30061": {
+    "ans": [
+      "Euro",
+      "Finnish florin",
+      "Finnish mark",
+      "Finnish krone"
+    ],
+    "question": [
+      "What is the currency in Finland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30248": {
+    "ans": [
+      "Sioux Falls",
+      "Watertown",
+      "Pierre",
+      "Rapid City"
+    ],
+    "question": [
+      "What is the capital of South Dakota?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30112": {
+    "ans": [
+      "Malian pound",
+      "French franc",
+      "Malian kwacha",
+      "West African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Mali?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30094": {
+    "ans": [
+      "Kosovar kuna",
+      "Kosovar convertible mark",
+      "Euro",
+      "Russian ruble"
+    ],
+    "question": [
+      "What is the currency in Kosovo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30360": {
+    "ans": [
+      "Tallinn",
+      "Minsk",
+      "Helsinki",
+      "Riga"
+    ],
+    "question": [
+      "What is the capital of Latvia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30269": {
+    "ans": [
+      "Montevideo",
+      "Buenos Aires",
+      "Rosario",
+      "Cordoba"
+    ],
+    "question": [
+      "What is the capital of Argentina?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30037": {
+    "ans": [
+      "Colombian dollar",
+      "Colombian escudo",
+      "Colombian peso",
+      "Colombian florin"
+    ],
+    "question": [
+      "What is the currency in Colombia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30332": {
+    "ans": [
+      "Victoria",
+      "Clifton",
+      "L'Apelle",
+      "St George's"
+    ],
+    "question": [
+      "What is the capital of Grenada?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30379": {
+    "ans": [
+      "Madolenihmw",
+      "Kolonia",
+      "Palikir",
+      "Rontiki"
+    ],
+    "question": [
+      "What is the capital of Micronesia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30012": {
+    "ans": [
+      "US dollar",
+      "East Caribbean dollar",
+      "Bahamian dollar",
+      "West Caribbean dollar"
+    ],
+    "question": [
+      "What is the currency in the Bahamas?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30243": {
+    "ans": [
+      "Lawton",
+      "Norman",
+      "Oklahoma City",
+      "Tulsa"
+    ],
+    "question": [
+      "What is the capital of Oklahoma?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30152": {
+    "ans": [
+      "East Caribbean dollar",
+      "Pound sterling",
+      "US dollar",
+      "St Lucia dollar"
+    ],
+    "question": [
+      "What is the currency in St Vincent and the Grenadines?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30001": {
+    "ans": [
+      "Albanian dinar",
+      "Albanian rupee",
+      "Albanian lek",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Albania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30252": {
+    "ans": [
+      "Burlington",
+      "Montpelier",
+      "Plattsburgh",
+      "Greensboro"
+    ],
+    "question": [
+      "What is the capital of Vermont?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30056": {
+    "ans": [
+      "French franc",
+      "EG dollar",
+      "Central African CFA franc",
+      "EG kwanza"
+    ],
+    "question": [
+      "What is the currency in Equatorial Guinea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30070": {
+    "ans": [
+      "Guatemalan peso",
+      "Guatemalan escudo",
+      "Guatemalan quetzal",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Guatemala?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30157": {
+    "ans": [
+      "West African CFA franc",
+      "Senegalese naira",
+      "French franc",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Senegal?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30002": {
+    "ans": [
+      "Algerian rupee",
+      "Algerian riyal",
+      "Algerian dinar",
+      "Algerian dirham"
+    ],
+    "question": [
+      "What is the currency in Algeria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30209": {
+    "ans": [
+      "Juneau",
+      "Fairbanks",
+      "Seward",
+      "Anchorage"
+    ],
+    "question": [
+      "What is the capital of Alaska?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30226": {
+    "ans": [
+      "Portsmouth",
+      "Augusta",
+      "Portland",
+      "Bangor"
+    ],
+    "question": [
+      "What is the capital of Maine?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30412": {
+    "ans": [
+      "Kingstown",
+      "Castries",
+      "St George's",
+      "Port Elizabeth"
+    ],
+    "question": [
+      "What is the capital of St Lucia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30316": {
+    "ans": [
+      "Guayaquil",
+      "Quito",
+      "Bogota",
+      "Caracas"
+    ],
+    "question": [
+      "What is the capital of Ecuador?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30275": {
+    "ans": [
+      "Cockburn Town",
+      "Arthur's Town",
+      "Freeport",
+      "Nassau"
+    ],
+    "question": [
+      "What is the capital of the Bahamas?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30131": {
+    "ans": [
+      "Nicaraguan cordoba",
+      "US dollar",
+      "Nicaraguan peso",
+      "Mexican peso"
+    ],
+    "question": [
+      "What is the currency in Nicaragua?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30089": {
+    "ans": [
+      "Kazakhstani tenge",
+      "Kazakhstani rupee",
+      "Kazakhstani ruble",
+      "Kazakhstani som"
+    ],
+    "question": [
+      "What is the currency in Kazakhstan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30389": {
+    "ans": [
+      "Lhasa",
+      "Kathmandu",
+      "Patna",
+      "Kolkata"
+    ],
+    "question": [
+      "What is the capital of Nepal?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30214": {
+    "ans": [
+      "Bridgeport",
+      "Bridgeport",
+      "New Haven",
+      "Hartford"
+    ],
+    "question": [
+      "What is the capital of Connecticut?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30108": {
+    "ans": [
+      "Malagasy ariary",
+      "West African CFA franc",
+      "Malagasy metical",
+      "Malagasy franc"
+    ],
+    "question": [
+      "What is the currency in Madagascar?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30455": {
+    "ans": [
+      "Cardiff",
+      "Plymouth",
+      "Bristol",
+      "Swansea"
+    ],
+    "question": [
+      "What is the capital of Wales?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30358": {
+    "ans": [
+      "Bishkek",
+      "Astana",
+      "Tashkent",
+      "Kabul"
+    ],
+    "question": [
+      "What is the capital of Kyrgyzstan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30397": {
+    "ans": [
+      "Lahore",
+      "Peshawar",
+      "Hyderabad",
+      "Islamabad"
+    ],
+    "question": [
+      "What is the capital of Pakistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30361": {
+    "ans": [
+      "Homs",
+      "Amman",
+      "Beirut",
+      "Haifa"
+    ],
+    "question": [
+      "What is the capital of Lebanon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30041": {
+    "ans": [
+      "Costa Rican colon",
+      "Costa Rican real",
+      "US dollar",
+      "Costa Rican peso"
+    ],
+    "question": [
+      "What is the currency in Costa Rica?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30304": {
+    "ans": [
+      "David",
+      "San Jose",
+      "Liberia",
+      "Managua"
+    ],
+    "question": [
+      "What is the capital of Costa Rica?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30452": {
+    "ans": [
+      "Lviv",
+      "Tbilisi",
+      "Odessa",
+      "Kyiv"
+    ],
+    "question": [
+      "What is the capital of Ukraine?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30299": {
+    "ans": [
+      "Macau",
+      "Hong Kong",
+      "Beijing",
+      "Shanghai"
+    ],
+    "question": [
+      "What is the capital of China?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30010": {
+    "ans": [
+      "Euro",
+      "Austrian mark",
+      "Austrian krone",
+      "German mark"
+    ],
+    "question": [
+      "What is the currency in Austria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30065": {
+    "ans": [
+      "Georgian lev",
+      "Georgian ruble",
+      "Russian ruble",
+      "Georgian lari"
+    ],
+    "question": [
+      "What is the currency in Georgia? (country)"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30292": {
+    "ans": [
+      "Krong Siem Reap",
+      "Phnom Penh",
+      "Ho Chi Minh City",
+      "Krong Poi Pet"
+    ],
+    "question": [
+      "What is the capital of Cambodia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30107": {
+    "ans": [
+      "Macedonian schilling",
+      "Macedonian zloty",
+      "Macedonian ruble",
+      "Macedonian denar"
+    ],
+    "question": [
+      "What is the currency in Macedonia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30319": {
+    "ans": [
+      "Bata",
+      "Malabo",
+      "Libreville",
+      "Conakry"
+    ],
+    "question": [
+      "What is the capital of Equatorial Guinea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30138": {
+    "ans": [
+      "Egyptian pound",
+      "Syrian pound",
+      "Lebanese pound",
+      "Israeli sheqel"
+    ],
+    "question": [
+      "What is the currency in the Palestinian Territories?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30445": {
+    "ans": [
+      "Nuku'alofa",
+      "Toloke",
+      "Suva",
+      "Apia"
+    ],
+    "question": [
+      "What is the capital of Tonga?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30024": {
+    "ans": [
+      "Brazilian real",
+      "Brazilian dollar",
+      "Brazilian peso",
+      "Brazilian escudo"
+    ],
+    "question": [
+      "What is the currency in Brazil?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30182": {
+    "ans": [
+      "Tongan dalasi",
+      "Tongan dollar",
+      "Tongan pa'anga",
+      "Tongan pound"
+    ],
+    "question": [
+      "What is the currency in Tonga?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30162": {
+    "ans": [
+      "US dollar",
+      "Netherlands Antilean guilder",
+      "Pound sterling",
+      "West Caribbean dollar"
+    ],
+    "question": [
+      "What is the currency in St Martin?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30173": {
+    "ans": [
+      "Swazi lilangeni",
+      "Swazi peso",
+      "Swazi kwacha",
+      "Swazi ouguiya"
+    ],
+    "question": [
+      "What is the currency in Swaziland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30267": {
+    "ans": [
+      "Lubango",
+      "Lobito",
+      "Namibe",
+      "Luanda"
+    ],
+    "question": [
+      "What is the capital of Angola?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30049": {
+    "ans": [
+      "Djiboutian franc",
+      "Djiboutian dollar",
+      "West African CFA franc",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Djibouti?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30357": {
+    "ans": [
+      "Salmiya",
+      "Kuwait City",
+      "Abu Dhabi",
+      "Dubai"
+    ],
+    "question": [
+      "What is the capital of Kuwait?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30423": {
+    "ans": [
+      "Philipsburg",
+      "Oranjestad",
+      "Sandy Ground",
+      "Gustavia"
+    ],
+    "question": [
+      "What is the capital of St Martin?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30130": {
+    "ans": [
+      "Australian dollar",
+      "Pound sterling",
+      "New Zealand pound",
+      "New Zealand dollar"
+    ],
+    "question": [
+      "What is the currency in New Zealand?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30013": {
+    "ans": [
+      "Bahraini riyal",
+      "Bahraini dollar",
+      "Bahraini dinar",
+      "Bahraini dirham"
+    ],
+    "question": [
+      "What is the currency in Bahrain?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30241": {
+    "ans": [
+      "Williston",
+      "Bismarck",
+      "Dickinson",
+      "Fargo"
+    ],
+    "question": [
+      "What is the capital of North Dakota?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30344": {
+    "ans": [
+      "Mosul",
+      "Baghdad",
+      "Homs",
+      "Tehran"
+    ],
+    "question": [
+      "What is the capital of Iraq?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30458": {
+    "ans": [
+      "Montevideo",
+      "Porto Alegre",
+      "Buenos Aires",
+      "Asuncion"
+    ],
+    "question": [
+      "What is the capital of Uruguay?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30259": {
+    "ans": [
+      "Hagatna",
+      "Songsong",
+      "Dededo",
+      "Saipan"
+    ],
+    "question": [
+      "What is the capital of Guam?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30134": {
+    "ans": [
+      "Norwegian florin",
+      "Euro",
+      "Norwegian pound",
+      "Norwegian krone"
+    ],
+    "question": [
+      "What is the currency in Norway?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30330": {
+    "ans": [
+      "Tamale",
+      "Abijan",
+      "Accra",
+      "Lome"
+    ],
+    "question": [
+      "What is the capital of Ghana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30426": {
+    "ans": [
+      "Noumea",
+      "Honiara",
+      "Buka Town",
+      "Port Vila"
+    ],
+    "question": [
+      "What is the capital of the Solomon Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30420": {
+    "ans": [
+      "Victoria",
+      "Saint Denis",
+      "Port Louis",
+      "Frand Anse"
+    ],
+    "question": [
+      "What is the capital of the Seychelles?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30022": {
+    "ans": [
+      "Euro",
+      "B&H convertible mark",
+      "B&H ruble",
+      "B&H convertible schilling"
+    ],
+    "question": [
+      "What is the currency in Bosnia and Herzegovina?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30096": {
+    "ans": [
+      "Kyrgyzstani ruble",
+      "Kyrgyzstani tenge",
+      "Kyrgyzstani som",
+      "Kyrgyzstani rupee"
+    ],
+    "question": [
+      "What is the currency in Kyrgyzstan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30212": {
+    "ans": [
+      "Sacramento",
+      "Los Angeles",
+      "San Diego",
+      "San Francisco"
+    ],
+    "question": [
+      "What is the capital of California?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30419": {
+    "ans": [
+      "Novi Sad",
+      "Belgrade",
+      "Zagreb",
+      "Sarajevo"
+    ],
+    "question": [
+      "What is the capital of Serbia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30023": {
+    "ans": [
+      "West African CFA franc",
+      "Botswana pula",
+      "Botswana dollar",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Botswana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30117": {
+    "ans": [
+      "Mexican dollar",
+      "Mexican peso",
+      "US dollar",
+      "Mexican lempira"
+    ],
+    "question": [
+      "What is the currency in Mexico?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30233": {
+    "ans": [
+      "Great Falls",
+      "Helena",
+      "Missoula",
+      "Billings"
+    ],
+    "question": [
+      "What is the capital of Montana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30374": {
+    "ans": [
+      "Syracuse",
+      "Valletta",
+      "Cagliari",
+      "Chania"
+    ],
+    "question": [
+      "What is the capital of Malta?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30021": {
+    "ans": [
+      "Bolivian peso",
+      "Bolivian dollar",
+      "Bolivian escudo",
+      "Bolivian boliviano"
+    ],
+    "question": [
+      "What is the currency in Bolivia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30273": {
+    "ans": [
+      "Innsbruck",
+      "Vienna",
+      "Graz",
+      "Linz"
+    ],
+    "question": [
+      "What is the capital of Austria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30394": {
+    "ans": [
+      "Niamey",
+      "Abuja",
+      "Lagos",
+      "Lome"
+    ],
+    "question": [
+      "What is the capital of Nigeria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30388": {
+    "ans": [
+      "Baiti",
+      "Anabar",
+      "Anibare",
+      "Yaren"
+    ],
+    "question": [
+      "What is the capital of Nauru?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30120": {
+    "ans": [
+      "US dollar",
+      "Euro",
+      "Monaco pound",
+      "Italian lira"
+    ],
+    "question": [
+      "What is the currency in Monaco?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30105": {
+    "ans": [
+      "French franc",
+      "Luxembourg pound",
+      "German mark",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Luxembourg?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30114": {
+    "ans": [
+      "West Caribbean dollar",
+      "East Caribbean dollar",
+      "Australian dollar",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Marshall Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30449": {
+    "ans": [
+      "Ashgabat",
+      "Tehran",
+      "Lahore",
+      "Baku"
+    ],
+    "question": [
+      "What is the capital of Turkmenistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30291": {
+    "ans": [
+      "Bukavu",
+      "Bujumbura",
+      "Butare",
+      "Mutumba"
+    ],
+    "question": [
+      "What is the capital of Burundi?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30050": {
+    "ans": [
+      "West Caribbean dollar",
+      "Dominican dollar",
+      "East Caribbean dollar",
+      "Dominican escudo"
+    ],
+    "question": [
+      "What is the currency in Dominica?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30097": {
+    "ans": [
+      "Lao kip",
+      "Lao riel",
+      "Lao yuan",
+      "Lao baht"
+    ],
+    "question": [
+      "What is the currency in Laos?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30113": {
+    "ans": [
+      "Euro",
+      "Maltese lira",
+      "Pound sterling",
+      "Italian lira"
+    ],
+    "question": [
+      "What is the currency in Malta?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30175": {
+    "ans": [
+      "Swiss mark",
+      "Euro",
+      "German mark",
+      "Swiss franc"
+    ],
+    "question": [
+      "What is the currency in Switzerland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30119": {
+    "ans": [
+      "Moldovan koruna",
+      "Moldovan leu",
+      "Moldovan dram",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Moldova?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30251": {
+    "ans": [
+      "Salt Lake City",
+      "Provo",
+      "Ogden",
+      "St George"
+    ],
+    "question": [
+      "What is the capital of Utah?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30260": {
+    "ans": [
+      "Hagatna",
+      "Songsong",
+      "Dededo",
+      "Saipan"
+    ],
+    "question": [
+      "What is the capital of the Northern Mariana Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30341": {
+    "ans": [
+      "Mumbai",
+      "Chennai",
+      "Jodhpur",
+      "New Delhi"
+    ],
+    "question": [
+      "What is the capital of India?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30354": {
+    "ans": [
+      "Daegu",
+      "Busan",
+      "Pyongyang",
+      "Seoul"
+    ],
+    "question": [
+      "What is the capital of North Korea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30347": {
+    "ans": [
+      "Florence",
+      "Milan",
+      "Naples",
+      "Rome"
+    ],
+    "question": [
+      "What is the capital of Italy?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30044": {
+    "ans": [
+      "Cuban escudo",
+      "Cuban dollar",
+      "US dollar",
+      "Cuban peso"
+    ],
+    "question": [
+      "What is the currency in Cuba?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30215": {
+    "ans": [
+      "Newark",
+      "Wilmington",
+      "Dover",
+      "Middletown"
+    ],
+    "question": [
+      "What is the capital of Delaware?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30283": {
+    "ans": [
+      "Walong",
+      "Thimphu",
+      "Cooch Behar",
+      "Paro"
+    ],
+    "question": [
+      "What is the capital of Bhutan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30271": {
+    "ans": [
+      "Oranjestad",
+      "San Nicolas",
+      "Savaneta",
+      "Santa Cruz"
+    ],
+    "question": [
+      "What is the capital of Aruba?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30164": {
+    "ans": [
+      "Euro",
+      "Slovenian pound",
+      "Italian lira",
+      "Slovenian lev"
+    ],
+    "question": [
+      "What is the currency in Slovenia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30317": {
+    "ans": [
+      "Cairo",
+      "Tripoli",
+      "Alexandria",
+      "Luxor"
+    ],
+    "question": [
+      "What is the capital of Egypt?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30231": {
+    "ans": [
+      "Hattiesburg",
+      "Jackson",
+      "Tupelo",
+      "Biloxi"
+    ],
+    "question": [
+      "What is the capital of Mississippi?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30430": {
+    "ans": [
+      "Johannesburg",
+      "Cape Town",
+      "Durban",
+      "Bloemfontein"
+    ],
+    "question": [
+      "What is the capital of South Africa? (judicial)"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30090": {
+    "ans": [
+      "Kenyan shilling",
+      "Kenyan nafka",
+      "Kenyan cedi",
+      "West African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Kenya?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30066": {
+    "ans": [
+      "German ruble",
+      "German schilling",
+      "Euro",
+      "German mark"
+    ],
+    "question": [
+      "What is the currency in Germany?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30151": {
+    "ans": [
+      "US dollar",
+      "Pound sterling",
+      "St Lucia dollar",
+      "East Caribbean dollar"
+    ],
+    "question": [
+      "What is the currency in St Lucia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30295": {
+    "ans": [
+      "Praia",
+      "Sao Filipe",
+      "Pedra Badejo",
+      "Mindelo"
+    ],
+    "question": [
+      "What is the capital of Cape Verde?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30093": {
+    "ans": [
+      "South Korean won",
+      "South Korean yuan",
+      "South Korean yen",
+      "South Korean dollar"
+    ],
+    "question": [
+      "What is the currency in South Korea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30207": {
+    "ans": [
+      "Dutch",
+      "French",
+      "German",
+      "Luxembourgish"
+    ],
+    "question": [
+      "Which of the following answers is not an official language of Luxembourg?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Languages",
+      null
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30401": {
+    "ans": [
+      "Merauke",
+      "Jayapura",
+      "Port Moresby",
+      "Teluk Ambon"
+    ],
+    "question": [
+      "What is the capital of Papua New Guinea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30442": {
+    "ans": [
+      "Dodoma",
+      "Mombasa",
+      "Kampala",
+      "Nairobi"
+    ],
+    "question": [
+      "What is the capital of Tanzania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30197": {
+    "ans": [
+      "Uzbekistani som",
+      "Uzbekistani som",
+      "Uzbekistani rupee",
+      "Uzbekistani tenge"
+    ],
+    "question": [
+      "What is the currency in Uzbekistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30322": {
+    "ans": [
+      "Asmara",
+      "Dire Dawa",
+      "Mogadishu",
+      "Addis Ababa"
+    ],
+    "question": [
+      "What is the capital of Ethiopia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30459": {
+    "ans": [
+      "Tbilisi",
+      "Tashkent",
+      "Ulanbaatar",
+      "Odessa"
+    ],
+    "question": [
+      "What is the capital of Uzbekistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30405": {
+    "ans": [
+      "Krakaw",
+      "Kyiv",
+      "Warsaw",
+      "Riga"
+    ],
+    "question": [
+      "What is the capital of Poland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30039": {
+    "ans": [
+      "Congolese franc",
+      "Congolese escudo",
+      "Congolese dollar",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in the Democratic Republic of Congo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30376": {
+    "ans": [
+      "Dakar",
+      "Nouakchott",
+      "Bamako",
+      "Agadir"
+    ],
+    "question": [
+      "What is the capital of Mauritania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30381": {
+    "ans": [
+      "Monaco",
+      "Beausoleil",
+      "La Turbie",
+      "Monte Carlo"
+    ],
+    "question": [
+      "What is the capital of Monaco?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30414": {
+    "ans": [
+      "Nuku'alofa",
+      "Toloke",
+      "Apia",
+      "Suva"
+    ],
+    "question": [
+      "What is the capital of Samoa?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30183": {
+    "ans": [
+      "T & T dollar",
+      "T & T escudo",
+      "T & T lira",
+      "T & T peso"
+    ],
+    "question": [
+      "What is the currency in Trinidad and Tobago?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30085": {
+    "ans": [
+      "Italian lira",
+      "Italian escudo",
+      "Italian peseta",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Italy?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30390": {
+    "ans": [
+      "The Hague",
+      "Rotterdam",
+      "Copehagen",
+      "Amsterdam"
+    ],
+    "question": [
+      "What is the capital of the Netherlands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30029": {
+    "ans": [
+      "Cambodian riel",
+      "Cambodian yuan",
+      "Cambodian rupee",
+      "Cambodian baht"
+    ],
+    "question": [
+      "What is the currency in Cambodia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30191": {
+    "ans": [
+      "UAE pound",
+      "UAE dirham",
+      "UAE dollar",
+      "UAE rial"
+    ],
+    "question": [
+      "What is the currency in United Arab Emirates?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30139": {
+    "ans": [
+      "US dollar",
+      "Mexican peso",
+      "Brazilian real",
+      "Panama peso"
+    ],
+    "question": [
+      "What is the currency in Panama?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30266": {
+    "ans": [
+      "Andorra la Vella",
+      "La Massana",
+      "Soldeu",
+      "El Pas de la Casa"
+    ],
+    "question": [
+      "What is the capital of Andorra?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30014": {
+    "ans": [
+      "Bangladeshi taka",
+      "Bangladeshi taka",
+      "Bangladeshi taka",
+      "Bangladeshi taka"
+    ],
+    "question": [
+      "What is the currency in Bangladesh?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30224": {
+    "ans": [
+      "Frankfort",
+      "Lexington",
+      "Bowling Green",
+      "Louisville"
+    ],
+    "question": [
+      "What is the capital of Kentucky?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30111": {
+    "ans": [
+      "Maldivian rupiah",
+      "Maldivian rupee",
+      "Maldivian rufiyaa",
+      "Maldivian rial"
+    ],
+    "question": [
+      "What is the currency in Maldives?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30077": {
+    "ans": [
+      "Hungarian forint",
+      "Hungarian florin",
+      "Hungarian zloty",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Hungary?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30087": {
+    "ans": [
+      "Japanese yuan",
+      "Japanese yen",
+      "Japanese dollar",
+      "Japanese won"
+    ],
+    "question": [
+      "What is the currency in Japan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30141": {
+    "ans": [
+      "Paraguayan peso",
+      "Paraguayan escudo",
+      "Paraguayan lempira",
+      "Paraguayan guarani"
+    ],
+    "question": [
+      "What is the currency in Paraguay?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30193": {
+    "ans": [
+      "Pound sterling",
+      "Welsh dollar",
+      "Euro",
+      "Welsh pound"
+    ],
+    "question": [
+      "What is the currency in Wales?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30461": {
+    "ans": [
+      "Guidonia",
+      "San Marino",
+      "Frascati",
+      "Vatican City"
+    ],
+    "question": [
+      "What is the capital of the Vatican?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30179": {
+    "ans": [
+      "Tanzanian shilling",
+      "Tanzanian dollar",
+      "Tanzanian peso",
+      "Tanzanian pound"
+    ],
+    "question": [
+      "What is the currency in Tanzania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30210": {
+    "ans": [
+      "Tucson",
+      "Santa Fe",
+      "Phoenix",
+      "Reno"
+    ],
+    "question": [
+      "What is the capital of Arizona?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30198": {
+    "ans": [
+      "Australian dollar",
+      "Vanuatu vatu",
+      "Vanuatu pa'anga",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Vanuatu?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30147": {
+    "ans": [
+      "Euro",
+      "Romanian rupee",
+      "Romanian mark",
+      "Romanian leu"
+    ],
+    "question": [
+      "What is the currency in Romania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30313": {
+    "ans": [
+      "Santo Domingo",
+      "San Juan",
+      "Roseau",
+      "Pointe-\u00e0-Pitre"
+    ],
+    "question": [
+      "What is the capital of Dominica?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30462": {
+    "ans": [
+      "La Paz",
+      "Lima",
+      "Caracas",
+      "Bogota"
+    ],
+    "question": [
+      "What is the capital of Venezuela?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30440": {
+    "ans": [
+      "Taichung City",
+      "Xiamen",
+      "Taipei",
+      "Fuzhou"
+    ],
+    "question": [
+      "What is the capital of Taiwan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30303": {
+    "ans": [
+      "Brazzaville",
+      "Kinshasa",
+      "Kiwkit",
+      "Pointe Noire"
+    ],
+    "question": [
+      "What is the capital of the Republic of Congo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30340": {
+    "ans": [
+      "Reykjavik",
+      "Reykholt",
+      "Belfast",
+      "Dublin"
+    ],
+    "question": [
+      "What is the capital of Iceland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30355": {
+    "ans": [
+      "Pyongyang",
+      "Seoul",
+      "Busan",
+      "Daegu"
+    ],
+    "question": [
+      "What is the capital of South Korea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30222": {
+    "ans": [
+      "Cedar Rapids",
+      "Sioux City",
+      "Des Moines",
+      "Iowa City"
+    ],
+    "question": [
+      "What is the capital of Iowa?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30140": {
+    "ans": [
+      "Papua New Guinean kina",
+      "Papua New Guinean rupiah",
+      "Australian dollar",
+      "French franc"
+    ],
+    "question": [
+      "What is the currency in Papua New Guinea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30038": {
+    "ans": [
+      "East Caribbean dollar",
+      "Comorian dollar",
+      "Comorian franc",
+      "West Caribbean dollar"
+    ],
+    "question": [
+      "What is the currency in Comoros?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30416": {
+    "ans": [
+      "Port Harcourt",
+      "Malabo",
+      "Libreville",
+      "S\u00e3o Tom\u00e9"
+    ],
+    "question": [
+      "What is the capital of Sao Tome and Principe?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30325": {
+    "ans": [
+      "Lyon",
+      "Marseille",
+      "Paris",
+      "Frankfurt"
+    ],
+    "question": [
+      "What is the capital of France?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30159": {
+    "ans": [
+      "Seychellois rufiyaa",
+      "Seychellois rupee",
+      "Euro",
+      "Seychellois riyal"
+    ],
+    "question": [
+      "What is the currency in the Seychelles?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30372": {
+    "ans": [
+      "Vaadho",
+      "Dhaandhoo",
+      "Male",
+      "Nilandhoo"
+    ],
+    "question": [
+      "What is the capital of Maldives?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30409": {
+    "ans": [
+      "Sotchi",
+      "Saint Petersburg",
+      "Moscow",
+      "Kyiv"
+    ],
+    "question": [
+      "What is the capital of Russia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30074": {
+    "ans": [
+      "Haitian gourde",
+      "Haitian franc",
+      "Haitian peso",
+      "Haitian dollar"
+    ],
+    "question": [
+      "What is the currency in Haiti?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30203": {
+    "ans": [
+      "Zambian cordoba",
+      "Zambian somoni",
+      "Zambian franc",
+      "Zambian kwacha"
+    ],
+    "question": [
+      "What is the currency in Zambia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30148": {
+    "ans": [
+      "Russian pound",
+      "Russian ruble",
+      "Euro",
+      "Russian rupee"
+    ],
+    "question": [
+      "What is the currency in Russia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30145": {
+    "ans": [
+      "Spanish peseta",
+      "Portuguese escudo",
+      "Euro",
+      "Portuguese peseta"
+    ],
+    "question": [
+      "What is the currency in Portugal?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30163": {
+    "ans": [
+      "Slovakian zloty",
+      "Euro",
+      "Slovakian forint",
+      "Slovakian leu"
+    ],
+    "question": [
+      "What is the currency in Slovakia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30011": {
+    "ans": [
+      "Azerbaijani manat",
+      "Azerbaijani lek",
+      "Azerbaijani rupee",
+      "Azerbaijani dinar"
+    ],
+    "question": [
+      "What is the currency in Azerbaijan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30352": {
+    "ans": [
+      "Nairobi",
+      "Juba",
+      "Kampala",
+      "Nakuru"
+    ],
+    "question": [
+      "What is the capital of Kenya?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30453": {
+    "ans": [
+      "Dubai",
+      "Riyadh",
+      "Abu Dhabi",
+      "Doha"
+    ],
+    "question": [
+      "What is the capital of United Arab Emirates?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30264": {
+    "ans": [
+      "Skopje",
+      "Tirana",
+      "Elbasan",
+      "Prishtina"
+    ],
+    "question": [
+      "What is the capital of Albania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30110": {
+    "ans": [
+      "Malaysian baht",
+      "Malaysian rupiah",
+      "Malaysian peso",
+      "Malaysian ringgit"
+    ],
+    "question": [
+      "What is the currency in Malaysia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30135": {
+    "ans": [
+      "Omani dollar",
+      "Omani rial",
+      "Omani dirham",
+      "Omani dinar"
+    ],
+    "question": [
+      "What is the currency in Oman?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30308": {
+    "ans": [
+      "Savaneta",
+      "Punto Fijo",
+      "Kralendijk",
+      "Willemstad"
+    ],
+    "question": [
+      "What is the capital of Cura\u00e7ao?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30217": {
+    "ans": [
+      "Savannah",
+      "Atlanta",
+      "Augusta",
+      "Albany"
+    ],
+    "question": [
+      "What is the capital of Georgia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30443": {
+    "ans": [
+      "Pattaya",
+      "Bangkok",
+      "Vientiane",
+      "Hanoi"
+    ],
+    "question": [
+      "What is the capital of Thailand?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30384": {
+    "ans": [
+      "Marrakech",
+      "Rabat",
+      "Tangiers",
+      "Casablanca"
+    ],
+    "question": [
+      "What is the capital of Morocco?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30265": {
+    "ans": [
+      "Algiers",
+      "Constantine",
+      "Rabat",
+      "Oran"
+    ],
+    "question": [
+      "What is the capital of Algeria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30167": {
+    "ans": [
+      "South African rand",
+      "South African dollar",
+      "South African florin",
+      "South African pound"
+    ],
+    "question": [
+      "What is the currency in South Africa?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30080": {
+    "ans": [
+      "Indonesian rupee",
+      "Indonesian rupiah",
+      "Indonesian dinar",
+      "Indonesian ruble"
+    ],
+    "question": [
+      "What is the currency in Indonesia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30367": {
+    "ans": [
+      "Bitburg",
+      "Trier",
+      "Bastogne",
+      "Luxembourg"
+    ],
+    "question": [
+      "What is the capital of Luxembourg?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30408": {
+    "ans": [
+      "Bucharest",
+      "Belgrade",
+      "Budapest",
+      "Craiova"
+    ],
+    "question": [
+      "What is the capital of Romania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30123": {
+    "ans": [
+      "Moroccan riyal",
+      "Euro",
+      "Moroccan dirham",
+      "Moroccan franc"
+    ],
+    "question": [
+      "What is the currency in Morocco?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30032": {
+    "ans": [
+      "Cape Verdean franc",
+      "Cape Verdean escudo",
+      "Cape Verdean peso",
+      "Cape Verdean dollar"
+    ],
+    "question": [
+      "What is the currency in Cape Verde?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30382": {
+    "ans": [
+      "Ulaanbaatar",
+      "Kumul",
+      "Astana",
+      "Omsk"
+    ],
+    "question": [
+      "What is the capital of Mongolia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30177": {
+    "ans": [
+      "Taiwan pound",
+      "Taiwan yen",
+      "Taiwan yuan",
+      "Taiwan dollar"
+    ],
+    "question": [
+      "What is the currency in Taiwan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30368": {
+    "ans": [
+      "Belgrade",
+      "Tirana",
+      "Skopje",
+      "Pristina"
+    ],
+    "question": [
+      "What is the capital of Macedonia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30284": {
+    "ans": [
+      "Asuncion",
+      "Cochabamba",
+      "La Paz",
+      "Lima"
+    ],
+    "question": [
+      "What is the capital of Bolivia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30326": {
+    "ans": [
+      "Kinshasa",
+      "Malabo",
+      "Yaound\u00e9",
+      "Libreville"
+    ],
+    "question": [
+      "What is the capital of Gabon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30171": {
+    "ans": [
+      "Sudanese franc",
+      "Sudanese dollar",
+      "Sudanese dirham",
+      "Sudanese pound"
+    ],
+    "question": [
+      "What is the currency in Sudan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30369": {
+    "ans": [
+      "Toliara",
+      "Port Louis",
+      "Antananarivo",
+      "Saint Denis"
+    ],
+    "question": [
+      "What is the capital of Madagascar?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30219": {
+    "ans": [
+      "Pocatello",
+      "Idaho Falls",
+      "Boise",
+      "Nampa"
+    ],
+    "question": [
+      "What is the capital of Idaho?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30004": {
+    "ans": [
+      "West African CFA franc",
+      "Central African CFA franc",
+      "Angolan naira",
+      "Angolan kwanza"
+    ],
+    "question": [
+      "What is the currency in Angola?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30424": {
+    "ans": [
+      "Bratislava",
+      "Ljubljana",
+      "Debrecen",
+      "Ostrava"
+    ],
+    "question": [
+      "What is the capital of Slovakia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30427": {
+    "ans": [
+      "Nairobi",
+      "Mogadishu",
+      "Mombasa",
+      "Sana'a"
+    ],
+    "question": [
+      "What is the capital of Somalia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30000": {
+    "ans": [
+      "Afghan afghani",
+      "Afghani rupee",
+      "Afghani dollar",
+      "Afghani dram"
+    ],
+    "question": [
+      "What is the currency in Afghanistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30166": {
+    "ans": [
+      "Somali shilling",
+      "Somali franc",
+      "Somali pound",
+      "Somali dollar"
+    ],
+    "question": [
+      "What is the currency in Somalia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30333": {
+    "ans": [
+      "San Miguel",
+      "Guatemala City",
+      "Puerto Barrios",
+      "Merida"
+    ],
+    "question": [
+      "What is the capital of Guatemala?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30268": {
+    "ans": [
+      "Codrington",
+      "Jolly Harbour",
+      "St John's",
+      "Willikies"
+    ],
+    "question": [
+      "What is the capital of Antigua and Barbuda?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30270": {
+    "ans": [
+      "Vanadzor",
+      "Tbilisi",
+      "Gyumri",
+      "Yerevan"
+    ],
+    "question": [
+      "What is the capital of Armenia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30364": {
+    "ans": [
+      "Tripoli",
+      "Damascus",
+      "Benghazi",
+      "Sfax"
+    ],
+    "question": [
+      "What is the capital of Lybia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30429": {
+    "ans": [
+      "Johannesburg",
+      "Bloemfontein",
+      "Pretoria",
+      "Cape Town"
+    ],
+    "question": [
+      "What is the capital of South Africa? (administrative)"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30057": {
+    "ans": [
+      "Eritrean nakfa",
+      "Central African CFA franc",
+      "Eritrean dollar",
+      "Eritrean naira"
+    ],
+    "question": [
+      "What is the currency in Eritrea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30350": {
+    "ans": [
+      "Beirut",
+      "Damascus",
+      "Tabuk",
+      "Amman"
+    ],
+    "question": [
+      "What is the capital of Jordan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30006": {
+    "ans": [
+      "Argentine escudo",
+      "Argentine peso",
+      "Argentine dollar",
+      "Argentine real"
+    ],
+    "question": [
+      "What is the currency in Argentina?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30456": {
+    "ans": [
+      "Belfast",
+      "Dublin",
+      "Glasgow",
+      "Cork"
+    ],
+    "question": [
+      "What is the capital of Northern Ireland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30282": {
+    "ans": [
+      "Lome",
+      "Djougou",
+      "Porto-Novo",
+      "Cotonou"
+    ],
+    "question": [
+      "What is the capital of Benin?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30189": {
+    "ans": [
+      "US dollar",
+      "Ugandan escudo",
+      "Ugandan dollar",
+      "Ugandan shilling"
+    ],
+    "question": [
+      "What is the currency in Uganda?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30327": {
+    "ans": [
+      "Banjul",
+      "Saly",
+      "Bissau",
+      "Dakar"
+    ],
+    "question": [
+      "What is the capital of the Gambia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30206": {
+    "ans": [
+      "English",
+      "French",
+      "Italian",
+      "German"
+    ],
+    "question": [
+      "Which of the following answers is not an official language of Switzerland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Languages",
+      null
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30437": {
+    "ans": [
+      "Helsinki",
+      "Stockholm",
+      "Oslo",
+      "Goteborg"
+    ],
+    "question": [
+      "What is the capital of Sweden?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30169": {
+    "ans": [
+      "Spanish lira",
+      "Spanish escudo",
+      "Spanish peseta",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Spain?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30296": {
+    "ans": [
+      "Bangassou",
+      "N'Djamena",
+      "Bangui",
+      "Yaound\u00e9"
+    ],
+    "question": [
+      "What is the capital of Central African Republic?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30463": {
+    "ans": [
+      "Vientiane",
+      "Bangkok",
+      "Ho Chi Minh City",
+      "Hanoi"
+    ],
+    "question": [
+      "What is the capital of Vietnam?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30393": {
+    "ans": [
+      "Abuja",
+      "Gao",
+      "Abuja",
+      "Niamey"
+    ],
+    "question": [
+      "What is the capital of Niger?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30256": {
+    "ans": [
+      "Madison",
+      "Green Bay",
+      "Milwaukee",
+      "Oshkosh"
+    ],
+    "question": [
+      "What is the capital of Wisconsin?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30150": {
+    "ans": [
+      "Fijian dollar",
+      "East Caribbean dollar",
+      "US dollar",
+      "Pound sterling"
+    ],
+    "question": [
+      "What is the currency in St Kitts ands Nevis?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30133": {
+    "ans": [
+      "US dollar",
+      "Nigerian franc",
+      "Nigerian dollar",
+      "Nigerian naira"
+    ],
+    "question": [
+      "What is the currency in Nigeria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30310": {
+    "ans": [
+      "Ostrava",
+      "Prague",
+      "Vienna",
+      "Bratislava"
+    ],
+    "question": [
+      "What is the capital of Czech Republic?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30201": {
+    "ans": [
+      "Vietnamese baht",
+      "Vietnamese dong",
+      "Vietnamese won",
+      "Vietnamese kina"
+    ],
+    "question": [
+      "What is the currency in Vietnam?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30396": {
+    "ans": [
+      "Dubai",
+      "Doha",
+      "Muscat",
+      "Abu Dhabi"
+    ],
+    "question": [
+      "What is the capital of Oman?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30249": {
+    "ans": [
+      "Nashville",
+      "Memphis",
+      "Chattanooga",
+      "Knoxville"
+    ],
+    "question": [
+      "What is the capital of Tennessee?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30088": {
+    "ans": [
+      "Jordanian sheqel",
+      "Jordanian dirham",
+      "Jordanian riyal",
+      "Jordanian dinar"
+    ],
+    "question": [
+      "What is the currency in Jordan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30421": {
+    "ans": [
+      "Kenema",
+      "Freetown",
+      "Monrovia",
+      "Conakry"
+    ],
+    "question": [
+      "What is the capital of Sierra Leone?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30227": {
+    "ans": [
+      "Annapolis",
+      "Washington",
+      "Frederick",
+      "Baltimore"
+    ],
+    "question": [
+      "What is the capital of Maryland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30400": {
+    "ans": [
+      "Cali",
+      "San Jos\u00e9",
+      "Panama City",
+      "Barranquilla"
+    ],
+    "question": [
+      "What is the capital of Panama?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30026": {
+    "ans": [
+      "Bulgarian ruble",
+      "Bulgarian convertible mark",
+      "Euro",
+      "Bulgarian lev"
+    ],
+    "question": [
+      "What is the currency in Bulgaria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30031": {
+    "ans": [
+      "Canadian euro",
+      "Canadian franc",
+      "Canadian dollar",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Canada?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30320": {
+    "ans": [
+      "Addis Ababa",
+      "Asmara",
+      "Gondar",
+      "Keren"
+    ],
+    "question": [
+      "What is the capital of Eritrea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30466": {
+    "ans": [
+      "Lusaka",
+      "Dodoma",
+      "Lilongwe",
+      "Harare"
+    ],
+    "question": [
+      "What is the capital of Zimbabwe?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30365": {
+    "ans": [
+      "St Gallen",
+      "Dornbirn",
+      "Feldkirch",
+      "Vaduz"
+    ],
+    "question": [
+      "What is the capital of Liechtenstein?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30281": {
+    "ans": [
+      "Chetumal",
+      "Belmopan",
+      "Orange Walk",
+      "Punta Gorda"
+    ],
+    "question": [
+      "What is the capital of Belize?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30051": {
+    "ans": [
+      "Dominican dollar",
+      "Dominican escudo",
+      "Dominican peso",
+      "Dominican real"
+    ],
+    "question": [
+      "What is the currency in Dominican Republic?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30336": {
+    "ans": [
+      "Guayana City",
+      "Paramaribo",
+      "Georgetown",
+      "Cayenne"
+    ],
+    "question": [
+      "What is the capital of Guyana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30353": {
+    "ans": [
+      "London",
+      "Poland",
+      "Paris",
+      "South Tarawa"
+    ],
+    "question": [
+      "What is the capital of Kiribati?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30053": {
+    "ans": [
+      "Ecuador peso",
+      "Ecuador real",
+      "Ecuador escudo",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Ecuador?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30146": {
+    "ans": [
+      "Qatari dollar",
+      "Qatari riyal",
+      "US dollar",
+      "Qatari dinar"
+    ],
+    "question": [
+      "What is the currency in Qatar?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30116": {
+    "ans": [
+      "Mauritian rupee",
+      "Mauritian franc",
+      "Mauritian ruble",
+      "Mauritian dollar"
+    ],
+    "question": [
+      "What is the currency in Mauritius?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30020": {
+    "ans": [
+      "Bhutanese ngultrum",
+      "Bhutanese yuan",
+      "Bhutanese rupee",
+      "Bhutanese kyat"
+    ],
+    "question": [
+      "What is the currency in Bhutan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30380": {
+    "ans": [
+      "Odessa",
+      "Chisinau",
+      "Varna",
+      "Bucharest"
+    ],
+    "question": [
+      "What is the capital of Moldova?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30366": {
+    "ans": [
+      "Riga",
+      "Vilinus",
+      "Tallinn",
+      "Minsk"
+    ],
+    "question": [
+      "What is the capital of Lithuania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30441": {
+    "ans": [
+      "Tashkent",
+      "Dushanbe",
+      "Kabul",
+      "Islamabad"
+    ],
+    "question": [
+      "What is the capital of Tajikistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30375": {
+    "ans": [
+      "Bairiki",
+      "Majuro",
+      "Nauru",
+      "Taburao"
+    ],
+    "question": [
+      "What is the capital of Marshall Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30411": {
+    "ans": [
+      "St John's",
+      "Basseterre",
+      "Kingston",
+      "Philipsburg"
+    ],
+    "question": [
+      "What is the capital of St Kitts ands Nevis?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30348": {
+    "ans": [
+      "Havana",
+      "Montego Bay",
+      "Caracas",
+      "Kingston"
+    ],
+    "question": [
+      "What is the capital of Jamaica?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30008": {
+    "ans": [
+      "West Caribbean dollar",
+      "US dollar",
+      "Aruban florin",
+      "Bahamian dollar"
+    ],
+    "question": [
+      "What is the currency in Aruba?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30371": {
+    "ans": [
+      "Kuala Lumpur",
+      "Tawau",
+      "Jakarta",
+      "Bangkok"
+    ],
+    "question": [
+      "What is the capital of Malaysia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30042": {
+    "ans": [
+      "West African CFA franc",
+      "Ivorian franc",
+      "Central African CFA franc",
+      "Ivorian dollar"
+    ],
+    "question": [
+      "What is the currency in Cote d'Ivoire?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30261": {
+    "ans": [
+      "Philipsburg",
+      "Charlotte Amalie",
+      "Frederiksted",
+      "San Juan"
+    ],
+    "question": [
+      "What is the capital of Puerto Rico?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30168": {
+    "ans": [
+      "South Sudanese pound",
+      "South Sudanese nafka",
+      "South Sudanese dollar",
+      "South Sudanese dollar"
+    ],
+    "question": [
+      "What is the currency in South Sudan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30075": {
+    "ans": [
+      "Honduran lempira",
+      "Honduran peso",
+      "Honduran quetzal",
+      "Honduran dollar"
+    ],
+    "question": [
+      "What is the currency in Honduras?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30447": {
+    "ans": [
+      "Alexandria",
+      "Rabat",
+      "Tunis",
+      "Sfax"
+    ],
+    "question": [
+      "What is the capital of Tunisia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30392": {
+    "ans": [
+      "Managua",
+      "San Jos\u00e9",
+      "Tegucigalpa",
+      "Belmopan"
+    ],
+    "question": [
+      "What is the capital of Nicaragua?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30188": {
+    "ans": [
+      "Pound sterling",
+      "US dollar",
+      "Australian dollar",
+      "Fijian dollar"
+    ],
+    "question": [
+      "What is the currency in Tuvalu?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30200": {
+    "ans": [
+      "Venezuelan dollar",
+      "Venezuelan quetzal",
+      "Venezuelan peso",
+      "Venezuelan bolivar"
+    ],
+    "question": [
+      "What is the currency in Venezuela?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30076": {
+    "ans": [
+      "Hong Kong pound",
+      "Pound sterling",
+      "Hong Kong dollar",
+      "Chinese yuan"
+    ],
+    "question": [
+      "What is the currency in Hong Kong?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30276": {
+    "ans": [
+      "Muharraq",
+      "Manama",
+      "Riffa",
+      "Saar"
+    ],
+    "question": [
+      "What is the capital of Bahrain?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30132": {
+    "ans": [
+      "Nigerien rand",
+      "Nigerien loti",
+      "French franc",
+      "West African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Niger?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30069": {
+    "ans": [
+      "US dollar",
+      "East Caribbean dollar",
+      "Grenada peso",
+      "Grenada dollar"
+    ],
+    "question": [
+      "What is the currency in Grenada?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30104": {
+    "ans": [
+      "Lithuanian krone",
+      "Euro",
+      "Russian ruble",
+      "Lithuanian lev"
+    ],
+    "question": [
+      "What is the currency in Lithuania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30072": {
+    "ans": [
+      "Bissau nafka",
+      "Bissau franc",
+      "French franc",
+      "West African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Guinea-Bissau?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30027": {
+    "ans": [
+      "West African CFA franc",
+      "Burkina Faso kwanza",
+      "Burkina Faso franc",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Burkina Faso?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30176": {
+    "ans": [
+      "Syrian dinar",
+      "Syrian sheqel",
+      "Syrian pound",
+      "Syrian dollar"
+    ],
+    "question": [
+      "What is the currency in Syria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30242": {
+    "ans": [
+      "Cleveland",
+      "Toledo",
+      "Columbus",
+      "Cincinnati"
+    ],
+    "question": [
+      "What is the capital of Ohio?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30432": {
+    "ans": [
+      "Valencia",
+      "Sevilla",
+      "Barcelona",
+      "Madrid"
+    ],
+    "question": [
+      "What is the capital of Spain?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30450": {
+    "ans": [
+      "Funafuti",
+      "Apia",
+      "Suva",
+      "Nuku'alofa"
+    ],
+    "question": [
+      "What is the capital of Tuvalu?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30083": {
+    "ans": [
+      "Irish pound",
+      "Euro",
+      "Pound sterling",
+      "Irish krone"
+    ],
+    "question": [
+      "What is the currency in Ireland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30102": {
+    "ans": [
+      "Lybian dollar",
+      "Lybian pound",
+      "Lybian dinar",
+      "Lybian rial"
+    ],
+    "question": [
+      "What is the currency in Lybia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30309": {
+    "ans": [
+      "Larnaca",
+      "Nicosia",
+      "Heraklion",
+      "Limassol"
+    ],
+    "question": [
+      "What is the capital of Cyprus?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30342": {
+    "ans": [
+      "Jakarta",
+      "Mumbai",
+      "Palembang",
+      "Bali"
+    ],
+    "question": [
+      "What is the capital of Indonesia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30328": {
+    "ans": [
+      "Tbilisi",
+      "Gyumri",
+      "Yerevan",
+      "Baku"
+    ],
+    "question": [
+      "What is the capital of Georgia? (country)"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30158": {
+    "ans": [
+      "Serbian dinar",
+      "Serbian ruble",
+      "Serbian lev",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Serbia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30035": {
+    "ans": [
+      "Chilean peso",
+      "Chilean dollar",
+      "Chilean escudo",
+      "Chilean florin"
+    ],
+    "question": [
+      "What is the currency in Chile?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30255": {
+    "ans": [
+      "Charleston",
+      "Huntington",
+      "Parkersburg",
+      "Morgantown"
+    ],
+    "question": [
+      "What is the capital of West Virginia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30045": {
+    "ans": [
+      "East Caribbean peso",
+      "West Caribbean dollar",
+      "Netherlands Antilean guilder",
+      "Caribbean escudo"
+    ],
+    "question": [
+      "What is the currency in Cura\u00e7ao?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30067": {
+    "ans": [
+      "Ghanaian birr",
+      "Ghanaian dollar",
+      "Ghanaian cedi",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Ghana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30122": {
+    "ans": [
+      "Montenegro rupee",
+      "Montenegro lev",
+      "Euro",
+      "Montenegro dinar"
+    ],
+    "question": [
+      "What is the currency in Montenegro?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30086": {
+    "ans": [
+      "West Caribbean dollar",
+      "US dollar",
+      "Jamaican dollar",
+      "Jamaican peso"
+    ],
+    "question": [
+      "What is the currency in Jamaica?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30385": {
+    "ans": [
+      "Dar es Salaam",
+      "Harare",
+      "Pretoria",
+      "Maputo"
+    ],
+    "question": [
+      "What is the capital of Mozambique?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30211": {
+    "ans": [
+      "Springdale",
+      "Fayetteville",
+      "Little Rock",
+      "Fort Smith"
+    ],
+    "question": [
+      "What is the capital of Arkansas?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30288": {
+    "ans": [
+      "Batu Apoi",
+      "Limbang",
+      "Miri",
+      "Bandar Seri Begawan"
+    ],
+    "question": [
+      "What is the capital of Brunei?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30312": {
+    "ans": [
+      "Tew'o",
+      "Djibouti",
+      "Hargeisa",
+      "Addis Ababa"
+    ],
+    "question": [
+      "What is the capital of Djibouti?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30338": {
+    "ans": [
+      "San Pedro Sula",
+      "Tegucigalpa",
+      "Mangua",
+      "San Jos\u00e9"
+    ],
+    "question": [
+      "What is the capital of Honduras?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30410": {
+    "ans": [
+      "Kabale",
+      "Bujumbura",
+      "Goma",
+      "Kigali"
+    ],
+    "question": [
+      "What is the capital of Rwanda?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30460": {
+    "ans": [
+      "Luganville",
+      "Port Vila",
+      "Noumea",
+      "Honiara"
+    ],
+    "question": [
+      "What is the capital of Vanuatu?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30103": {
+    "ans": [
+      "Swiss franc",
+      "Austrian schilling",
+      "German mark",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Liechtenstein?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30378": {
+    "ans": [
+      "Guadalajara",
+      "Mexico City",
+      "Cancun",
+      "Monterrey"
+    ],
+    "question": [
+      "What is the capital of Mexico?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30137": {
+    "ans": [
+      "West Caribbean dollar",
+      "Pound sterling",
+      "US dollar",
+      "Australian dollar"
+    ],
+    "question": [
+      "What is the currency in Palau?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30418": {
+    "ans": [
+      "Bamako",
+      "Dakar",
+      "St Louis",
+      "Banjul"
+    ],
+    "question": [
+      "What is the capital of Senegal?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30109": {
+    "ans": [
+      "Malawian pound",
+      "Malawian kwacha",
+      "Malawian ariary",
+      "Malawian dollar"
+    ],
+    "question": [
+      "What is the currency in Malawi?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30202": {
+    "ans": [
+      "Yemeni dinar",
+      "Yemeni tala",
+      "Yemeni rial",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Yemen?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30071": {
+    "ans": [
+      "Guinean cedi",
+      "Guinean franc",
+      "Guinean dalasi",
+      "West African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Guinea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30387": {
+    "ans": [
+      "Lubango",
+      "Kimberly",
+      "Gaborone",
+      "Windhoek"
+    ],
+    "question": [
+      "What is the capital of Namibia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30106": {
+    "ans": [
+      "Macanese dollar",
+      "Macanese yuan",
+      "Macanese pataca",
+      "Macanese baht"
+    ],
+    "question": [
+      "What is the currency in Macau?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30425": {
+    "ans": [
+      "Ljubljana",
+      "Maribor",
+      "Bratislava",
+      "Trieste"
+    ],
+    "question": [
+      "What is the capital of Slovenia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30230": {
+    "ans": [
+      "Minneapolis",
+      "Rochester",
+      "St Paul",
+      "Duluth"
+    ],
+    "question": [
+      "What is the capital of Minnesota?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30404": {
+    "ans": [
+      "Manila",
+      "Lapu-Lapu",
+      "Cebu",
+      "Davao"
+    ],
+    "question": [
+      "What is the capital of the Philippines?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30125": {
+    "ans": [
+      "Myanmar kyat",
+      "Myanmar rufiyaa",
+      "Myanmar ringgit",
+      "Myanmar dollar"
+    ],
+    "question": [
+      "What is the currency in Myanmar?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30196": {
+    "ans": [
+      "Uruguayan peso",
+      "Uruguayan dollar",
+      "Uruguayan metical",
+      "Uruguayan real"
+    ],
+    "question": [
+      "What is the currency in Uruguay?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30099": {
+    "ans": [
+      "Lebanese franc",
+      "Lebanese sheqel",
+      "Lebanese dollar",
+      "Lebanese pound"
+    ],
+    "question": [
+      "What is the currency in Lebanon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30160": {
+    "ans": [
+      "Sierra Leonean tala",
+      "Sierra Leonean lempira",
+      "Sierra Leonean leone",
+      "Sierra Leonean tugrik"
+    ],
+    "question": [
+      "What is the currency in Sierra Leone?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30009": {
+    "ans": [
+      "Australian dollar",
+      "Pound sterling",
+      "Australian pound",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Australia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30046": {
+    "ans": [
+      "Turkish lira",
+      "Euro",
+      "Greek drachma",
+      "Cyprus dollar"
+    ],
+    "question": [
+      "What is the currency in Cyprus?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30073": {
+    "ans": [
+      "Guyanese peso",
+      "Guyanese florin",
+      "Guyanese dollar",
+      "Guyanese franc"
+    ],
+    "question": [
+      "What is the currency in Guyana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30359": {
+    "ans": [
+      "Vientiane",
+      "Phnom Penh",
+      "Ho Chi Minh City",
+      "Hanoi"
+    ],
+    "question": [
+      "What is the capital of Laos?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30237": {
+    "ans": [
+      "Trenton",
+      "Atlantic City",
+      "Princepton",
+      "Newark"
+    ],
+    "question": [
+      "What is the capital of New Jersey?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30190": {
+    "ans": [
+      "Euro",
+      "Ukrainian hryvnia",
+      "Russian ruble",
+      "Ukrainian ruble"
+    ],
+    "question": [
+      "What is the currency in Ukraine?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30356": {
+    "ans": [
+      "TIrana",
+      "Pristina",
+      "Novi Sad",
+      "Skopje"
+    ],
+    "question": [
+      "What is the capital of Kosovo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30154": {
+    "ans": [
+      "Euro",
+      "San Marino dollar",
+      "Italian lira",
+      "Pound sterling"
+    ],
+    "question": [
+      "What is the currency in San Marino?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30220": {
+    "ans": [
+      "Springfield",
+      "Peoria",
+      "Chicago",
+      "Rockford"
+    ],
+    "question": [
+      "What is the capital of Illinois?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30081": {
+    "ans": [
+      "Iranian dram",
+      "Iranian dirham",
+      "Iranian rial",
+      "Iranian sheqel"
+    ],
+    "question": [
+      "What is the currency in Iran?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30030": {
+    "ans": [
+      "Central African CFA franc",
+      "Cameroon franc",
+      "West African CFA franc",
+      "Cameroon naira"
+    ],
+    "question": [
+      "What is the currency in Cameroon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30184": {
+    "ans": [
+      "Tunisian dinar",
+      "Tunisian rial",
+      "Tunisian pound",
+      "Tunisian nafka"
+    ],
+    "question": [
+      "What is the currency in Tunisia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30143": {
+    "ans": [
+      "Philippine yen",
+      "Philippine peso",
+      "Philippine dollar",
+      "Philippine pound"
+    ],
+    "question": [
+      "What is the currency in the Philippines?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30156": {
+    "ans": [
+      "Saudi riyal",
+      "Saudi dollar",
+      "Saudi dinarl",
+      "Saudi sheqel"
+    ],
+    "question": [
+      "What is the currency in Saudi Arabia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30434": {
+    "ans": [
+      "Kampala",
+      "Khartoum",
+      "Bangui",
+      "Juba"
+    ],
+    "question": [
+      "What is the capital of Sudan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30060": {
+    "ans": [
+      "Fijian yen",
+      "Fijian dollar",
+      "US dollar",
+      "Australian dollar"
+    ],
+    "question": [
+      "What is the currency in Fiji?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30180": {
+    "ans": [
+      "Thai kyat",
+      "Thai ringgit",
+      "Thai dollar",
+      "Thai baht"
+    ],
+    "question": [
+      "What is the currency in Thailand?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30240": {
+    "ans": [
+      "Greensboro",
+      "Raleigh",
+      "Winston-Salem",
+      "Charlotte"
+    ],
+    "question": [
+      "What is the capital of North Carolina?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30464": {
+    "ans": [
+      "Djibouti",
+      "Sana'a",
+      "Muscat",
+      "Riyadh"
+    ],
+    "question": [
+      "What is the capital of Yemen?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30349": {
+    "ans": [
+      "Hiroshima",
+      "Osaka",
+      "Tokyo",
+      "Kyoto"
+    ],
+    "question": [
+      "What is the capital of Japan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30279": {
+    "ans": [
+      "Brest",
+      "Minsk",
+      "Vilnius",
+      "Riga"
+    ],
+    "question": [
+      "What is the capital of Belarus?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30324": {
+    "ans": [
+      "Stockholm",
+      "Oslo",
+      "Helsinki",
+      "Tallinn"
+    ],
+    "question": [
+      "What is the capital of Finland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30287": {
+    "ans": [
+      "S\u00e3o Paolo",
+      "Porto Alegre",
+      "Brasilia",
+      "Rio de Janeiro"
+    ],
+    "question": [
+      "What is the capital of Brazil?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30058": {
+    "ans": [
+      "Estonian krone",
+      "Estonian lev",
+      "Euro",
+      "Russian ruble"
+    ],
+    "question": [
+      "What is the currency in Estonia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30007": {
+    "ans": [
+      "Armenian dram",
+      "Euro",
+      "Armenian rupee",
+      "Armenian dinar"
+    ],
+    "question": [
+      "What is the currency in Armenia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30280": {
+    "ans": [
+      "Antwerp",
+      "Brussels",
+      "Bruges",
+      "Zurich"
+    ],
+    "question": [
+      "What is the capital of Belgium?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30047": {
+    "ans": [
+      "Czech zloty",
+      "Euro",
+      "Czech koruna",
+      "Czech lev"
+    ],
+    "question": [
+      "What is the currency in Czech Republic?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30003": {
+    "ans": [
+      "Euro",
+      "Spanish peseta",
+      "Italian lira",
+      "French franc"
+    ],
+    "question": [
+      "What is the currency in Andorra?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30448": {
+    "ans": [
+      "Kabul",
+      "Istanbul",
+      "Ankara",
+      "Izmir"
+    ],
+    "question": [
+      "What is the capital of Turkey?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30127": {
+    "ans": [
+      "Fijian dollar",
+      "Australian dollar",
+      "Pound sterling",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Nauru?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30095": {
+    "ans": [
+      "Kuwaiti riyal",
+      "Kuwaiti dinar",
+      "Kuwaiti dollar",
+      "Kuwaiti sheqel"
+    ],
+    "question": [
+      "What is the currency in Kuwait?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30225": {
+    "ans": [
+      "Lake Charles",
+      "Shreveport",
+      "Baton Rouge",
+      "New Orleans"
+    ],
+    "question": [
+      "What is the capital of Louisiana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30054": {
+    "ans": [
+      "Egyptian dinar",
+      "Egyptian pound",
+      "Egyptian riyal",
+      "Egyptian dirham"
+    ],
+    "question": [
+      "What is the currency in Egypt?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30229": {
+    "ans": [
+      "Lansing",
+      "Grand Rapids",
+      "Ann Arbor",
+      "Detroit"
+    ],
+    "question": [
+      "What is the capital of Michigan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30428": {
+    "ans": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban"
+    ],
+    "question": [
+      "What is the capital of South Africa? (legislative)"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30018": {
+    "ans": [
+      "Belize dollar",
+      "US dollar",
+      "Belize florin",
+      "East Caribbean dollar"
+    ],
+    "question": [
+      "What is the currency in Belize?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30399": {
+    "ans": [
+      "Jericho",
+      "Hebron",
+      "Gaza",
+      "Ramallah"
+    ],
+    "question": [
+      "What is the capital of the Palestinian Territories?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30005": {
+    "ans": [
+      "East Caribbean dollar",
+      "Bahamian dollar",
+      "West Caribbean dollar",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Antigua and Barbuda?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30290": {
+    "ans": [
+      "Ouagadougou",
+      "Accra",
+      "Bobo-Dioulasso",
+      "Bamako"
+    ],
+    "question": [
+      "What is the capital of Burkina Faso?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30433": {
+    "ans": [
+      "Coimbatore",
+      "Colombo",
+      "Jaffna",
+      "Madurai"
+    ],
+    "question": [
+      "What is the capital of Sri Lanka?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30221": {
+    "ans": [
+      "Evansville",
+      "Bloomington",
+      "Indianapolis",
+      "Gary"
+    ],
+    "question": [
+      "What is the capital of Indiana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30078": {
+    "ans": [
+      "Euro",
+      "Icelandic florin",
+      "Icelandic krona",
+      "Icelandic pound"
+    ],
+    "question": [
+      "What is the currency in Iceland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30144": {
+    "ans": [
+      "Polish zloty",
+      "Polish krone",
+      "Polish lev",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Poland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30118": {
+    "ans": [
+      "Euro",
+      "Japanese Yen",
+      "US dollar",
+      "Pound sterling"
+    ],
+    "question": [
+      "What is the currency in Micronesia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30351": {
+    "ans": [
+      "Bishkek",
+      "Omsk",
+      "Tashkent",
+      "Astana"
+    ],
+    "question": [
+      "What is the capital of Kazakhstan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30370": {
+    "ans": [
+      "Lusaka",
+      "Harare",
+      "Zomba",
+      "Lilongwe"
+    ],
+    "question": [
+      "What is the capital of Malawi?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30438": {
+    "ans": [
+      "Bern",
+      "Zurich",
+      "Geneva",
+      "Lausanne"
+    ],
+    "question": [
+      "What is the capital of Switzerland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30415": {
+    "ans": [
+      "Perugia",
+      "Cesena",
+      "San Marino",
+      "Rimini"
+    ],
+    "question": [
+      "What is the capital of San Marino?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30149": {
+    "ans": [
+      "Central African CFA franc",
+      "Rwandan metical",
+      "Rwandan franc",
+      "Rwandan rand"
+    ],
+    "question": [
+      "What is the currency in Rwanda?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30293": {
+    "ans": [
+      "Douala",
+      "Libreville",
+      "Yaound\u00e9",
+      "Bangui"
+    ],
+    "question": [
+      "What is the capital of Cameroon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30272": {
+    "ans": [
+      "Melbourne",
+      "Sydney",
+      "Perth",
+      "Canberra"
+    ],
+    "question": [
+      "What is the capital of Australia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30297": {
+    "ans": [
+      "N'Djamena",
+      "Douala",
+      "Moundou",
+      "Bangui"
+    ],
+    "question": [
+      "What is the capital of Chad?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30254": {
+    "ans": [
+      "Seattle",
+      "Spokane",
+      "Tacoma",
+      "Olympia"
+    ],
+    "question": [
+      "What is the capital of Washington?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30204": {
+    "ans": [
+      "South African rand",
+      "Pound sterling",
+      "Central African CFA franc",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Zimbabwe?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30274": {
+    "ans": [
+      "Lankaran",
+      "Tbilisi",
+      "Ganja",
+      "Baku"
+    ],
+    "question": [
+      "What is the capital of Azerbaijan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30403": {
+    "ans": [
+      "Caracas",
+      "Lima",
+      "Quito",
+      "La Paz"
+    ],
+    "question": [
+      "What is the capital of Peru?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30345": {
+    "ans": [
+      "Belfast",
+      "Reykjavik",
+      "Cardiff",
+      "Dublin"
+    ],
+    "question": [
+      "What is the capital of Ireland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30339": {
+    "ans": [
+      "Sofia",
+      "Debrecen",
+      "Bucharest",
+      "Budapest"
+    ],
+    "question": [
+      "What is the capital of Hungary?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30431": {
+    "ans": [
+      "Khartoum",
+      "Juba",
+      "Kampala",
+      "Bangui"
+    ],
+    "question": [
+      "What is the capital of South Sudan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30244": {
+    "ans": [
+      "Eugene",
+      "Salem",
+      "Medford",
+      "Portland"
+    ],
+    "question": [
+      "What is the capital of Oregon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30043": {
+    "ans": [
+      "Croatian lev",
+      "Croatian krone",
+      "Croatian kuna",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Croatia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30052": {
+    "ans": [
+      "Timor yuan",
+      "Timor dollar",
+      "Timor yen",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Timor-Leste?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30129": {
+    "ans": [
+      "Dutch krone",
+      "Dutch forint",
+      "Euro",
+      "Dutch florin"
+    ],
+    "question": [
+      "What is the currency in the Netherlands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30262": {
+    "ans": [
+      "Charlotte Amalie",
+      "Philipsburg",
+      "Charlotte Amalie",
+      "San Juan"
+    ],
+    "question": [
+      "What is the capital of the U.S. Virgin Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30436": {
+    "ans": [
+      "Durban",
+      "Mbabane",
+      "Nelspruit",
+      "Maputo"
+    ],
+    "question": [
+      "What is the capital of Swaziland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30285": {
+    "ans": [
+      "Sarajevo",
+      "Mostar",
+      "Zagreb",
+      "Belgrade"
+    ],
+    "question": [
+      "What is the capital of Bosnia and Herzegovina?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30199": {
+    "ans": [
+      "Vatican dollar",
+      "Euro",
+      "Vatican pound",
+      "Italian lira"
+    ],
+    "question": [
+      "What is the currency in the Vatican?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30346": {
+    "ans": [
+      "Beirut",
+      "Haifa",
+      "Tel Aviv",
+      "Jerusalem"
+    ],
+    "question": [
+      "What is the capital of Israel?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30263": {
+    "ans": [
+      "Hyderabad",
+      "Grand Rapids",
+      "Kabul",
+      "Kandahar"
+    ],
+    "question": [
+      "What is the capital of Afghanistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30025": {
+    "ans": [
+      "Brunei dollar",
+      "Brunei riyal",
+      "Brunei dirham",
+      "Brunei dinar"
+    ],
+    "question": [
+      "What is the currency in Brunei?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30195": {
+    "ans": [
+      "British dollar",
+      "Pound sterling",
+      "Euro",
+      "British krone"
+    ],
+    "question": [
+      "What is the currency in England?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30235": {
+    "ans": [
+      "Reno",
+      "Las Vegas",
+      "Carson City",
+      "Elko"
+    ],
+    "question": [
+      "What is the capital of Nevada?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30307": {
+    "ans": [
+      "Kingston",
+      "Havana",
+      "Port-au-Prince",
+      "Santiago de Cuba"
+    ],
+    "question": [
+      "What is the capital of Cuba?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30314": {
+    "ans": [
+      "Puerto Plata",
+      "San Juan",
+      "Punta Cana",
+      "Santo Domingo"
+    ],
+    "question": [
+      "What is the capital of Dominican Republic?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30257": {
+    "ans": [
+      "Jackson",
+      "Casper",
+      "Cheyenne",
+      "Rock Springs"
+    ],
+    "question": [
+      "What is the capital of Wyoming?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30208": {
+    "ans": [
+      "Birmingham",
+      "Montgomery",
+      "Columbus",
+      "Mobile"
+    ],
+    "question": [
+      "What is the capital Alabama?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30294": {
+    "ans": [
+      "Vancouver",
+      "Montreal",
+      "Toronto",
+      "Ottawa"
+    ],
+    "question": [
+      "What is the capital of Canada?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30068": {
+    "ans": [
+      "Euro",
+      "Greek drachma",
+      "Greek lira",
+      "Greek peseta"
+    ],
+    "question": [
+      "What is the currency in Greece?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30286": {
+    "ans": [
+      "Gaborone",
+      "Francistown",
+      "Pretoria",
+      "Maun"
+    ],
+    "question": [
+      "What is the capital of Botswana?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30165": {
+    "ans": [
+      "East Caribbean dollar",
+      "Solomon Islands dollar",
+      "US dollar",
+      "Australian dollar"
+    ],
+    "question": [
+      "What is the currency in the Solomon Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30258": {
+    "ans": [
+      "Toloke",
+      "Suva",
+      "Apia",
+      "Pago Pago"
+    ],
+    "question": [
+      "What is the capital of the American Samoa?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30153": {
+    "ans": [
+      "Samoan cedi",
+      "Samoan tala",
+      "Fijian dollar",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Samoa?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30335": {
+    "ans": [
+      "Conakry",
+      "Banjul",
+      "Libreville",
+      "Bissau"
+    ],
+    "question": [
+      "What is the capital of Guinea-Bissau?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30305": {
+    "ans": [
+      "Yamoussoukro",
+      "Kumasi",
+      "Monrovia",
+      "Abidjan"
+    ],
+    "question": [
+      "What is the capital of Cote d'Ivoire?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30062": {
+    "ans": [
+      "French franc",
+      "Euro",
+      "French dollar",
+      "French mark"
+    ],
+    "question": [
+      "What is the currency in France?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30121": {
+    "ans": [
+      "Mongolian rupee",
+      "Mongolian tugrik",
+      "Mongolian somoni",
+      "Mongolian yuan"
+    ],
+    "question": [
+      "What is the currency in Mongolia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30315": {
+    "ans": [
+      "Dili",
+      "Malang",
+      "Kupang",
+      "Teluk Ambon"
+    ],
+    "question": [
+      "What is the capital of Timor-Leste?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30028": {
+    "ans": [
+      "Burundi dollar",
+      "Burundi franc",
+      "Central African CFA franc",
+      "Burundi naira"
+    ],
+    "question": [
+      "What is the currency in Burundi?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30395": {
+    "ans": [
+      "Helsinki",
+      "Lillehammer",
+      "Stockholm",
+      "Oslo"
+    ],
+    "question": [
+      "What is the capital of Norway?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30064": {
+    "ans": [
+      "West African CFA franc",
+      "Gambian dollar",
+      "Central African CFA franc",
+      "Gambian dalasi"
+    ],
+    "question": [
+      "What is the currency in the Gambia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30301": {
+    "ans": [
+      "Domoney",
+      "Mal\u00e9",
+      "Fomboni",
+      "Moroni"
+    ],
+    "question": [
+      "What is the capital of Comoros?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30048": {
+    "ans": [
+      "Danish krone",
+      "Euro",
+      "Danish florin",
+      "Danish mark"
+    ],
+    "question": [
+      "What is the currency in Denmark?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30178": {
+    "ans": [
+      "Tajikistani birr",
+      "Tajikistani dalasi",
+      "Tajikistani manat",
+      "Tajikistani somoni"
+    ],
+    "question": [
+      "What is the currency in Tajikistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30318": {
+    "ans": [
+      "San Salvador",
+      "La Paz",
+      "Santa Ana",
+      "San Miguel"
+    ],
+    "question": [
+      "What is the capital of El Salvador?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30082": {
+    "ans": [
+      "Iraqi rial",
+      "Iraqi dinar",
+      "Iraqi dirham",
+      "Iraqi dollar"
+    ],
+    "question": [
+      "What is the currency in Iraq?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30454": {
+    "ans": [
+      "Dundee",
+      "Edimburgh",
+      "Glasgow",
+      "Cardiff"
+    ],
+    "question": [
+      "What is the capital of Scotland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30343": {
+    "ans": [
+      "Isfahan",
+      "Damascus",
+      "Tehran",
+      "Bagdad"
+    ],
+    "question": [
+      "What is the capital of Iran?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30017": {
+    "ans": [
+      "Euro",
+      "French franc",
+      "Belgian franc",
+      "Belgian krone"
+    ],
+    "question": [
+      "What is the currency in Belgium?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30059": {
+    "ans": [
+      "Ethiopian birr",
+      "Central African CFA franc",
+      "Ethiopian nafka",
+      "Ethiopian dollar"
+    ],
+    "question": [
+      "What is the currency in Ethiopia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30311": {
+    "ans": [
+      "Oslo",
+      "Copenhagen",
+      "Aalborg",
+      "Gothenburg"
+    ],
+    "question": [
+      "What is the capital of Denmark?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30362": {
+    "ans": [
+      "Bloemfontein",
+      "Maseru",
+      "Ladysmith",
+      "Bethlehem"
+    ],
+    "question": [
+      "What is the capital of Lesotho?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30323": {
+    "ans": [
+      "Nuku",
+      "Suva",
+      "Lautoka",
+      "Nadi"
+    ],
+    "question": [
+      "What is the capital of Fiji?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30302": {
+    "ans": [
+      "Pointe Noire",
+      "Kinshasa",
+      "Kiwkit",
+      "Brazzaville"
+    ],
+    "question": [
+      "What is the capital of the Democratic Republic of Congo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30174": {
+    "ans": [
+      "Euro",
+      "Swedish krona",
+      "Swedish pound",
+      "Swedish florin"
+    ],
+    "question": [
+      "What is the currency in Sweden?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30334": {
+    "ans": [
+      "Libreville",
+      "Banjul",
+      "Conakry",
+      "Bissau"
+    ],
+    "question": [
+      "What is the capital of Guinea?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30098": {
+    "ans": [
+      "Russian ruble",
+      "Latvian krona",
+      "Euro",
+      "Latvian ruble"
+    ],
+    "question": [
+      "What is the currency in Latvia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30377": {
+    "ans": [
+      "Saint Denis",
+      "Port Louis",
+      "Antananarivo",
+      "Grand Baie"
+    ],
+    "question": [
+      "What is the capital of Mauritius?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30101": {
+    "ans": [
+      "Liberian peso",
+      "US dollar",
+      "Liberian dollar",
+      "Liberian pound"
+    ],
+    "question": [
+      "What is the currency in Liberia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30142": {
+    "ans": [
+      "Peruvian peso",
+      "Peruvian dollar",
+      "Peruvian nuevo sol",
+      "Peruvian quetzal"
+    ],
+    "question": [
+      "What is the currency in Peru?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30321": {
+    "ans": [
+      "Vilnius",
+      "Minsk",
+      "Riga",
+      "Tallinn"
+    ],
+    "question": [
+      "What is the capital of Estonia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30298": {
+    "ans": [
+      "Mendoza",
+      "Concepcion",
+      "La Paz",
+      "Santiago"
+    ],
+    "question": [
+      "What is the capital of Chile?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30363": {
+    "ans": [
+      "Freetown",
+      "Kankan",
+      "Man",
+      "Monrovia"
+    ],
+    "question": [
+      "What is the capital of Liberia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30278": {
+    "ans": [
+      "Charnocks",
+      "Four Roads",
+      "Bridgetown",
+      "Bathsheba"
+    ],
+    "question": [
+      "What is the capital of Barbados?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30329": {
+    "ans": [
+      "Munich",
+      "Frankfurt",
+      "Berlin",
+      "Bonn"
+    ],
+    "question": [
+      "What is the capital of Germany?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30246": {
+    "ans": [
+      "Newport",
+      "Cranston",
+      "Warwik",
+      "Providence"
+    ],
+    "question": [
+      "What is the capital of Rhode Island?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30337": {
+    "ans": [
+      "Pointe-\u00e0-Pitre",
+      "Port-au-Prince",
+      "Santo Domingo",
+      "Fort-de-France"
+    ],
+    "question": [
+      "What is the capital of Haiti?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30205": {
+    "ans": [
+      "French",
+      "Dutch",
+      "English",
+      "German"
+    ],
+    "question": [
+      "Which of the following answers is not an official language of Belgium?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Languages",
+      null
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30218": {
+    "ans": [
+      "Maui",
+      "Honolulu",
+      "Hilo",
+      "Koloa"
+    ],
+    "question": [
+      "What is the capital of Hawaii?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30457": {
+    "ans": [
+      "London",
+      "Dublin",
+      "Birmingham",
+      "Manchester"
+    ],
+    "question": [
+      "What is the capital of England?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30015": {
+    "ans": [
+      "US dollar",
+      "Barbadian dollar",
+      "Barbadian florin",
+      "West Caribbean dollar"
+    ],
+    "question": [
+      "What is the currency in Barbados?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30172": {
+    "ans": [
+      "Surinamese peso",
+      "Surnamese pound",
+      "US dollar",
+      "Surinamese dollar"
+    ],
+    "question": [
+      "What is the currency in Suriname?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30194": {
+    "ans": [
+      "Irish dollar",
+      "Euro",
+      "Pound sterling",
+      "Irish pound"
+    ],
+    "question": [
+      "What is the currency in Northern Ireland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30413": {
+    "ans": [
+      "St George's",
+      "Port Elizabeth",
+      "Castries",
+      "Kingstown"
+    ],
+    "question": [
+      "What is the capital of St Vincent and the Grenadines?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30435": {
+    "ans": [
+      "Paramaribo",
+      "Cayenne",
+      "Macapa",
+      "Georgetown"
+    ],
+    "question": [
+      "What is the capital of Suriname?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30084": {
+    "ans": [
+      "Israeli sheqel",
+      "Israeli dollar",
+      "US dollar",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Israel?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30192": {
+    "ans": [
+      "Scottish pound",
+      "US dollar",
+      "Pound sterling",
+      "Euro"
+    ],
+    "question": [
+      "What is the currency in Scotland?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30245": {
+    "ans": [
+      "Pittsburg",
+      "Philadelphia",
+      "Harrisburg",
+      "Lancaster"
+    ],
+    "question": [
+      "What is the capital of Pennsylvania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30331": {
+    "ans": [
+      "Nikosia",
+      "Athens",
+      "Thessaloniki",
+      "Corfu"
+    ],
+    "question": [
+      "What is the capital of Greece?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30213": {
+    "ans": [
+      "Colorado Springs",
+      "Colorado Springs",
+      "Boulder",
+      "Denver"
+    ],
+    "question": [
+      "What is the capital of Colorado?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30055": {
+    "ans": [
+      "Salvdorian peso",
+      "US dollar",
+      "Salvadorian dollar",
+      "Mexican peso"
+    ],
+    "question": [
+      "What is the currency in El Salvador?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30422": {
+    "ans": [
+      "Kuala Lumpur",
+      "Singapore",
+      "Hong Kong",
+      "Taipei"
+    ],
+    "question": [
+      "What is the capital of Singapore?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30289": {
+    "ans": [
+      "Varna",
+      "Sofia",
+      "Bucharest",
+      "Tirana"
+    ],
+    "question": [
+      "What is the capital of Bulgaria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30238": {
+    "ans": [
+      "El Paso",
+      "Santa Fe",
+      "Albuquerque",
+      "Las Cruces"
+    ],
+    "question": [
+      "What is the capital of New Mexico?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30406": {
+    "ans": [
+      "Braga",
+      "Porto",
+      "Lisbon",
+      "Malaga"
+    ],
+    "question": [
+      "What is the capital of Portugal?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30239": {
+    "ans": [
+      "Buffalo",
+      "New York",
+      "Albany",
+      "Rochester"
+    ],
+    "question": [
+      "What is the capital of New York?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30402": {
+    "ans": [
+      "Asuncion",
+      "La Paz",
+      "Montevideo",
+      "Rosario"
+    ],
+    "question": [
+      "What is the capital of Paraguay?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30170": {
+    "ans": [
+      "Sri Lankan ringgit",
+      "Sri Lankan rupee",
+      "Sri Lankan dinar",
+      "Sri Lankan baht"
+    ],
+    "question": [
+      "What is the currency in Sri Lanka?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30465": {
+    "ans": [
+      "Harare",
+      "Lilongwe",
+      "Lusaka",
+      "Dodoma"
+    ],
+    "question": [
+      "What is the capital of Zambia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30040": {
+    "ans": [
+      "West African CFA franc",
+      "RC kwanza",
+      "RC franc",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in the Republic of Congo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30451": {
+    "ans": [
+      "Bujumbura",
+      "Nairobi",
+      "Juba",
+      "Kampala"
+    ],
+    "question": [
+      "What is the capital of Uganda?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30136": {
+    "ans": [
+      "Indian rupee",
+      "Pakistani dram",
+      "Pakistani pound",
+      "Pakistani rupee"
+    ],
+    "question": [
+      "What is the currency in Pakistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30063": {
+    "ans": [
+      "Gabonese dalasi",
+      "Central African CFA franc",
+      "West African CFA franc",
+      "French franc"
+    ],
+    "question": [
+      "What is the currency in Gabon?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30034": {
+    "ans": [
+      "Central African CFA franc",
+      "West African CFA franc",
+      "Chad dollar",
+      "Chad franc"
+    ],
+    "question": [
+      "What is the currency in Chad?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30016": {
+    "ans": [
+      "Belarusian ruble",
+      "Belarusian rupee",
+      "Euro",
+      "Russian ruble"
+    ],
+    "question": [
+      "What is the currency in Belarus?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30373": {
+    "ans": [
+      "Bamako",
+      "Dakar",
+      "Timbuktu",
+      "Conakry"
+    ],
+    "question": [
+      "What is the capital of Mali?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30126": {
+    "ans": [
+      "South African rand",
+      "US dollar",
+      "Namibian dollar",
+      "Pound sterling"
+    ],
+    "question": [
+      "What is the currency in Namibia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30128": {
+    "ans": [
+      "Japanese yen",
+      "Chinese yuan",
+      "Nepalese won",
+      "Nepalese rupee"
+    ],
+    "question": [
+      "What is the currency in Nepal?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30383": {
+    "ans": [
+      "Skopje",
+      "Pogdorica",
+      "Tirana",
+      "Sarajevo"
+    ],
+    "question": [
+      "What is the capital of Montenegro?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30386": {
+    "ans": [
+      "Chittagong",
+      "Mandalay",
+      "Naypyitaw",
+      "Dhaka"
+    ],
+    "question": [
+      "What is the capital of Myanmar?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30100": {
+    "ans": [
+      "Lesotho nafka",
+      "Lesotho loti",
+      "Lesotho naira",
+      "Lesotho kwanza"
+    ],
+    "question": [
+      "What is the currency in Lesotho?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30300": {
+    "ans": [
+      "Bogota",
+      "Medellin",
+      "Quito",
+      "Caracas"
+    ],
+    "question": [
+      "What is the capital of Colombia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30155": {
+    "ans": [
+      "ST & P dobra",
+      "ST & P peso",
+      "ST & P leu",
+      "ST & P kyat"
+    ],
+    "question": [
+      "What is the currency in Sao Tome and Principe?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30181": {
+    "ans": [
+      "Togo franc",
+      "Togo cedi",
+      "West African CFA franc",
+      "Togo ariary"
+    ],
+    "question": [
+      "What is the currency in Togo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30223": {
+    "ans": [
+      "Kansas City",
+      "Wichita",
+      "Topeka",
+      "Junction City"
+    ],
+    "question": [
+      "What is the capital of Kansas?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30033": {
+    "ans": [
+      "West African CFA franc",
+      "Central African kwanza",
+      "Central African dollar",
+      "Central African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Central African Republic?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30232": {
+    "ans": [
+      "Springfield",
+      "Saint Louis",
+      "Jefferson City",
+      "Kansas City"
+    ],
+    "question": [
+      "What is the capital of Missouri?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30439": {
+    "ans": [
+      "Damascus",
+      "Tehran",
+      "Amman",
+      "Alep"
+    ],
+    "question": [
+      "What is the capital of Syria?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30236": {
+    "ans": [
+      "Nashua",
+      "Dover",
+      "Concord",
+      "Manchester"
+    ],
+    "question": [
+      "What is the capital of New Hampshire?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30277": {
+    "ans": [
+      "Chittagong",
+      "Dhaka",
+      "Rajshahi",
+      "Jessore"
+    ],
+    "question": [
+      "What is the capital of Bangladesh?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30115": {
+    "ans": [
+      "Mauritanian ouguiya",
+      "Mauritanian franc",
+      "Mauritanian ariary",
+      "West African CFA franc"
+    ],
+    "question": [
+      "What is the currency in Mauritania?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30391": {
+    "ans": [
+      "Wellinton",
+      "Christchurch",
+      "Auckland",
+      "Dunedin"
+    ],
+    "question": [
+      "What is the capital of New Zealand?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30185": {
+    "ans": [
+      "Turkish pound",
+      "Turkish lira",
+      "Turkish dirham",
+      "Turkish rupee"
+    ],
+    "question": [
+      "What is the currency in Turkey?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30091": {
+    "ans": [
+      "US dollar",
+      "East Caribbean dollar",
+      "Kiribati dollar",
+      "Australian dollar"
+    ],
+    "question": [
+      "What is the currency in Kiribati?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30306": {
+    "ans": [
+      "Zagreb",
+      "Belgrade",
+      "Dubrovnic",
+      "Sarajevo"
+    ],
+    "question": [
+      "What is the capital of Croatia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30234": {
+    "ans": [
+      "Lincoln",
+      "Kearney",
+      "North Platte",
+      "Omaha"
+    ],
+    "question": [
+      "What is the capital of Nebraska?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30417": {
+    "ans": [
+      "Dubai",
+      "Doha",
+      "Abu Dhabi",
+      "Riyadh"
+    ],
+    "question": [
+      "What is the capital of Saudi Arabia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30250": {
+    "ans": [
+      "San Antonio",
+      "Houston",
+      "Dallas",
+      "Austin"
+    ],
+    "question": [
+      "What is the capital of Texas?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30186": {
+    "ans": [
+      "Turkemistani riyal",
+      "Turkemistani manat",
+      "Turkemistani som",
+      "Turkemistani ruble"
+    ],
+    "question": [
+      "What is the currency in Turkmenistan?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30079": {
+    "ans": [
+      "Indian lira",
+      "Indian rupee",
+      "Indian ruble",
+      "Indian baht"
+    ],
+    "question": [
+      "What is the currency in India?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30124": {
+    "ans": [
+      "Mozambican escudo",
+      "Mozambican metical",
+      "Central African CFA franc",
+      "Mozambican quetzal"
+    ],
+    "question": [
+      "What is the currency in Mozambique?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      1
+    ]
+  },
+  "30187": {
+    "ans": [
+      "Euro",
+      "West Caribbean dollar",
+      "Pound sterling",
+      "US dollar"
+    ],
+    "question": [
+      "What is the currency in Turks and Caicos Islands?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  },
+  "30216": {
+    "ans": [
+      "Tallahassee",
+      "Orlando",
+      "Jacksonville",
+      "Miami"
+    ],
+    "question": [
+      "What is the capital of Florida?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30446": {
+    "ans": [
+      "Port of Spain",
+      "San Fernando",
+      "Maturin",
+      "Curapano"
+    ],
+    "question": [
+      "What is the capital of Trinidad and Tobago?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30036": {
+    "ans": [
+      "Chinese yuan",
+      "Chinese baht",
+      "Chinese yen",
+      "Chinese rupee"
+    ],
+    "question": [
+      "What is the currency in China?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30253": {
+    "ans": [
+      "Richmond",
+      "Norfolk",
+      "Roanoke",
+      "Virginia Beach"
+    ],
+    "question": [
+      "What is the capital of Virginia?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "United States"
+    ],
+    "c_ans": [
+      0
+    ]
+  },
+  "30444": {
+    "ans": [
+      "Accra",
+      "Djougou",
+      "Lom\u00e9",
+      "Lagos"
+    ],
+    "question": [
+      "What is the capital of Togo?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Capitals"
+    ],
+    "c_ans": [
+      2
+    ]
+  },
+  "30161": {
+    "ans": [
+      "Hong Kong K1338dollar",
+      "Chinese yuan",
+      "Singapore won",
+      "Singapore dollar"
+    ],
+    "question": [
+      "What is the currency in Singapore?"
+    ],
+    "d1": [
+      "Social Sciences",
+      "Geography",
+      "Countries",
+      "Currencies"
+    ],
+    "c_ans": [
+      3
+    ]
+  }
+}
