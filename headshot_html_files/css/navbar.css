@@ -1,0 +1,91 @@
+/* NAVBAR CLASSES */
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    box-shadow: 4px 4px 4px #333333;
+}
+.navbar-default {
+  background-color: #fafbf5;
+  border-color: #1b60f9;
+}
+.navbar-default .navbar-brand {
+  color: #1b60f9;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fafbf5;
+  background-color: #1b60f9;
+}
+.navbar-default .navbar-text {
+  color: #1b60f9;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #1b60f9;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fafbf5;
+  background-color: #1b60f9;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fafbf5;
+  background-color: #1b60f9;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fafbf5;
+  background-color: #1b60f9;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1b60f9;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1b60f9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1b60f9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #1b60f9;
+}
+.navbar-default .navbar-link {
+  color: #1b60f9;
+}
+.navbar-default .navbar-link:hover {
+  color: #fafbf5;
+  background-color: #1b60f9;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #1b60f9;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fafbf5;
+    background-color: #1b60f9;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fafbf5;
+    background-color: #1b60f9;
+  }
+}
+
+.nav-image{
+    position: absolute;
+    left: 50%;
+    margin-left: -88px !important;  /* 50% of your logo width */
+    width: 180px;
+    display: block;
+    margin-top: 2px;
+}
+/* !--NAVBAR CLASSES--! */
