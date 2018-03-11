@@ -108,7 +108,7 @@ Sample Json response:-
 Start the game of all users connected in the game room.
 Field Name	|Description	|Value Type	|Mandatory
 ---|---|---|---|
-Game_room_id  	Id of current game room with users in it.	Int	Yes
+Game_room_id  |Id of current game room with users in it.	|Int	|Yes
 
 5.  Bet
 
@@ -133,7 +133,7 @@ Game_room_id  	|Id of current game room with users in it.	|Int	|Yes
 
 Commits player entire stack(all money).
 Field Name|	Description	 |Value Type	|Mandatory
----|---|---|---
+---|---|---|---|
 User_id	|Id of current User loged in.	|Int	  |Yes
 Game_room_id  |	Id of current game room with users in it.|	Int	 |Yes
 
@@ -141,7 +141,7 @@ Game_room_id  |	Id of current game room with users in it.|	Int	 |Yes
 
 Ending participation in a hand. No more bets are required to go into the pot by someone once they fold.
 Field Name	|Description	 |Value Type	|Mandatory
----|---|---|---
+---|---|---|---|
 User_id	|Id of current User loged in.	|Int	 |Yes
 Game_room_id  	|Id of current game room with users in it.	 |Int	 | Yes
 
