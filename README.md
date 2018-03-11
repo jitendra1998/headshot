@@ -30,6 +30,7 @@ $ pip install -r req.txt
 1. ### UserLogin API ###
 
 On successful login sets the username in cookie and fetches the user data and appends in user_session redis table and in case of incorrect email or password redirects it to the same webpage asking to provide information again.
+
 Field Name | Description | Value Type | Mandatory|
 ---|---|---|---|
 user_email |	Email of user registered with | String |YES
@@ -61,6 +62,7 @@ Field Name	|Description	|Value Type	|Mandatory|
 ---|---|---|---|
 Game_room_id  	|Id of current game room with users in it.	|Multiple INT|Yes |
 theme	|Theme of the question to show.	|String	|Yes |
+
 Sample Json response:- 
 
 {
