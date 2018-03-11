@@ -1,6 +1,6 @@
 # Headshot #
 
-<img width="136" src="https://github.com/jitendra1998/headshot/blob/master/Head.png" alt="github api logo" />
+<img width="300" height="200" src="https://github.com/jitendra1998/headshot/blob/master/Head.png" alt="github api logo" />
 
 ##### Table of Contents ##### 
 
