@@ -4,12 +4,12 @@
 
 ##### Table of Contents ##### 
 
-* [1. INTRODUCTION](#1-INTRODUCTION)
+* [1. INTRODUCTION](###1-INTRODUCTION)
 * [2. INSTALLATION](#2-INSTALLATION)
 * [3. END POINT](#3-ENDPOINT)
 * [4. SCREENSHOTS ](#4-SCREENSHOTS )
 
-### 1 INT#RODUCTION ### 
+### 1 INTRODUCTION ### 
 Headshot is a collection of 5 independent APIs with easy to integrate RESTful architecture .
 These APIs can be used as a open source platform to develope educational, fun and enganing games. A user will be able to register and login with Register and Login API. They will able to use the feature of question generator to generate the question and also hints.  Using this we have implemented a poker based quizzing game in which multiple users can join a game room and start a game.  Many such innovative ideas can be implemented using these API's.
 
