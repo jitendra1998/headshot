@@ -240,7 +240,7 @@ Field Name|	Description	 |Value Type	|Mandatory
 User_id	|Id of current User loged in.	|Int	  |Yes
 Game_room_id  |	Id of current game room with users in it.|	Int	 |Yes
 
-### 8. All_in ###
+### 8. Fold ###
 
 Ending participation in a hand. No more bets are required to go into the pot by someone once they fold.
 
