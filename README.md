@@ -29,52 +29,52 @@ Install necessary Python dependencies as follows:
 ```ruby
 $ pip install -r req.txt
 ```
-#how to initialize the game
+3. how to initialize the game
 
 ```ruby 
 *install tornado, mqsql-server, redis-server
 ```
 
-#mysql setup 
+4. mysql setup 
 ```ruby
 sudo apt-get update
 sudo apt-get install mysql-server
 ```
 
-#mysql secure installation
+5. mysql secure installation
 ```ruby
 /usr/bin/mysql_secure_installation
 ```
 
-#start mysql
+6. start mysql
 ```ruby
 /usr/bin/mysql -u root -p
 ```
 
-#create a database quizycash
+7. create a database quizycash
 ```ruby
 CREATE DATABASE quizycash;
 USE quizycash;
 ```
 
-#create a user development with pass 12345
+8. create a user development with pass 12345
 ```ruby
 CREATE USER 'development'@'localhost' IDENTIFIED BY '12345';
 GRANT ALL PRIVILEGES ON * . * TO 'development'@'localhost';
 ```
 
-#install mysq-db
+9. install mysq-db
 ```ruby
 $ sudo apt-get install python-pip python-dev libmysqlclient-dev
 pip install MySQL-python
 ```
 
-#initialize the database schema
+10. initialize the database schema
 ```ruby
 /usr/bin/mysql -u development -p quizycash < database_schema.sql
 ```
 
-#insert game data (game data for 3 game rooms)
+11. insert game data (game data for 3 game rooms)
 ```ruby
 INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, min_buy_in, max_buy_in, game_status, created_at, big_blind, small_blind) VALUES ('game1', 'football', 10, 'sports', 20,80,1,'2017-08-03 15:36:45', 2, 1);
 
@@ -84,29 +84,29 @@ INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, m
 INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, min_buy_in, max_buy_in, game_status, created_at, big_blind, small_blind) VALUES ('game4', 'football', 10, 'sports', 25,100,1,'2017-09-20 08:19:32', 4, 2);
 ```
 
-#redis-server setup
+12. redis-server setup
 ```ruby
 sudo apt-get install redis-server
 ```
 
-#check redis by running reddis-cli on terminal
+13. check redis by running reddis-cli on terminal
 ```ruby
 redis-cli
 ```
 
-#flush redis
+14. flush redis
 ```ruby
 redis-cli flushall
 ```
 
-#insert active_games data in redis (for that on a new terminal run python)
+15. insert active_games data in redis (for that on a new terminal run python)
 ```ruby
 import redis
 import json
 r = redis.StrictRedis(host='localhost', db=4)
 r.set('active_games', json.dumps({'game1':'1'}))
 ```
-# new redis active_games data 
+16.  new redis active_games data 
 ```ruby
 r.set('active_games', json.dumps({"game3": "3", "game2": "2", "game1": "1"}))
 ```
