@@ -254,5 +254,8 @@ Game_room_id  	|Id of current game room with users in it.	 |Int	 | Yes
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-32-56.png" alt="ss" />
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-33-22.png" alt="ss" />
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-33-59.png" alt="ss" />
+<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2012-13-48.png" alt="ss" />
+<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2012-13-58.png" alt="ss" />
+<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-33-59.png" alt="ss" />
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-34-13.png" alt="ss" />
-<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-34-46.png" alt="ss" />
+<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2012-14-10.png" alt="ss" />
