@@ -253,4 +253,5 @@ Game_room_id  	|Id of current game room with users in it.	 |Int	 | Yes
 
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-32-56.png" alt="ss" />
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-33-22.png" alt="ss" />
+<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-33-59.png" alt="ss" />
 
