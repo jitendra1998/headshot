@@ -29,10 +29,103 @@ Install necessary Python dependencies as follows:
 ```ruby
 $ pip install -r req.txt
 ```
+#how to initialize the game
 
-//more steps
+```ruby 
+*install tornado, mqsql-server, redis-server
+```
+
+#mysql setup 
+```ruby
+sudo apt-get update
+sudo apt-get install mysql-server
+```
+
+#mysql secure installation
+```ruby
+/usr/bin/mysql_secure_installation
+```
+
+#start mysql
+```ruby
+/usr/bin/mysql -u root -p
+```
+
+#create a database quizycash
+```ruby
+CREATE DATABASE quizycash;
+USE quizycash;
+```
+
+#create a user development with pass 12345
+```ruby
+CREATE USER 'development'@'localhost' IDENTIFIED BY '12345';
+GRANT ALL PRIVILEGES ON * . * TO 'development'@'localhost';
+```
+
+#install mysq-db
+```ruby
+$ sudo apt-get install python-pip python-dev libmysqlclient-dev
+pip install MySQL-python
+```
+
+#initialize the database schema
+```ruby
+/usr/bin/mysql -u development -p quizycash < database_schema.sql
+```
+
+#insert game data (game data for 3 game rooms)
+```ruby
+INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, min_buy_in, max_buy_in, game_status, created_at, big_blind, small_blind) VALUES ('game1', 'football', 10, 'sports', 20,80,1,'2017-08-03 15:36:45', 2, 1);
+
+INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, min_buy_in, max_buy_in, game_status, created_at, big_blind, small_blind) VALUES ('game2', 'football', 10, 'science', 250,1000,1,'2017-09-13 21:40:05', 40, 20);
+
+INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, min_buy_in, max_buy_in, game_status, created_at, big_blind, small_blind) VALUES ('game3', 'football', 10, 'economics', 100,500,1,'2017-09-20 08:19:32', 40, 20);
+INSERT INTO game_room (game_room_name, game_category, max_players, game_theme, min_buy_in, max_buy_in, game_status, created_at, big_blind, small_blind) VALUES ('game4', 'football', 10, 'sports', 25,100,1,'2017-09-20 08:19:32', 4, 2);
+```
+
+#redis-server setup
+```ruby
+sudo apt-get install redis-server
+```
+
+#check redis by running reddis-cli on terminal
+```ruby
+redis-cli
+```
+
+#flush redis
+```ruby
+redis-cli flushall
+```
+
+#insert active_games data in redis (for that on a new terminal run python)
+```ruby
+import redis
+import json
+r = redis.StrictRedis(host='localhost', db=4)
+r.set('active_games', json.dumps({'game1':'1'}))
+```
+# new redis active_games data 
+```ruby
+r.set('active_games', json.dumps({"game3": "3", "game2": "2", "game1": "1"}))
+```
+
+
+#initial check
+```ruby
+r.get('active_players')
+r.get('user_session')
+r.get('active_games')
+```
+# for deployment change host in statrting of file
+```ruby
+admin_func.js - 1
+game_room_api.py - 1
+ ```
 
 ## 3 END POINT ##
+
 ### 1. UserLogin API ###
 
 On successful login sets the username in cookie and fetches the user data and appends in user_session redis table and in case of incorrect email or password redirects it to the same webpage asking to provide information again.
