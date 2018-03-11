@@ -106,6 +106,7 @@ Sample Json response:-
 4. Start_game 
 
 Start the game of all users connected in the game room.
+
 Field Name	|Description	|Value Type	|Mandatory
 ---|---|---|---|
 Game_room_id  |Id of current game room with users in it.	|Int	|Yes
@@ -123,6 +124,7 @@ bet_amount	|Amount to bet 	|Int	|Yes
 6.  Call
 
 Match the current amount of the bet made by a previous player in the round .
+
 Field Name	|Description	|Value Type	|Mandatory
 ---|---|---|---|
 User_id	|Id of current User loged in.|	Int	|Yes
@@ -132,6 +134,7 @@ Game_room_id  	|Id of current game room with users in it.	|Int	|Yes
 7.  All_in
 
 Commits player entire stack(all money).
+
 Field Name|	Description	 |Value Type	|Mandatory
 ---|---|---|---|
 User_id	|Id of current User loged in.	|Int	  |Yes
@@ -140,6 +143,7 @@ Game_room_id  |	Id of current game room with users in it.|	Int	 |Yes
 8. All_in
 
 Ending participation in a hand. No more bets are required to go into the pot by someone once they fold.
+
 Field Name	|Description	 |Value Type	|Mandatory
 ---|---|---|---|
 User_id	|Id of current User loged in.	|Int	 |Yes
