@@ -9,7 +9,7 @@
 * [3. END POINT](#3-ENDPOINT)
 * [4. SCREENSHOTS ](#4-SCREENSHOTS )
 
-## 1 INTRODUCTION ## 
+### 1 INT#RODUCTION ### 
 Headshot is a collection of 5 independent APIs with easy to integrate RESTful architecture .
 These APIs can be used as a open source platform to develope educational, fun and enganing games. A user will be able to register and login with Register and Login API. They will able to use the feature of question generator to generate the question and also hints.  Using this we have implemented a poker based quizzing game in which multiple users can join a game room and start a game.  Many such innovative ideas can be implemented using these API's.
 
@@ -118,7 +118,7 @@ r.get('active_players')
 r.get('user_session')
 r.get('active_games')
 ```
-# For deployment change host in statrting of file
+### For deployment change host in statrting of file ###
 ```ruby
 admin_func.js - 1
 game_room_api.py - 1
