@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>brainshot</title>
+    <link rel="icon" href="images/yellow-hex.png">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Spectral+SC" rel="stylesheet">
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-wrapper">
+            <form name="usr_login" method="post" class="user-login-form">
+                <div class="header">
+                    <img class="logo" src="images/logo.png">
+                </div>
+                <hr>
+                <p>E-mail <i class="fa fa-envelope-o" aria-hidden="true"></i> :</p> <input class="form-control" type="text" id="u_email" name="user_email" placeholder="Enter Your email" required>
+                <p>Password <i class="fa fa-key" aria-hidden="true"></i> :</p><input class="form-control" type="password" id="u_pass" name="password"  placeholder="Password">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" id="login_btn">LOGIN</button><br>
+                <p id="error_msg"></p>
+                <p class="pull-right">Not a user ? <a href="/user/signup" id="signup">Sign Up</a><br></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

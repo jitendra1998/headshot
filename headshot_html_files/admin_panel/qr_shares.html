@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>QuizzyCash</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="assets/vendor/pace/themes/orange/pace-theme-minimal.css">
+		<link rel="stylesheet" href="assets/css/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+		<link rel="stylesheet" href="assets/vendor/x-editable/bootstrap3-editable/css/bootstrap-editable.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap-tour/css/bootstrap-tour.min.css">
+		<link rel="stylesheet" href="assets/vendor/jqvmap/jqvmap.min.css">
+
+		<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/skins/sidebar-nav-darkgray.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/skins/navbar3.css" type="text/css">
+		<!-- FOR DEMO PURPOSES ONLY. You should/may remove this in your project -->
+		<link rel="stylesheet" href="assets/css/demo.css">
+		<link rel="stylesheet" href="demo-panel/style-switcher.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+
+		<script language="javascript">
+			function getRndInteger(min, max) {
+ 			   return Math.floor(Math.random() * (max - min + 1) ) + min;
+			}
+
+			window.onload = function(){
+
+			}
+		</script>
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="index.html">
+						<!--<img src="assets/img/logo-white.png" alt="Klorofil Pro Logo" class="img-responsive logo">-->
+						<img src="assets/img/logo.jpg" alt="QuizzyCash Logo" class="img-responsive logo" style="hieght:70%;width:70%;">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth"><i class="ti-arrow-circle-left"></i></button>
+					</div>
+					<form class="navbar-form navbar-left search-form">
+						<input type="text" value="" class="form-control" placeholder="Search dashboard...">
+						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</form>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="assets/img/user.png" alt="Avatar">
+									<span>Samuel</span>
+								</a>
+								<ul class="dropdown-menu logged-user-menu">
+									<li><a href="#"><i class="ti-user"></i> <span>My Profile</span></a></li>
+									<li><a href="appviews-inbox.html"><i class="ti-email"></i> <span>Message</span></a></li>
+									<li><a href="#"><i class="ti-settings"></i> <span>Settings</span></a></li>
+									<li><a href="page-lockscreen.html"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">
+						<li class="menu-group">Main</li>
+						<li class="panel">
+							<li><a href="admin_panel.html"  ><i class="flaticon-man-with-tie"></i>Admin</a></li>
+						</li>
+
+						<!--li class="panel">
+							<li><a href="index.html" class="active"><i class="ti-dashboard"></i>Dashboard</a></li>
+						</li-->
+						<li class="panel">
+							<!--li><a href="index.html" class="active"><i class="ti-dashboard"></i>Dashboard</a></li-->
+							<a href="general_dashboard.html" ><!--a href="#dashboard" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed"--><i class="ti-dashboard"></i> <span class="title">Dashboard</span> <!--i class="icon-submenu ti-angle-left"--></i></a>
+							<div id="dashboard" >
+								<ul class="submenu">
+									<li><a href="general_dashboard.html">Gaming</a></li>
+									<li><a href="marketing_dashboard.html">Marketing</a></li>
+									
+								</ul>
+							</div>
+						</li>
+						
+						<li class="panel">
+							<li><a href="questions.html" ><i class="flaticon-question"></i>Questions</a></li>
+						</li>
+
+						<li class="panel">
+							<li><a href="user_page.html" ><i class="ti-user"></i>User</a></li>
+						</li>
+						<li class="panel">
+							<li><a href="session.html" ><i class="flaticon-login-1"></i>Session</a></li>
+						</li>
+						<!--<li class="panel">-->
+							<!--<li><a href="#" ><i class="ti-calendar"></i>Events</a></li>-->
+						<!--</li>-->
+
+						<li class="panel">
+							<li><a href="qr_shares.html" class="active" ><i class="flaticon-blackberry-qr-code-variant"></i>QR shares</a></li>
+						</li>
+
+						
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="content-heading clearfix">
+						<div class="heading-left">
+							<h1 class="page-title">Welcome to Admin Panel</h1>
+							<p class="page-subtitle">Admin dashboard for QuizzyCash</p>
+						</div>
+						<ul class="breadcrumb">
+							<li><a href="admin_panel.html"><i class="fa fa-home"></i> Home</a></li>
+							<li class="active"><a href="qr_shares.html">QR shares</a></li>
+							<!--<li class="active">Dashboard v1</li>-->
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+							<!-- donut chart -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h2 class="panel-title">QR shares</h2>
+									</div>
+									<div class="panel-body">
+										<canvas id="donut-chart" height="150"></canvas>
+										<form class="margin-top-30">
+											<p class="text-muted">Play with controls below to see other chart options demo</p>
+											<span class="fancy-checkbox custom-bgcolor-blue">
+												<label>
+													<input type="checkbox" id="addRemoveDonutDataset">
+													<span>Add/Remove Dataset</span>
+												</label>
+											</span>
+										</form>
+									</div>
+								</div>
+							<!-- end donut chart -->
+							</div>
+							<!--div class="col-md-6">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">QR Scan</h3>
+									</div>
+									<div class="panel-body">
+										<div id="demo-bar-chart" class="ct-chart"></div>
+									</div>
+								</div>
+							</div-->
+							<div class="col-md-6">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">QR Scan(In Thousandf)</h3>
+									</div>
+									<div class="panel-body">
+										<div id="demo-line-chart" class="ct-chart"></div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="container-fluid">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Area wise QR scans</h3>
+							</div>
+							<div class="panel-body">
+								<div id="data-visualization-map">
+									<div class="row">
+										<div class="col-md-9">
+											<div class="map"></div>
+										</div>
+										<div class="col-md-3">
+											<div class="areaLegend legend-right"></div>
+											<em>Click the text legend to see interactivity in action.</em>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					<div class="row">
+						<!-- FILTER COLUMN -->
+						
+						<!-- END FILTER COLUMN -->
+                                                
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+
+				<!-- RIGHT SIDEBAR -->
+				<div id="sidebar-right" class="right-sidebar">
+					<div class="sidebar-widget">
+						<h4 class="widget-heading"><i class="fa fa-calendar"></i> TODAY</h4>
+						<p class="date">Wednesday, 22 December</p>
+						<div class="row margin-top-30">
+							<div class="col-xs-4">
+								<a href="#">
+									<div class="icon-transparent-area custom-color-blue first">
+										<i class="fa fa-tasks"></i>
+										<span>Tasks</span>
+										<span class="badge">5</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#">
+									<div class="icon-transparent-area custom-color-green">
+										<i class="fa fa-envelope"></i>
+										<span>Mail</span>
+										<span class="badge">12</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#">
+									<div class="icon-transparent-area custom-color-orange last">
+										<i class="fa fa-user-plus"></i>
+										<span>Users</span>
+										<span class="badge">24</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar-widget">
+						<div class="widget-header">
+							<h4 class="widget-heading">YOUR APPS</h4>
+							<a href="#" class="show-all">Show all</a>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="Dropbox" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-dropbox dropbox-color"></i>
+								</a>
+							</div>
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="WordPress" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-wordpress wordpress-color"></i>
+								</a>
+							</div>
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="Drupal" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-drupal drupal-color"></i>
+								</a>
+							</div>
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="Github" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-github github-color"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar-widget">
+						<div class="widget-header">
+							<h4 class="widget-heading">MY PROJECTS</h4>
+							<a href="#" class="show-all">Show all</a>
+						</div>
+						<ul class="list-unstyled list-project-progress">
+							<li>
+								<a href="#" class="project-name">Project XY</a>
+								<div class="progress progress-xs progress-transparent custom-color-orange">
+									<div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width:67%"></div>
+								</div>
+								<span class="percentage">67%</span>
+							</li>
+							<li>
+								<a href="#" class="project-name">Growth Campaign</a>
+								<div class="progress progress-xs progress-transparent custom-color-blue">
+									<div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width:23%"></div>
+								</div>
+								<span class="percentage">23%</span>
+							</li>
+							<li>
+								<a href="#" class="project-name">Website Redesign</a>
+								<div class="progress progress-xs progress-transparent custom-color-green">
+									<div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width:87%"></div>
+								</div>
+								<span class="percentage">87%</span>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<div class="widget-header">
+							<h4 class="widget-heading">MY FILES</h4>
+							<a href="#" class="show-all">Show all</a>
+						</div>
+						<ul class="list-unstyled list-justify list-file-simple">
+							<li><a href="#"><i class="fa fa-file-word-o"></i>Proposal_draft.docx</a>
+								<span>4 MB</span>
+							</li>
+							<li><a href="#"><i class="fa fa-file-pdf-o"></i>Manual_Guide.pdf</a>
+								<span>20 MB</span>
+							</li>
+							<li><a href="#"><i class="fa fa-file-zip-o"></i>all-project-files.zip</a>
+								<span>315 MB</span>
+							</li>
+							<li><a href="#"><i class="fa fa-file-excel-o"></i>budget_estimate.xls</a>
+								<span>1 MB</span>
+							</li>
+						</ul>
+					</div>
+					<p class="text-center"><a href="#" class="btn btn-default btn-xs">More Widgets</a></p>
+				</div>
+				<!-- END RIGHT SIDEBAR -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			<!--<footer>-->
+				<!--<div class="container-fluid">-->
+					<!--<p class="copyright">&copy; 2017 <a href="http://www.myraatechnologies.com/" target="_blank">Myraa Technologies</a>. All Rights Reserved.</p>-->
+				<!--</div>-->
+			<!--</footer>-->
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/pace/pace.min.js"></script>
+		<script src="assets/vendor/bootstrap-progressbar/js/bootstrap-progressbar.min.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.resize.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.time.js"></script>
+		<script src="assets/vendor/flot.tooltip/jquery.flot.tooltip.js"></script>
+		<script src="assets/vendor/x-editable/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+		<script src="assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+		<script src="assets/vendor/moment/min/moment.min.js"></script>
+		<script src="assets/vendor/jquery-sparkline/js/jquery.sparkline.min.js"></script>
+		<script src="assets/vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widget.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/data.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/scroll-parent.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/disable-selection.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widgets/sortable.js"></script>
+		<script src="assets/vendor/datatables/js-main/jquery.dataTables.min.js"></script>
+		<script src="assets/vendor/datatables/js-bootstrap/dataTables.bootstrap.min.js"></script>
+		<script src="assets/vendor/jquery-appear/jquery.appear.min.js"></script>
+		<script src="assets/vendor/jqvmap/jquery.vmap.min.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.usa.js"></script>
+		<script src="assets/vendor/chart-js/Chart.min.js"></script>
+		<script src="assets/vendor/raphael/raphael.min.js"></script>
+		<script src="assets/vendor/justgage-toorshia/justgage.js"></script>
+		<script src="assets/scripts/klorofilpro-common.js"></script>
+
+		<script src="assets/vendor/chartist/js/chartist.min.js"></script>
+
+		<script src="assets/vendor/jquery-mapael/js/jquery.mapael.min.js"></script>
+		<script src="assets/vendor/jquery-mapael/js/maps/world_countries.min.js"></script>
+		<script src="assets/vendor/jquery-mapael/js/maps/france_departments.js"></script>
+		<!-- DEMO PANEL -->
+		<!-- for demo purpose only, you should remove it on your project directory -->
+		<script type="text/javascript">
+		var toggleDemoPanel = function(e)
+		{
+			e.preventDefault();
+			var panel = document.getElementById('demo-panel');
+			if (panel.className) panel.className = '';
+			else panel.className = 'active';
+		}
+		// fix each iframe src when back button is clicked
+		$(function()
+		{
+			$('iframe').each(function()
+			{
+				this.src = this.src;
+			});
+		});
+		</script>
+		
+		<!-- END DEMO PANEL -->
+		<script>
+		$(function()
+		{	
+			// MINI LINE CHARTS
+			var params = {
+				width: '60px',
+				height: '30px',
+				lineWidth: '2',
+				lineColor: '#1D92AF',
+				fillColor: 'rgba(29,146,175,0.2) ',
+				spotRadius: '2',
+				highlightLineColor: '#aedaff',
+				highlightSpotColor: '#71aadb',
+				spotColor: false,
+				minSpotColor: false,
+				maxSpotColor: false,
+				disableInteraction: false
+			};
+			// values from HTML script
+			$('#demo-sparkline-line1').sparkline('html', params);
+			params.lineColor = '#ef2020';
+			params.fillColor = 'rgba(239,32,32,0.2)';
+			$('#demo-sparkline-line2').sparkline('html', params);
+			params.lineColor = '#ff9800';
+			params.fillColor = 'rgba(255,152,0,0.2)';
+			$('#demo-sparkline-line3').sparkline('html', params);
+			params.lineColor = '#7CAC25';
+			params.fillColor = 'rgba(124,172,37,0.2)';
+			$('#demo-sparkline-line4').sparkline('html', params);
+			params.lineColor = '#777';
+			params.fillColor = 'rgba(119,119,119,0.2)';
+			$('#demo-sparkline-line5').sparkline('html', params);
+			// values from Javascript
+			var values1 = getRandomValues();
+			params.lineColor = '#1D92AF';
+			params.fillColor = false;
+			$('#demo-sparkline-line6').sparkline(values1[0], params);
+			params.lineColor = '#ef2020';
+			params.fillColor = false;
+			$('#demo-sparkline-line7').sparkline(values1[1], params);
+			params.lineColor = '#ff9800';
+			params.fillColor = false;
+			$('#demo-sparkline-line8').sparkline(values1[2], params);
+			params.lineColor = '#7CAC25';
+			params.fillColor = false;
+			$('#demo-sparkline-line9').sparkline(values1[3], params);
+			params.lineColor = '#777';
+			params.fillColor = false;
+			$('#demo-sparkline-line10').sparkline(values1[4], params);
+			// Simple stat
+			params.lineColor = '#00AAFF';
+			params.width = '' + $('.sparkline-stat-medium').width() + '';
+			$('#sparkline-stat1').sparkline(values1[0], params);
+			$('#sparkline-stat2').sparkline(values1[1], params);
+			$('#sparkline-stat3').sparkline(values1[2], params);
+			$('#sparkline-stat4').sparkline(values1[3], params);
+			$('#sparkline-stat5').sparkline(values1[4], params);
+			$('#sparkline-stat6').sparkline(values1[5], params);
+			// Sparkline big
+			var paramsBig = {
+				width: '' + $('#sparkline-stat-big1').innerWidth() + '',
+				height: '80px',
+				spotRadius: '2',
+				spotColor: false,
+				minSpotColor: false,
+				maxSpotColor: false,
+				lineWidth: 1,
+				lineColor: "rgba(87,90,103, 0.5)",
+				fillColor: "rgba(87,90,103, 0.1)",
+				highlightLineColor: '#fff',
+				highlightSpotColor: '#fff',
+				disableInteraction: true,
+				chartRangeMin: 0,
+				chartRangeMax: 1000
+			};
+			$('#sparkline-stat-big1').sparkline('html', paramsBig);
+			// MINI BAR CHARTS
+			var values2 = getRandomValues();
+			var paramsBar = {
+				type: 'bar',
+				barWidth: 5,
+				height: 25,
+				barColor: '#0E9BE2'
+			};
+			$('#mini-bar-chart1').sparkline(values2[0], paramsBar);
+			paramsBar.barColor = '#7CAC25';
+			$('#mini-bar-chart2').sparkline(values2[1], paramsBar);
+			paramsBar.barColor = '#FF4402';
+			$('#mini-bar-chart3').sparkline(values2[2], paramsBar);
+			paramsBar.barColor = '#ff9800';
+			$('#mini-bar-chart4').sparkline(values2[3], paramsBar);
+			paramsBar.barColor = '#777';
+			$('#mini-bar-chart5').sparkline(values2[4], paramsBar);
+			//simple stat
+			paramsBar.barColor = '#7CAC25';
+			$('#sparkbar-chart1').sparkline(values2[0], paramsBar);
+			paramsBar.barColor = '#FF4402';
+			$('#sparkbar-chart2').sparkline(values2[1], paramsBar);
+			paramsBar.barColor = '#ff9800';
+			$('#sparkbar-chart3').sparkline(values2[2], paramsBar);
+			// negative values;
+			$('#mini-bar-negative').sparkline('html', paramsBar);
+			// stacked bar
+			$('#mini-bar-stacked').sparkline('html', paramsBar);
+			// composite
+			$('#demo-sparkline-compositeline').sparkline('html',
+			{
+				fillColor: false,
+				lineColor: '#ff9800',
+				width: '200px',
+				height: '30px',
+				lineWidth: '2',
+			});
+			$('#demo-sparkline-compositeline').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7],
+			{
+				composite: true,
+				fillColor: false,
+				lineColor: '#777',
+				lineWidth: '2',
+				chartRangeMin: 0,
+				chartRangeMax: 10
+			});
+			$('#demo-sparkline-compositebar').sparkline('html',
+			{
+				type: 'bar',
+				barColor: '#7CAC25',
+				barWidth: 5,
+				height: 25,
+			});
+			$('#demo-sparkline-compositebar').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6],
+			{
+				composite: true,
+				fillColor: false,
+				lineColor: '#777',
+			});
+			// MINI PIE CHARTS
+			var paramsPie = {
+				type: "pie",
+				sliceColors: ["#0E9BE2", "#ff9800", "#7CAC25"]
+			};
+			$('#mini-pie-chart1').sparkline('html', paramsPie);
+			$('#mini-pie-chart2').sparkline('html', paramsPie);
+			$('#mini-pie-chart3').sparkline('html', paramsPie);
+			function getRandomValues()
+			{
+				// data setup
+				var values = new Array(20);
+				for (var i = 0; i < values.length; i++)
+				{
+					values[i] = [5 + randomVal(), 10 + randomVal(), 15 + randomVal(), 20 + randomVal(), 30 + randomVal(),
+						35 + randomVal(), 40 + randomVal(), 45 + randomVal(), 50 + randomVal()
+					];
+				}
+				return values;
+			}
+			function randomVal()
+			{
+				return Math.floor(Math.random() * 80);
+			}
+			
+			// datatable with column filter enabled
+			var dtTable = $('#datatable-column-filter').DataTable(
+			{ // use DataTable, not dataTable
+				sDom: // redefine sDom without lengthChange and default search box
+					"t" +
+					"<'row'<'col-sm-6'i><'col-sm-6'p>>"
+			});
+			$('#datatable-column-filter thead').append('<tr class="row-filter"><th></th><th></th><th></th><th></th><th></th></tr>');
+			$('#datatable-column-filter thead .row-filter th').each(function()
+			{
+				$(this).html('<input type="text" class="form-control input-sm" placeholder="Search...">');
+			});
+			$('#datatable-column-filter .row-filter input').on('keyup change', function()
+			{
+				dtTable
+					.column($(this).parent().index() + ':visible')
+					.search(this.value)
+					.draw();
+			});
+		});
+		</script>
+		<script type="text/javascript">
+		var toggleDemoPanel = function(e)
+		{
+			e.preventDefault();
+			var panel = document.getElementById('demo-panel');
+			if (panel.className) panel.className = '';
+			else panel.className = 'active';
+		}
+		// fix each iframe src when back button is clicked
+		$(function()
+		{
+			$('iframe').each(function()
+			{
+				this.src = this.src;
+			});
+		});
+
+		</script>
+
+
+		
+		<!-- END DEMO PANEL -->
+		<!-- DEMO PANEL -->
+		<!-- for demo purpose only, you should remove it on your project directory -->
+		<script type="text/javascript">
+		var toggleDemoPanel = function(e)
+		{
+			e.preventDefault();
+			var panel = document.getElementById('demo-panel');
+			if (panel.className) panel.className = '';
+			else panel.className = 'active';
+		}
+		// fix each iframe src when back button is clicked
+		$(function()
+		{
+			$('iframe').each(function()
+			{
+				this.src = this.src;
+			});
+		});
+		</script>
+		
+		<!-- END DEMO PANEL -->
+
+		<script>
+		$(function()
+		{
+			// general config and options
+			Chart.defaults.global.defaultFontColor = '#a0aeba';
+			var chartLabels = ['Coke', 'McChicken', 'Fries', 'Pizza', 'Burger kings', 'Chicken grill', 'Pepsi'];
+			var chartData = [123, 129, 124, 130, 132, 139, 140];
+			var chartData2 = [125, 127, 123, 132, 129, 138, 144];
+	
+			// donut chart
+			var ctxDonutChart = document.getElementById("donut-chart").getContext("2d");
+			var donutChart = new Chart(ctxDonutChart,
+			{
+				type: 'doughnut',
+				data:
+				{
+					labels: chartLabels,
+					datasets: [
+						{
+							data: chartData,
+							backgroundColor: ['#4A90E2', '#7CAC25', '#FF4402', '#AB7DF6', '#F3BB23', '#20B2AA', '#1DBB8E'],
+						}
+					]
+				},
+				options:
+				{
+					responsive: true,
+					legend:
+					{
+						position: 'right',
+					},
+				}
+			});
+			$('#addRemoveDonutDataset').on('change', function()
+			{
+				var newDataset = {
+					data: chartData2,
+					backgroundColor: ['#4A90E2', '#7CAC25', '#FF4402', '#AB7DF6', '#F3BB23', '#20B2AA', '#1DBB8E'],
+				};
+				if ($(this).is(':checked'))
+				{
+					donutChart.data.datasets.push(newDataset);
+				}
+				else
+				{
+					donutChart.data.datasets.pop();
+				}
+				donutChart.update();
+			});
+
+		
+			
+		});
+		</script>
+		<script>
+		$(function()
+		{
+			var options;
+			var data = {
+				labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				series: [
+					[2, 3.8, 3.5, 3.2, 4.1, 4.5, 5.7, 4, 5.5, 6.2, 7.5, 9],
+				]
+			};
+			
+			// line chart
+			options = {
+				height: "300px",
+				showPoint: true,
+				axisX:
+				{
+					showGrid: false
+				},
+				lineSmooth: false,
+			};
+			new Chartist.Line('#demo-line-chart', data, options);
+			
+		});
+		</script>
+
+		<script>
+		$(function()
+		{
+			var data = {
+				"areas":
+				{
+					"US":
+					{
+						"value": 2200,
+						"tooltip":
+						{
+							"content": "<span>United States</span><br />Sales: 2200"
+						}
+					},
+					"CN":
+					{
+						"value": 1800,
+						"tooltip":
+						{
+							"content": "<span>China</span><br />Sales: 1800"
+						}
+					},
+					"JP":
+					{
+						"value": 1550,
+						"tooltip":
+						{
+							"content": "<span>Japan</span><br />Sales: 1550"
+						}
+					},
+					"IN":
+					{
+						"value": 1400,
+						"tooltip":
+						{
+							"content": "<span>India</span><br />Sales: 1400"
+						}
+					},
+					"DE":
+					{
+						"value": 1600,
+						"tooltip":
+						{
+							"content": "<span>Germany</span><br />Sales: 1600"
+						}
+					},
+					"RU":
+					{
+						"value": 900,
+						"tooltip":
+						{
+							"content": "<span>Russia</span><br />Sales: 900"
+						}
+					},
+					"GB":
+					{
+						"value": 1200,
+						"tooltip":
+						{
+							"content": "<span>United Kingdom</span><br />Sales: 1200"
+						}
+					},
+					"FR":
+					{
+						"value": 1100,
+						"tooltip":
+						{
+							"content": "<span>France</span><br />Sales: 1100"
+						}
+					},
+					"BR":
+					{
+						"value": 400,
+						"tooltip":
+						{
+							"content": "<span>Brazil</span><br />Sales: 400"
+						}
+					},
+					"IT":
+					{
+						"value": 700,
+						"tooltip":
+						{
+							"content": "<span>Italy</span><br />Sales: 700"
+						}
+					},
+					"MX":
+					{
+						"value": 1900,
+						"tooltip":
+						{
+							"content": "<span>Mexico</span><br />Sales: 1900"
+						}
+					},
+					"ES":
+					{
+						"value": 300,
+						"tooltip":
+						{
+							"content": "<span>Spain</span><br />Sales: 300"
+						}
+					},
+					"KR":
+					{
+						"value": 200,
+						"tooltip":
+						{
+							"content": "<span>South Korea</span><br />Sales: 200"
+						}
+					},
+					"CA":
+					{
+						"value": 2900,
+						"tooltip":
+						{
+							"content": "<span>Canada</span><br />Sales: 2900"
+						}
+					},
+					"ID":
+					{
+						"value": 1200,
+						"tooltip":
+						{
+							"content": "<span>Indonesia</span><br />Sales: 1300"
+						}
+					},
+					"TR":
+					{
+						"value": 90,
+						"tooltip":
+						{
+							"content": "<span>Turkey</span><br />Sales: 90"
+						}
+					},
+					"IR":
+					{
+						"value": 80,
+						"tooltip":
+						{
+							"content": "<span>Iran</span><br />Sales: 80"
+						}
+					},
+					"AU":
+					{
+						"value": 900,
+						"tooltip":
+						{
+							"content": "<span>Australia</span><br />Sales: 1400"
+						}
+					},
+					"ZA":
+					{
+						"value": 50,
+						"tooltip":
+						{
+							"content": "<span>South Africa</span><br />Sales: 50"
+						}
+					},
+					"EG":
+					{
+						"value": 20,
+						"tooltip":
+						{
+							"content": "<span>Egypt</span><br />Sales: 20"
+						}
+					},
+					"PK":
+					{
+						"value": 1300,
+						"tooltip":
+						{
+							"content": "<span>Pakistan</span><br />Sales: 1300"
+						}
+					},
+					"SG":
+					{
+						"value": 100,
+						"tooltip":
+						{
+							"content": "<span>Singapore</span><br />Sales: 100"
+						}
+					},
+				}
+			}; // end data
+			// map with sales data visualization
+			var colors = ["#7a7a7a", "#5c5c5c", "#474747", "#333333", "#1f1f1f"];
+			$('#data-visualization-map').mapael(
+			{
+				map:
+				{
+					name: "world_countries",
+					defaultArea:
+					{
+						attrs:
+						{
+							stroke: "#dedede",
+							"stroke-width": 1,
+							fill: "#efefef"
+						}
+					}
+				},
+				legend:
+				{
+					area:
+					{
+						display: true,
+						title: "Scans",
+						slices: [
+						{
+							max: 100,
+							attrs:
+							{
+								fill: colors[0]
+							},
+							label: "Less than 100"
+						},
+						{
+							min: 100,
+							max: 500,
+							attrs:
+							{
+								fill: colors[1]
+							},
+							label: "Between 100 and 500"
+						},
+						{
+							min: 500,
+							max: 1000,
+							attrs:
+							{
+								fill: colors[2]
+							},
+							label: "Between 500 and 1000"
+						},
+						{
+							min: 1000,
+							max: 1500,
+							attrs:
+							{
+								fill: colors[3]
+							},
+							label: "Between 1000 and 1500"
+						},
+						{
+							min: 1500,
+							attrs:
+							{
+								fill: colors[4]
+							},
+							label: "More than 1500"
+						}]
+					}
+				},
+				areas: data['areas']
+			}); // end data visualization map
+			
+			
+		});
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,1507 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>QuizzyCash</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="assets/vendor/pace/themes/orange/pace-theme-minimal.css">
+		<link rel="stylesheet" href="assets/css/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+		<link rel="stylesheet" href="assets/vendor/x-editable/bootstrap3-editable/css/bootstrap-editable.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap-tour/css/bootstrap-tour.min.css">
+		<link rel="stylesheet" href="assets/vendor/jqvmap/jqvmap.min.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/skins/sidebar-nav-darkgray.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/skins/navbar3.css" type="text/css">
+		<!-- FOR DEMO PURPOSES ONLY. You should/may remove this in your project -->
+		<link rel="stylesheet" href="assets/css/demo.css">
+		<link rel="stylesheet" href="demo-panel/style-switcher.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+		<!--
+		<script language="javascript">
+			function getRndInteger(min, max) {
+ 			   return Math.floor(Math.random() * (max - min + 1) ) + min;
+			}
+
+			window.onload = function(){
+				document.getElementById('online_users').innerHTML = getRndInteger(45000, 50000);
+				document.getElementById('active_gamerooms').innerHTML = getRndInteger(1000, 1200);
+				document.getElementById('total_pot_amount').innerHTML = getRndInteger(145000, 250000);
+				document.getElementById('active_campaigns').innerHTML = getRndInteger(2000, 2700);
+				document.getElementById('weekly_campaign').innerHTML = 4*getRndInteger(2000, 2700);
+				document.getElementById('new_users').innerHTML = getRndInteger(200, 300);
+				document.getElementById('games_played').innerHTML = getRndInteger(15000, 20000);
+				document.getElementById('unique_questions').innerHTML = getRndInteger(150000, 2000000);
+				document.getElementById('viewed').innerHTML = getRndInteger(25000, 30000);
+				document.getElementById('shared').innerHTML = getRndInteger(1500, 2000);
+				document.getElementById('clicked').innerHTML = getRndInteger(15000, 20000);
+
+			}
+		</script>
+		-->
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="index.html">
+						<!--<img src="assets/img/logo-white.png" alt="Klorofil Pro Logo" class="img-responsive logo">-->
+						<img src="assets/img/logo.jpg" alt="QuizzyCash Logo" class="img-responsive logo" style="hieght:70%;width:70%;">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth"><i class="ti-arrow-circle-left"></i></button>
+					</div>
+					<form class="navbar-form navbar-left search-form">
+						<input type="text" value="" class="form-control" placeholder="Search dashboard...">
+						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</form>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="assets/img/user.png" alt="Avatar">
+									<span>Samuel</span>
+								</a>
+								<ul class="dropdown-menu logged-user-menu">
+									<li><a href="#"><i class="ti-user"></i> <span>My Profile</span></a></li>
+									<li><a href="appviews-inbox.html"><i class="ti-email"></i> <span>Message</span></a></li>
+									<li><a href="#"><i class="ti-settings"></i> <span>Settings</span></a></li>
+									<li><a href="page-lockscreen.html"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">
+						<li class="menu-group">Main</li>
+						<li class="panel">
+							<li><a href="admin_panel.html" ><i class="flaticon-man-with-tie"></i>Admin</a></li>
+						</li>
+
+						<!--li class="panel">
+							<li><a href="index.html" class="active"><i class="ti-dashboard"></i>Dashboard</a></li>
+						</li-->
+						<li class="panel">
+							<!--li><a href="index.html" class="active"><i class="ti-dashboard"></i>Dashboard</a></li-->
+							<a href="general_dashboard.html" ><!--a href="#dashboard" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed"--><i class="ti-dashboard"></i> <span class="title">Dashboard</span> <!--i class="icon-submenu ti-angle-left"></i--></a>
+							<div id="dashboard" >
+								<ul class="submenu">
+									<li><a href="general_dashboard.html">Gaming</a></li>
+									<li><a href="marketing_dashboard.html">Marketing</a></li>
+									
+								</ul>
+							</div>
+						</li>
+						
+						<li class="panel">
+							<li><a href="questions.html" ><i class="flaticon-question"></i>Questions</a></li>
+						</li>
+						<li class="panel">
+							<li><a href="user_page.html" ><i class="ti-user"></i>User</a></li>
+						</li>
+						<li class="panel">
+							<li><a href="session.html" class="active" ><i class="flaticon-login-1"></i>Session</a></li>
+						</li>
+						<!--<li class="panel">-->
+							<!--<li><a href="#" ><i class="ti-calendar"></i>Events</a></li>-->
+						<!--</li>-->
+
+						<li class="panel">
+							<li><a href="qr_shares.html"  ><i class="flaticon-blackberry-qr-code-variant"></i>QR shares</a></li>
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+
+
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="content-heading clearfix">
+						<div class="heading-left">
+							<h1 class="page-title">Welcome to Admin Panel</h1>
+							<p class="page-subtitle">Admin dashboard for QuizzyCash</p>
+						</div>
+						<ul class="breadcrumb">
+							<li><a href="admin_panel.html"><i class="fa fa-home"></i> Home</a></li>
+							<li class="active"><a href="session.html">Session</a></li>
+							<!--<li class="active">Dashboard v1</li>-->
+						</ul>
+					</div>
+					<div class="container-fluid">
+
+						<div class="row">
+                            <script>
+                            var ws_10,messageContainer;
+
+
+
+                            window.onload = function(){
+                                function createEntry(username, message){
+
+                                    var entry = document.createElement("p");
+                                    entry.class = "_entry";
+                                    var boldtext = document.createElement("b");
+                                    boldtext.class = "_boldtext";
+
+                                    var dom_uname = document.createElement("small");
+                                    dom_uname.class = "_username";
+                                    dom_uname.innerHTML = username+" ";
+                                    boldtext.appendChild(dom_uname);
+                                    entry.appendChild(boldtext);
+
+                                    var dom_msg = document.createElement("small");
+                                    dom_msg.class = "_message";
+                                    dom_msg.innerHTML = message;
+                                    entry.appendChild(dom_msg);
+									updateScroll();
+                                    return entry;
+                            }
+
+                                messageContainer = document.getElementById("panel-body-10");
+                                ws_10 = new WebSocket("ws://52.187.112.27:8080/Websocket/10");
+                                console.log("CONNECTED TO SOCKET");
+//                                ws_1 = new WebSocket("ws://{{ host }}:8080/Websocket/10");
+
+
+                            ws_10.onclose = function(e) {
+                                console.log("WS CLOSED");
+
+          		            };
+
+                            ws_10.onopen = function() {
+                               console.log("Hello, world");
+//                                var temp = "<div>
+//                                        <span> DYN: </span> <span> MESSAGE</span>
+//                                        </div>
+//                                        <div>
+//                                        <span> DYN: </span> <span> MESSAGE</span>
+//                                        </div>";
+//                                document.getElementById("panel-body-10").appendChild(temp);
+
+                                messageContainer = document.getElementById("panel-body-10");
+                                <!--messageContainer.appendChild(createEntry("ABCD", "ABCD"));-->
+                            };
+
+
+                            ws_10.onmessage = function(e){
+                                var data = JSON.parse(e.data);
+                            switch(data.game_key){
+                                case '1':
+                                messageContainer.appendChild(createEntry(data.user_name, data.message));
+                                break;
+
+                                case '2':
+                                //messageContainer.appendChild(createEntry(data.user_name, data.message));
+                                messageContainer.appendChild(createEntry(data.user_name, "Has Joined!"));
+                                break;
+
+                                case '3':
+                                //messageContainer.appendChild(createEntry(data.user_name, data.message));
+                                messageContainer.appendChild(createEntry(data.user_name, "Has Left!"));
+                                break;
+
+                                case '4':
+                                messageContainer.appendChild(createEntry("The game", "Has Started"));
+
+
+                                break;
+
+                                case '5':
+                                messageContainer.appendChild(createEntry(data.user_name, data.message));
+
+                                break;
+
+                                case '6':
+                                if(data.con_id != 'question'){
+                                messageContainer.appendChild(createEntry("hint"+data.con_id.slice(5), data.con));
+                                }
+                                break;
+
+                                default:
+                                break;
+                            }
+                            };
+
+                                }
+							function updateScroll(){
+									element.scrollTop = element.scrollHeight;*/
+									var wtf = $('.chat-box');
+									var height = wtf[0].scrollHeight;
+									wtf.scrollTop(height);
+									console.log("Inside Update Scroll.");
+									$('.chat-box').animate({scrollTop: $('.chat-box').prop("scrollHeight")}, 500);
+
+								}
+                            </script>
+
+							<style>
+							.chat-box
+								{
+								height:400px;
+								overflow:auto;
+								}
+								.chat-box-heading img{
+									width: 45px;
+								}
+								.chat-text-num{
+									top: 25px;
+									z-index: 10000;
+									left: 39px;
+									position: absolute;
+									color: #ffff;
+								}
+
+							</style>
+						<div class="row">
+                            <div class="col-md-4">
+                                <div class="panel">
+                                    <div class="panel-heading chat-box-heading">
+										<img src="../images/chat-box-01.png">&nbsp;&nbsp;&nbsp;
+										<span class="chat-text-num">1</span>
+								        <h3 class="panel-title"> Game Room - Football</h3>
+							         </div>
+
+                                    <div class="panel-body chat-box" id="panel-body-10">
+                                    	<div>
+											<span> THE GAME </span> <span> Has Started.</span>
+										</div>
+										<div>
+											<span> Hint </span> <span> Football </span>
+										</div>
+										<div>
+											<span> John </span> <span> Played Small Blind 100€ </span>
+										</div>
+										<div>
+											<span> Mike </span> <span>  Played Big Blind 200€ </span>
+										</div>
+										<div>
+											<span> John  </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> hint </span> <span> Domestic Competitions </span>
+										</div>
+										<div>
+											<span> John </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Mike </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Hint </span> <span> England </span>
+										</div>
+										<div>
+											<span> John </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Mike </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Winner </span> <span> John </span>
+										</div>
+										<div>
+											<span> Pot Amount Won </span> <span> 360.0 </span>
+										</div>
+										<div>
+											<span> Rake For The Round </span> <span> 40.0 </span>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-md-4">
+								<div class="panel">
+									<div class="panel-heading chat-box-heading">
+										<img src="../images/chat-box-02.png">&nbsp;&nbsp;&nbsp;
+										<span class="chat-text-num">2</span>
+										<h3 class="panel-title">Game Room - Social Science</h3>
+									</div>
+									<div class="panel-body chat-box">
+										<div>
+											<span> THE GAME </span> <span> Has Started.</span>
+										</div>
+										<div>
+											<span> Hint </span> <span> Geography </span>
+										</div>
+										<div>
+											<span> William </span> <span> Played Small Blind 20€ </span>
+										</div>
+										<div>
+											<span> Michael </span> <span>  Played Big Blind 40€ </span>
+										</div>
+										<div>
+											<span> Hint </span> <span>  Countries </span>
+										</div>
+										<div>
+											<span> William </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Michael </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Hint </span> <span> United States </span>
+										</div>
+										<div>
+											<span> William </span> <span> Has Called 0€ </span>
+										</div>
+										<div>
+											<span> Michael </span> <span> Has Bet 0€ </span>
+										</div>
+										<div>
+											<span> Winner </span> <span> Michael </span>
+										</div>
+										<div>
+											<span> Pot Amount Won </span> <span> 144.0 </span>
+										</div>
+										<div>
+											<span> Rake For The Round </span> <span> 16.0 </span>
+										</div>
+										<div>
+											<span> THE GAME </span> <span> Has Started.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            <div class="col-md-4">
+                                <div class="panel">
+                                    <div class="panel-heading chat-box-heading">
+										<img src="../images/chat-box-03.png">&nbsp;&nbsp;&nbsp;
+										<span class="chat-text-num">3</span>
+										<h3 class="panel-title">Game Room - Tennis</h3>
+							         </div>
+                                    <div class="panel-body chat-box">
+                                         <div>
+											<span> THE GAME </span> <span> Has Started.</span>
+										</div>
+										<div>
+											<span> Hint </span> <span> Chemistry </span>
+										</div>
+										<div>
+											<span> Ruby </span> <span> Played Small Blind 1€ </span>
+										</div>
+										<div>
+											<span> Python </span> <span>  Played Big Blind 2€ </span>
+										</div>
+										<div>
+											<span> Ruby  </span> <span> Has Called 1€ </span>
+										</div>
+										<div>
+											<span> Python </span> <span> Has Called 2€ </span>
+										</div>
+										<div>
+											<span> Ruby </span> <span> Has Called 1€ </span>
+										</div>
+										<div>
+											<span> Python </span> <span> Has Bet 2€ </span>
+										</div>
+										<div>
+											<span> Pot Amount </span> <span> 8 </span>
+										</div>
+										<div>
+											<span> Winner </span> <span> Python </span>
+										</div>
+										<div>
+											<span> Pot Amount Won </span> <span> 7 </span>
+										</div>
+										<div>
+											<span> Rake For The Round </span> <span> 1 </span>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+
+						</div>
+
+						<div class="col-md-6">
+                        <!-- FEATURED DATATABLE -->
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Active Game Rooms</h3>
+							</div>
+							<div class="panel-body">
+								<!--<p class="alert alert-info"></p>-->
+								<table id="featured-datatable" class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th>Game Room Id</th>
+											<th>Theme</th>
+											<th>Round</th>
+											<th>Active Players</th>
+											<th>Waiting List</th>
+											<th>Pot Amount</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										</tr>
+
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										</tr>
+
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										</tr>
+
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										</tr>
+
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										</tr>
+
+										<tr>
+											<td><a href="#">763648</a></td>
+											<td>Sports</td>
+											<td>3</td>
+											<td>8</td>
+											<td>40</td>
+											<td>4000</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- END FEATURED DATATABLE -->
+							</div>
+							<div class="col-md-6">
+								<!-- RECENT PURCHASES -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h4 class="panel-title">Recent User Activity</h4>
+										<div class="right">
+											<span class="link"><i class="fa fa-shopping-bag"></i> <a href="#">View All Activities</a></span>
+										</div>
+									</div>
+									<div class="panel-body no-padding">
+										<div class="table-responsive">
+											<table class="table table-minimal table-fullwidth table-striped">
+												<thead>
+													<tr>
+														<th>User Id </th>
+                                                        <th>NAME</th>
+                                                        <th>Game Action</th>
+                                                        <th>AMOUNT</th>
+														<th>Date &amp; Time</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><a href="#">763648</a></td>
+                                                        <td>Steve</td>
+                                                        <td>Call</td>
+                                                        <td>122</td>
+														<td>Oct 21, 2016 &nbsp;&nbsp;
+															<span class="text-muted">10:23 AM</span>
+														</td>
+
+													</tr>
+													<tr>
+														<td><a href="#">763649</a></td>
+														<td>Amber</td>
+														<td>Bet</td>
+														<td>62</td>
+														<td>Oct 21, 2016 &nbsp;&nbsp;
+															<span class="text-muted">10:18 AM</span>
+														</td>
+
+													</tr>
+													<tr>
+														<td><a href="#">763650</a></td>
+														<td>Michael</td>
+														<td>Bet</td>
+														<td>34</td>
+														<td>Oct 18, 2016 &nbsp;&nbsp;
+															<span class="text-muted">09:22 AM</span>
+														</td>
+
+													</tr>
+													<tr>
+														<td><a href="#">763651</a></td>
+														<td>Roger</td>
+														<td>All In</td>
+														<td>186</td>
+														<td>Oct 17, 2016 &nbsp;&nbsp;
+															<span class="text-muted">08:47 AM</span>
+														</td>
+
+													</tr>
+													<tr>
+														<td><a href="#">763652</a></td>
+														<td>Smith</td>
+														<td>Fold</td>
+														<td>362</td>
+														<td>Oct 16, 2016 &nbsp;&nbsp;
+															<span class="text-muted">11:18 PM</span>
+														</td>
+
+													</tr>
+													<tr>
+														<td><a href="#">763651</a></td>
+														<td>Claudia</td>
+														<td>Call</td>
+														<td>112</td>
+														<td>Oct 15, 2016 &nbsp;&nbsp;
+															<span class="text-muted">10:08 PM</span>
+														</td>
+
+													</tr>
+													<tr>
+														<td><a href="#">763650</a></td>
+														<td>Simon</td>
+														<td>Bet</td>
+														<td>285</td>
+														<td>Oct 15, 2016 &nbsp;&nbsp;
+															<span class="text-muted">09:42 PM</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- END RECENT PURCHASES -->
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-7">
+								<div class="panel">
+									<div class="panel-heading">
+										<h4 class="panel-title">Top Banners </h4>
+									</div>
+									<div class="panel-body no-padding">
+										<div class="table-responsive">
+											<table class="table table-minimal table-striped table-fullwidth table-icons-stat">
+												<thead class="hide">
+													<tr>
+														<th>Product Name</th>
+														<th>Views</th>
+														<th>Sales</th>
+														<th>Revenue</th>
+														<th>Downloads</th>
+														<th>View Detail</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>OneBeez</td>
+														<td><i class="fa fa-eye"></i> 1656</td>
+														<td><i class="fa fa-hand-o-up"></i> 454</td>
+														<td><i class="fa fa-share-alt"></i> 3467</td>
+                                                        <td><i class="fa fa-money"></i> $4536</td>
+                                                        <td><a href="#"><i class="fa fa-bar-chart"></i></a></td>
+													</tr>
+													<tr>
+														<td>Hover</td>
+														<td><i class="fa fa-eye"></i> 4254</td>
+														<td><i class="fa fa-hand-o-up"></i> 452</td>
+														<td><i class="fa fa-share-alt"></i> 1273</td>
+                                                        <td><i class="fa fa-money"></i> $574</td>
+                                                        <td><a href="#"><i class="fa fa-bar-chart"></i></a></td>
+													</tr>
+													<tr>
+														<td>KingAdmin</td>
+														<td><i class="fa fa-eye"></i> 87989</td>
+														<td><i class="fa fa-hand-o-up"></i> 8345</td>
+														<td><i class="fa fa-share-alt"></i> 10837</td>
+                                                        <td><i class="fa fa-money"></i> $756142</td>
+                                                        <td><a href="#"><i class="fa fa-bar-chart"></i></a></td>
+													</tr>
+													<tr>
+														<td>Repute</td>
+														<td><i class="fa fa-eye"></i> 25754</td>
+														<td><i class="fa fa-hand-o-up"></i> 5663</td>
+														<td><i class="fa fa-share-alt"></i> 1654</td>
+                                                        <td><i class="fa fa-money"></i> $1754</td>
+                                                        <td><a href="#"><i class="fa fa-bar-chart"></i></a></td>
+													</tr>
+													<tr>
+														<td>Bravana</td>
+														<td><i class="fa fa-eye"></i> 86745</td>
+														<td><i class="fa fa-hand-o-up"></i> 456</td>
+														<td><i class="fa fa-share-alt"></i> 2788</td>
+                                                        <td><i class="fa fa-money"></i> $5642</td>
+                                                        <td><a href="#"><i class="fa fa-bar-chart"></i></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
+							<div class="col-md-6 sortable-item">
+								<!-- SHARES GOAL -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">Shares Goal</h3>
+									</div>
+									<div class="panel-body">
+										<div id="progress-share" class="progress-semicircle" data-max="500">
+											<div class="bar-overflow">
+												<div class="bar"></div>
+											</div>
+											<span class="content">
+												<i class="fa fa-share-alt icon"></i>
+												<span class="value">380</span>
+												<h4 class="heading">Share more products!</h4>
+												<p class="text-muted">Get free product if you reach 500 shares goal</p>
+												<button type="button" class="btn btn-primary">Share Now</button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<!-- END SHARES GOAL -->
+							</div>
+
+							<div class="col-md-6 sortable-item">
+								<!-- VISIT DURATION -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">Visit Duration</h3>
+									</div>
+									<div class="panel-body">
+										<canvas id="horizontalbar-chart" height="250"></canvas>
+									</div>
+								</div>
+								<!-- END VISIT DURATION -->
+								<!-- END RESOURCE ACTIVITY -->
+								</div>
+
+
+							</div>
+							<div class="col-md-5">
+								<div class="panel">
+									<div class="panel-heading">
+										<h4 class="panel-title">Leaderboard</h4>
+									</div>
+									<div class="panel-body no-padding">
+										<div class="leaderboard padding-top-30">
+											<div class="custom-tabs-line left-aligned">
+												<ul class="nav nav-justified" role="tablist">
+													<li class="active"><a href="#following" role="tab" data-toggle="tab">Top Gainer</a></li>
+													<li><a href="#global" role="tab" data-toggle="tab">Top Spenders</a></li>
+												</ul>
+											</div>
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane active" id="following">
+													<ul class="list-unstyled list-positions">
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 130</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/male1.png" class="user-picture" alt="">
+																	<span class="position-number">1</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Johnny Jenkins</a>
+																	<span class="username">johnny.j</span>
+																</div>
+															</div>
+															<span class="points">34535</span>
+														</li>
+														<li class="position down clearfix">
+															<span class="change"><i class="fa fa-sort-down icon-change"></i> 73</span>
+															<div class="account">
+																<div class="user">
+																	<span class="user-picture anonymous"><i class="fa fa-user-secret"></i></span>
+																	<span class="position-number">2</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Betty Peters</a>
+																	<span class="username">betty.petters</span>
+																</div>
+															</div>
+															<span class="points">32873</span>
+														</li>
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 86</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/female1.png" class="user-picture" alt="">
+																	<span class="position-number">3</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Martha</a>
+																	<span class="username">justmartha90</span>
+																</div>
+															</div>
+															<span class="points">32010</span>
+														</li>
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 342</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/male2.png" class="user-picture" alt="">
+																	<span class="position-number">4</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Eric Ellis</a>
+																	<span class="username">eric.ellis</span>
+																</div>
+															</div>
+															<span class="points">29083</span>
+														</li>
+														<li class="position down clearfix">
+															<span class="change"><i class="fa fa-sort-down icon-change"></i> 173</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/female2.png" class="user-picture" alt="">
+																	<span class="position-number">5</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Cynthia James</a>
+																	<span class="username">c.james</span>
+																</div>
+															</div>
+															<span class="points">28847</span>
+														</li>
+														<li class="position down clearfix">
+															<span class="change"><i class="fa fa-sort-down icon-change"></i> 22</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/female3.png" class="user-picture" alt="">
+																	<span class="position-number">6</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Deborah Larson</a>
+																	<span class="username">thelarson53</span>
+																</div>
+															</div>
+															<span class="points">28598</span>
+														</li>
+													</ul>
+												</div>
+												<div role="tabpanel" class="tab-pane" id="global">
+													<ul class="list-unstyled list-positions">
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 287</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/male3.png" class="user-picture" alt="">
+																	<span class="position-number">1</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Abraham</a>
+																	<span class="username">abe085</span>
+																</div>
+															</div>
+															<span class="points">55198</span>
+														</li>
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 23</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/female4.png" class="user-picture" alt="">
+																	<span class="position-number">2</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Brittany Morales</a>
+																	<span class="username">britt_morales123</span>
+																</div>
+															</div>
+															<span class="points">55006</span>
+														</li>
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 15</span>
+															<div class="account">
+																<div class="user">
+																	<img src="assets/img/people/male4.png" class="user-picture" alt="">
+																	<span class="position-number">3</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Gary Adams</a>
+																	<span class="username">GaryHimSelf</span>
+																</div>
+															</div>
+															<span class="points">54781</span>
+														</li>
+														<li class="position down clearfix">
+															<span class="change"><i class="fa fa-sort-down icon-change"></i> 22</span>
+															<div class="account">
+																<div class="user">
+																	<span class="user-picture anonymous"><i class="fa fa-user-secret"></i></span>
+																	<span class="position-number">4</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Andrew Peters</a>
+																	<span class="username">andrew093</span>
+																</div>
+															</div>
+															<span class="points">54632</span>
+														</li>
+														<li class="position down clearfix">
+															<span class="change"><i class="fa fa-sort-down icon-change"></i> 167</span>
+															<div class="account">
+																<div class="user">
+																	<span class="user-picture anonymous"><i class="fa fa-user-secret"></i></span>
+																	<span class="position-number">5</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">David Fernandez</a>
+																	<span class="username">fernandezzz</span>
+																</div>
+															</div>
+															<span class="points">54411</span>
+														</li>
+														<li class="position up clearfix">
+															<span class="change"><i class="fa fa-sort-up icon-change"></i> 43</span>
+															<div class="account">
+																<div class="user">
+																	<span class="user-picture anonymous"><i class="fa fa-user-secret"></i></span>
+																	<span class="position-number">6</span>
+																</div>
+																<div class="right">
+																	<a href="#" class="name">Nicole Perkins</a>
+																	<span class="username">nperkins987</span>
+																</div>
+															</div>
+															<span class="points">54387</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<!-- TOP METRICS -->
+
+						<!-- END OVERVIEW -->
+					</div>
+					</div>
+
+
+			</div>
+				<!-- END MAIN CONTENT -->
+
+				<!-- RIGHT SIDEBAR -->
+				<div id="sidebar-right" class="right-sidebar">
+					<div class="sidebar-widget">
+						<h4 class="widget-heading"><i class="fa fa-calendar"></i> TODAY</h4>
+						<p class="date">Wednesday, 22 December</p>
+						<div class="row margin-top-30">
+							<div class="col-xs-4">
+								<a href="#">
+									<div class="icon-transparent-area custom-color-blue first">
+										<i class="fa fa-tasks"></i>
+										<span>Tasks</span>
+										<span class="badge">5</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#">
+									<div class="icon-transparent-area custom-color-green">
+										<i class="fa fa-envelope"></i>
+										<span>Mail</span>
+										<span class="badge">12</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#">
+									<div class="icon-transparent-area custom-color-orange last">
+										<i class="fa fa-user-plus"></i>
+										<span>Users</span>
+										<span class="badge">24</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar-widget">
+						<div class="widget-header">
+							<h4 class="widget-heading">YOUR APPS</h4>
+							<a href="#" class="show-all">Show all</a>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="Dropbox" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-dropbox dropbox-color"></i>
+								</a>
+							</div>
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="WordPress" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-wordpress wordpress-color"></i>
+								</a>
+							</div>
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="Drupal" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-drupal drupal-color"></i>
+								</a>
+							</div>
+							<div class="col-xs-3">
+								<a href="#" class="icon-app" title="Github" data-toggle="tooltip" data-placement="top">
+									<i class="fa fa-github github-color"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar-widget">
+						<div class="widget-header">
+							<h4 class="widget-heading">MY PROJECTS</h4>
+							<a href="#" class="show-all">Show all</a>
+						</div>
+						<ul class="list-unstyled list-project-progress">
+							<li>
+								<a href="#" class="project-name">Project XY</a>
+								<div class="progress progress-xs progress-transparent custom-color-orange">
+									<div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width:67%"></div>
+								</div>
+								<span class="percentage">67%</span>
+							</li>
+							<li>
+								<a href="#" class="project-name">Growth Campaign</a>
+								<div class="progress progress-xs progress-transparent custom-color-blue">
+									<div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width:23%"></div>
+								</div>
+								<span class="percentage">23%</span>
+							</li>
+							<li>
+								<a href="#" class="project-name">Website Redesign</a>
+								<div class="progress progress-xs progress-transparent custom-color-green">
+									<div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width:87%"></div>
+								</div>
+								<span class="percentage">87%</span>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<div class="widget-header">
+							<h4 class="widget-heading">MY FILES</h4>
+							<a href="#" class="show-all">Show all</a>
+						</div>
+						<ul class="list-unstyled list-justify list-file-simple">
+							<li><a href="#"><i class="fa fa-file-word-o"></i>Proposal_draft.docx</a>
+								<span>4 MB</span>
+							</li>
+							<li><a href="#"><i class="fa fa-file-pdf-o"></i>Manual_Guide.pdf</a>
+								<span>20 MB</span>
+							</li>
+							<li><a href="#"><i class="fa fa-file-zip-o"></i>all-project-files.zip</a>
+								<span>315 MB</span>
+							</li>
+							<li><a href="#"><i class="fa fa-file-excel-o"></i>budget_estimate.xls</a>
+								<span>1 MB</span>
+							</li>
+						</ul>
+					</div>
+					<p class="text-center"><a href="#" class="btn btn-default btn-xs">More Widgets</a></p>
+				</div>
+				<!-- END RIGHT SIDEBAR -->
+			</div>
+			<!-- END MAIN -->
+		<div>
+        <div class="clearfix"></div>
+			<!--<footer>-->
+				<!--<div class="container-fluid">-->
+					<!--<p class="copyright">&copy; 2017 <a href="http://www.myraatechnologies.com/" target="_blank">Myraa Technologies</a>. All Rights Reserved.</p>-->
+				<!--</div>-->
+			<!--</footer>-->
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/pace/pace.min.js"></script>
+		<script src="assets/vendor/bootstrap-progressbar/js/bootstrap-progressbar.min.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.resize.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.time.js"></script>
+		<script src="assets/vendor/flot.tooltip/jquery.flot.tooltip.js"></script>
+		<script src="assets/vendor/x-editable/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+		<script src="assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+		<script src="assets/vendor/moment/min/moment.min.js"></script>
+		<script src="assets/vendor/jquery-sparkline/js/jquery.sparkline.min.js"></script>
+		<script src="assets/vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widget.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/data.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/scroll-parent.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/disable-selection.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widgets/sortable.js"></script>
+		<script src="assets/vendor/datatables/js-main/jquery.dataTables.min.js"></script>
+		<script src="assets/vendor/datatables/js-bootstrap/dataTables.bootstrap.min.js"></script>
+		<script src="assets/vendor/jquery-appear/jquery.appear.min.js"></script>
+		<script src="assets/vendor/jqvmap/jquery.vmap.min.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.usa.js"></script>
+		<script src="assets/vendor/chart-js/Chart.min.js"></script>
+		<script src="assets/vendor/raphael/raphael.min.js"></script>
+		<script src="assets/vendor/justgage-toorshia/justgage.js"></script>
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/pace/pace.min.js"></script>
+		<script src="assets/vendor/datatables/js-main/jquery.dataTables.min.js"></script>
+		<script src="assets/vendor/datatables/js-bootstrap/dataTables.bootstrap.min.js"></script>
+		<script src="assets/vendor/datatables-colreorder/dataTables.colReorder.js"></script>
+		<script src="assets/vendor/datatables-tabletools/js/dataTables.tableTools.js"></script>
+		<script src="assets/scripts/klorofilpro-common.js"></script>
+
+		<!-- DEMO PANEL -->
+		<!-- for demo purpose only, you should remove it on your project directory -->
+
+        <script type="text/javascript">
+		var toggleDemoPanel = function(e)
+		{
+			e.preventDefault();
+			var panel = document.getElementById('demo-panel');
+			if (panel.className) panel.className = '';
+			else panel.className = 'active';
+		}
+		// fix each iframe src when back button is clicked
+		$(function()
+		{
+			$('iframe').each(function()
+			{
+				this.src = this.src;
+			});
+		});
+		</script>
+		
+		<!-- END DEMO PANEL -->
+
+		<script>
+
+		$(function()
+		{
+			// metric's progress bar
+			$('.progress-bar').progressbar(
+			{
+				display_text: 'fill'
+			});
+			Chart.defaults.global.defaultFontColor = '#a0aeba';
+			var ctx = document.getElementById("headline-chart").getContext("2d");
+			var headlineChart = new Chart(ctx,
+			{
+				type: 'line',
+				data:
+				{
+					labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+					datasets: [
+					{
+						data: [123, 129, 124, 130, 132, 139, 140],
+						label: 'Previous Week',
+						backgroundColor: 'rgba(0, 183, 253, .25)',
+						borderColor: 'transparent',
+					},
+					{
+						data: [125, 127, 123, 132, 129, 138, 144],
+						label: 'This Week',
+						backgroundColor: 'rgba( 0, 157, 255, .5)',
+						borderColor: 'transparent',
+					}],
+				},
+				options:
+				{
+					responsive: true,
+					elements:
+					{
+						line:
+						{
+							borderWidth: 1,
+						},
+						point:
+						{
+							radius: 0
+						}
+					},
+					scales:
+					{
+						xAxes: [
+						{
+							gridLines:
+							{
+								display: false
+							}
+						}],
+						yAxes: [
+						{
+							gridLines:
+							{
+								color: '#e5e5e5',
+								drawBorder: false,
+								borderDash: [4, 8]
+							},
+							ticks:
+							{
+								callback: function(value, index, values)
+								{
+									return '$' + value;
+								}
+							},
+						}]
+					},
+					tooltips:
+					{
+						position: 'nearest',
+						mode: 'index',
+						intersect: false
+					}
+				}
+			});
+			// visit duration
+			Chart.defaults.global.defaultFontColor = '#a0aeba';
+			var ctxHorizontalBarChart = document.getElementById("horizontalbar-chart").getContext("2d");
+			var horizontalBarChart = new Chart(ctxHorizontalBarChart,
+			{
+				type: 'horizontalBar',
+				data:
+				{
+					labels: ['0-10s', '11s-30s', '31s-60s', '1m-2m', '3m-5m', '6m-10m', '> 10m'],
+					datasets: [
+					{
+						data: [4000, 4500, 3700, 2990, 1655, 1423, 1123],
+						backgroundColor: 'rgba(0,184,235,0.2)'
+					}]
+				},
+				options:
+				{
+					responsive: true,
+					legend:
+					{
+						display: false
+					},
+					scales:
+					{
+						xAxes: [
+						{
+							display: false
+						}],
+						yAxes: [
+						{
+							gridLines:
+							{
+								display: false,
+								drawBorder: false
+							}
+						}]
+					}
+				}
+			});
+			// gauge chart
+			var activityGauge = new JustGage(
+			{
+				id: "gauge",
+				value: getRandomInt(0, 100),
+				valueFontColor: '#5E6773',
+				valueFontFamily: 'Roboto, sans-serif',
+				valueMinFontSize: 28,
+				symbol: '%',
+				min: 0,
+				max: 100,
+				minTxt: '0%',
+				maxTxt: '100%',
+				label: 'resource allocated',
+				labelFontColor: '#A0AEBA',
+				labelMinFontSize: 12,
+				counter: true,
+				pointer: true,
+				pointerOptions:
+				{
+					color: '#5E6773'
+				}
+			});
+			setInterval(function()
+			{
+				activityGauge.refresh(getRandomInt(0, 100));
+			}, 2000);
+			var runProgressShareOnce = false;
+			$('#progress-share').bind('appear', function()
+			{
+				if (runProgressShareOnce) return false;
+				$(this).each(function()
+				{
+					var $bar = $(this).find(".bar");
+					var $val = $(this).find(".value");
+					var perc = parseInt($val.text(), 10);
+					var scale = 180 / parseInt($(this).attr('data-max'));
+					$(
+					{
+						p: 0
+					}).animate(
+					{
+						p: perc
+					},
+					{
+						duration: 3000,
+						easing: "swing",
+						step: function(p)
+						{
+							$bar.css(
+							{
+								transform: "rotate(" + (45 + (p * scale)) + "deg)",
+							});
+							$val.text(p | 0);
+						}
+					});
+				});
+				runProgressShareOnce = true;
+			});
+			// datatable with paging options and live search
+			$('#featured-datatable').dataTable(
+			{
+				sDom: "<'row'<'col-sm-6'l><'col-sm-6'f>r>t<'row'<'col-sm-6'i><'col-sm-6'p>>",
+			});
+			$('#headlinechart-controls #toggleWeeklyAvg').on('change', function()
+			{
+				var newDataset = {
+					data: [124, 128, 129, 131, 131, 137, 142],
+					label: 'Weekly Avg.',
+					fill: false,
+					borderWidth: 2,
+					borderDash: [5, 5],
+					pointRadius: 3,
+					pointHoverRadius: 5,
+					borderColor: '#5e6773',
+					backgroundColor: 'transparent'
+				}
+				if ($(this).is(':checked'))
+				{
+					headlineChart.data.datasets.push(newDataset);
+				}
+				else
+				{
+					headlineChart.data.datasets.pop();
+				}
+				headlineChart.update();
+			});
+			$('#headlinechart-controls #toggleTension').on('change', function()
+			{
+				headlineChart.options.elements.line.tension = $(this).is(':checked') ? 0.000001 : 0.4;
+				headlineChart.update();
+			});
+			// real-time usage chart
+			var usageData = [],
+				totalPoints = 20;
+			function getRandomData()
+			{
+				if (usageData.length > 0)
+					usageData = usageData.slice(1);
+				while (usageData.length < totalPoints)
+				{
+					var y = Math.random() * 100
+					usageData.push(y);
+				}
+				var result = [];
+				for (var i = 0; i < usageData.length; ++i)
+				{
+					result.push([i, usageData[i]])
+				}
+				return result;
+			}
+			var usageChart = $.plot($('#real-time-usage'), [getRandomData()],
+			{
+				series:
+				{
+					lines:
+					{
+						fill: true,
+						fillColor: '#53c265'
+					}
+				},
+				colors: ['#53c265'],
+				grid:
+				{
+					show: false,
+				},
+			});
+			setInterval(function()
+			{
+				usageChart.setData([getRandomData()]);
+				usageChart.draw();
+				$('.widget-mini-realtime-usage').find('.number').text((Math.random() * 100).toFixed(2));
+			}, 1000);
+			// real-time pie chart
+			var sysLoad = $('#load-chart').easyPieChart(
+			{
+				size: 130,
+				barColor: function(percent)
+				{
+					return "rgb(" + Math.round(200 * percent / 100) + ", " + Math.round(200 * (1.1 - percent / 100)) + ", 0)";
+				},
+				trackColor: 'rgba(187, 202, 213, .2)',
+				scaleColor: false,
+				lineWidth: 8,
+				lineCap: "round",
+				animate: 800
+			});
+			var updateInterval = 3000; // in milliseconds
+			setInterval(function()
+			{
+				var randomVal;
+				randomVal = getRandomInt(0, 100);
+				sysLoad.data('easyPieChart').update(randomVal);
+				sysLoad.find('.percent .number').text(randomVal);
+				$('.widget-system-load .info .number').each(function()
+				{
+					$(this).text(getRandomInt(0, 100))
+				});
+			}, updateInterval);
+			function getRandomInt(min, max)
+			{
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			// visits table
+			var exportTable = $('#datatable-data-export').DataTable(
+			{
+				sDom: "T<'clearfix'>" +
+					"<'row'<'col-sm-6'l><'col-sm-6'f>r>" +
+					"t" +
+					"<'row'<'col-sm-6'i><'col-sm-6'p>>",
+				"tableTools":
+				{
+					"sSwfPath": "assets/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf"
+				}
+			});
+		});
+		</script>
+	</body>
+</html>
+        <!--<script type="text/javascript">-->
+		<!--var toggleDemoPanel = function(e)-->
+		<!--{-->
+			<!--e.preventDefault();-->
+			<!--var panel = document.getElementById('demo-panel');-->
+			<!--if (panel.className) panel.className = '';-->
+			<!--else panel.className = 'active';-->
+		<!--}-->
+		<!--// fix each iframe src when back button is clicked-->
+		<!--$(function()-->
+		<!--{-->
+			<!--$('iframe').each(function()-->
+			<!--{-->
+				<!--this.src = this.src;-->
+			<!--});-->
+		<!--});-->
+
+		<!--$('#sales-performance').sparkline('html',-->
+			<!--{-->
+				<!--width: '70%',-->
+				<!--height: '40px',-->
+				<!--lineWidth: '2',-->
+				<!--lineColor: '#00aaff',-->
+				<!--fillColor: false,-->
+				<!--spotRadius: '2',-->
+				<!--highlightLineColor: '#aedaff',-->
+				<!--highlightSpotColor: '#71aadb',-->
+				<!--spotColor: false,-->
+				<!--minSpotColor: false,-->
+				<!--maxSpotColor: false,-->
+				<!--disableInteraction: false-->
+			<!--});-->
+
+			<!--var mapData = {'gw': '2028', 'gt': '1644', 'gr': '1225', 'gq': '1773', 'gy': '2078', 'ge': '1896', 'gd': '2769', 'gb': '1368', 'ga': '2983', 'gn': '2853', 'gm': '1113', 'gh': '2258', 'tz': '2947', 'lc': '1063', 'la': '2683', 'tw': '1342', 'tt': '2832', 'tr': '1517', 'lk': '2542', 'tn': '2586', 'to': '1735', 'tl': '2810', 'tm': '2104', 'tj': '2246', 'ls': '1471', 'th': '2341', 'tg': '1522', 'td': '1073', 'ly': '1141', 'do': '1994', 'dm': '2241', 'dj': '2588', 'dk': '2080', 'de': '2351', 'ye': '2475', 'dz': '1270', 'uy': '1778', 'vu': '1230', 'qa': '2366', 'zm': '2974', 'ee': '2804', 'eg': '1500', 'za': '1219', 'ec': '1338', 'us': '1234', 'et': '2036', 'zw': '1546', 'es': '1746', 'er': '2763', 'ru': '1686', 'rw': '2898', 'rs': '2488', 'ro': '1845', 'bd': '2225', 'be': '1843', 'bf': '1421', 'bg': '2716', 'ba': '2447', 'bb': '1273', 'bh': '2879', 'bn': '1911', 'bo': '2067', 'jp': '2601', 'bi': '2818', 'bj': '2893', 'bt': '1900', 'jm': '2698', 'jo': '2389', 'ws': '1160', 'br': '2536', 'bs': '1869', 'lb': '1694', 'by': '1242', 'bz': '2034', 'om': '2351', 'ua': '1332', 'lr': '1823', 'bw': '1284', 'ci': '2365', 'ch': '2161', 'co': '1436', 'cn': '2514', 'cm': '2699', 'cl': '1833', 'al': '1991', 'ca': '1153', 'cg': '1677', 'cf': '2594', 'cd': '1089', 'cz': '1062', 'cy': '2221', 'cr': '2240', 'cv': '1182', 'lv': '2890', 'pt': '2658', 'py': '2918', 'lt': '1759', 'at': '1123', 'pa': '2160', 'pg': '1942', 'pe': '1029', 'pk': '2311', 'ph': '1831', 'pl': '1079', 'hr': '2945', 'ht': '2366', 'hu': '2808', 'hk': '1694', 'lu': '2469', 'hn': '1601', 'ao': '2056', 'me': '2892', 'md': '1256', 'mg': '2295', 'ma': '2542', 'uz': '2006', 'mm': '2344', 'ml': '2797', 'mn': '1525', 'mk': '2874', 'mu': '2454', 'mt': '1653', 'mw': '2110', 'mv': '1332', 'mr': '2184', 'ug': '1497', 'my': '2489', 'mx': '1443', 'mz': '2891', 'vc': '2627', 'ae': '2044', 've': '1514', 'ag': '1912', 'af': '1677', 'iq': '1528', 'is': '1515', 'ir': '1380', 'am': '1481', 'it': '1098', 'vn': '1032', 'kn': '2184', 'ar': '1279', 'au': '1248', 'il': '2343', 'in': '1602', 'az': '1439', 'ie': '2333', 'id': '1274', 'ni': '1420', 'nl': '1981', 'no': '1709', 'na': '2663', 'ne': '2842', 'ng': '2209', 'nz': '1469', 'np': '2147', 'fr': '2151', 'kz': '1621', 'fi': '1030', 'fj': '1275', 'sz': '2026', 'sy': '2213', 'kg': '2045', 'undefined': '2266', 'ke': '1582', 'sr': '1491', 'ki': '2430', 'kh': '1460', 'sv': '2278', 'km': '2208', 'st': '2966', 'sk': '2661', 'kr': '1857', 'si': '2460', 'kw': '2575', 'sn': '2711', 'sl': '1616', 'sc': '2934', 'sb': '1137', 'sa': '1068', 'sg': '2961', 'se': '2600', 'sd': '2100'}-->
+
+			<!--$('#map-email-opens').vectorMap(-->
+			<!--{-->
+				<!--map: 'world_en',-->
+				<!--values: mapData,-->
+				<!--backgroundColor: 'transparent',-->
+				<!--color: '#f2f4f6',-->
+				<!--borderColor: '#D1D4D7',-->
+				<!--borderOpacity: 0.5,-->
+				<!--scaleColors: ["#E7F5FF", "#9AA9B4"],-->
+				<!--normalizeFunction: 'polynomial',-->
+				<!--onLabelShow: function(event, label, code)-->
+				<!--{-->
+					<!--if (mapData[code] !== undefined)-->
+					<!--{-->
+						<!--label.text(code.toUpperCase() + ': ' + mapData[code]);-->
+					<!--}-->
+				<!--},-->
+			<!--});-->
+			<!--&lt;!&ndash;{&ndash;&gt;-->
+				<!--&lt;!&ndash;map: 'world_en',&ndash;&gt;-->
+				<!--&lt;!&ndash;backgroundColor: 'transparent',&ndash;&gt;-->
+				<!--&lt;!&ndash;color: '#f2f4f6',&ndash;&gt;-->
+				<!--&lt;!&ndash;borderColor: '#D1D4D7',&ndash;&gt;-->
+				<!--&lt;!&ndash;borderOpacity: 0.5,&ndash;&gt;-->
+				<!--&lt;!&ndash;values: mapData,&ndash;&gt;-->
+				<!--&lt;!&ndash;scaleColors: ["#E7F5FF", "#9AA9B4"],&ndash;&gt;-->
+				<!--&lt;!&ndash;normalizeFunction: 'polynomial',&ndash;&gt;-->
+				<!--&lt;!&ndash;onLabelShow: function(event, label, code)&ndash;&gt;-->
+				<!--&lt;!&ndash;{&ndash;&gt;-->
+					<!--&lt;!&ndash;if (sample_data[code] !== undefined)&ndash;&gt;-->
+					<!--&lt;!&ndash;{&ndash;&gt;-->
+						<!--&lt;!&ndash;label.text(code.toUpperCase() + ': ' + sample_data[code]);&ndash;&gt;-->
+					<!--&lt;!&ndash;}&ndash;&gt;-->
+				<!--&lt;!&ndash;},&ndash;&gt;-->
+			<!--&lt;!&ndash;});&ndash;&gt;-->
+		<!--</script>-->
+		<!--<div id="demo-panel">-->
+			<!--<a href="#" onclick="toggleDemoPanel(event);"><i class="fa fa-cog fa-spin"></i></a>-->
+			<!--<iframe src="demo-panel/index.html"></iframe>-->
+		<!--</div>-->
+		<!--&lt;!&ndash; END DEMO PANEL &ndash;&gt;-->
+	<!--</body>-->
+<!--</html>-->

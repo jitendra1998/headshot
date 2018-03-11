@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizzyCash</title>
+    <link rel="icon" href="{{ static_url('images/favicon.jpg')}}" type="image/png">
+    <link rel="stylesheet" href="{{ static_url('lib/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Libre+Baskerville|Patua+One|Prompt|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Boogaloo|Courgette|Merienda|Permanent+Marker|Quattrocento|Satisfy" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/join_game.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/navbar.css') }}">
+
+    <script type="text/javascript" src="{{ static_url('lib/jquery/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('lib/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/join_game.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Spectral+SC" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9309e82b92.js"></script>
+    <script src="{{ static_url('js/log4javascript.js') }}" type="text/javascript"></script>
+    <script>
+        var ws, user_seat_no = 0, user_taken = 0, ans, user_animation = 0, pause = 1,id, user_buy_in;
+        var logger = log4javascript.getDefaultLogger();
+        $(document).ready(function(){
+            $("#game-room").hide();
+
+            // Logout
+            $("#logout-btn").click(function(){
+                if(user_taken == 1){
+                    sit_out();
+                    }
+                $.ajax(
+                {
+                 type: "POST",
+                 url: "http://{{ host }}:8080/user/logout",
+                 data: {"username" : '{{ user_name }}'},
+                 success: function(response)
+                       {
+                        window.location.href = "http://{{ host }}:8080/user/login";
+                       }
+                });
+            });
+
+//            $("#sit-go").focus();
+//            $("#sit-go").addClass("selected-state");
+//
+//
+//            $("#sit-go").click(function () {
+//                  if(!$("#sit-go").hasClass("selected-state")) {
+//                      $("#sit-go").addClass("selected-state");
+//                  }
+//                  $("#join-waiting-list").removeClass("selected-state");
+//            });
+//
+//            $("#join-waiting-list-go").click(function () {
+//                  if(!$("#join-waiting-list").hasClass("selected-state")) {
+//                      $("#join-waiting-list").addClass("selected-state");
+//                  }
+//                  $("#sit-go").removeClass("selected-state");
+//            });
+
+            // Joins the game room
+            $("#join-game").click(function(){
+                $("#buyInModal").modal('show');
+                });
+
+            // Gets the game room ID and also checks if user is can enter game room based on buyin amount
+            $("#games tr").click(function(e){
+
+                $("#balance-low").hide();
+                $("#game-room").hide();
+                $("#join-game-buttons").hide();
+
+                // $("#game tr td").removeClass("highlight");
+                //
+                // $(this).addClass("highlight");
+
+                //setting hexagons to default
+                for(var i=1; i<=10; i++){
+                    if(i%2 ==0) {
+                        $("#seat_" + i).attr("src", "{{ static_url('images/takethisseat_girl.png') }}");
+                    }
+                    else
+                        $("#seat_" + i).attr("src", "{{ static_url('images/takethisseat_boy.png') }}");
+                    $("#seat_"+i+"-profile").css("visibility","hidden");
+                    $("#seat_"+i+"-name").text("");
+                    $("#seat_"+i+"-money").text("");
+                }
+
+                id = $(this).attr('value');
+                console.log(id);
+                openWS(id);
+                var min_buy = $(this).children('td:nth-child(4)').html();
+                var max_buy = $(this).children('td:nth-child(5)').html();
+                var user = "{{ user_balance }}";
+//                var noOfUsers = $(this).children('td:nth-child(3)').html();
+
+                //sets the text to theme
+                var theme = $(this).children('td:nth-child(2)').html();
+                var len = theme.length;
+                if(len<10){
+                    changeCSS(".hint-text-display","font-size: 26px; line-height: 28px");
+                } else if(len>10 && len<30){
+                    changeCSS(".hint-text-display","font-size: 16px; line-height: 18px");
+                } else if(len>30){
+                    changeCSS(".hint-text-display","font-size: 12px; line-height: 14px");
+                }
+                $("#hint-text").text(theme);
+
+
+                //
+                if(parseInt(user)<parseInt(min_buy)){
+                    $("#balance-low").show();
+                    }
+                else{
+                   $("#game-room").show();
+                   $("#join-game-buttons").show();
+                   document.getElementById('min_buyin_text').innerHTML = min_buy;
+                   document.getElementById('max_buyin_text').innerHTML = max_buy;
+                   document.getElementById('buyin_text').innerHTML = max_buy;
+                   user_buy_in = parseInt(max_buy);
+                   $("#buyin-slider").slider({
+                        range: "min",
+                        value: parseFloat(max_buy),
+                        min: parseFloat(min_buy),
+                        max: parseFloat(max_buy),
+                        step:0.01 ,
+                        offset: "0, 1",
+
+                       slide: function(event, ui) {
+                            user_buy_in = parseFloat(ui.value);
+                            document.getElementById('buyin_text').innerHTML = user_buy_in + "\u20ac";
+                            }
+                        });
+                    }
+            });
+
+             // if(len<10){
+             //                changeCSS(".hint-text-display","font-size: 26px; line-height: 28px");
+             //                changeCSS(".hint-text-animate","font-size: 47px; line-height: 50px");
+             //            } else if(len>10 && len<30){
+             //                changeCSS(".hint-text-display","font-size: 20px; line-height: 22px");
+             //                changeCSS(".hint-text-animate","font-size: 29px; line-height: 32px");
+             //            } else if(len>30){
+             //                changeCSS(".hint-text-display","font-size: 15px; line-height: 16px");
+             //                changeCSS(".hint-text-animate","font-size: 24px; line-height: 25px");
+             //            }
+
+
+            //tab hover
+                $('#tournament').click(function(){
+                    console.log('tournament called');
+                    sessionStorage.setItem('tournament', "tournament");
+                    $(".game-table").attr('disabled', true);
+                    $('#tournament-img').attr('src','/static/images/tournament.png');
+                    $('#sit-go-img').attr('src','/static/images/sit-go.png');
+//                    $("#tournament_sec_img img").show();
+                    $("#game-room").hide();
+                    $("#join-game").hide();
+                    $("#join-waiting-list").hide();
+                    $("#tournament_bg").show();
+                    $(".game-table").hide();
+                    $("#games").css('pointer-events','none');
+                    $(".join-game").hide();
+                    $("#tournament_text").css("color","#4d4d4d");
+                    $("#sit_go_text").css("color","#989898");
+                    $("#hexa_slider").hide();
+
+
+
+
+                });
+
+                $('#sit-go').click(function(){
+                    console.log('sit-go called');
+                    $('#tournament-img').attr('src','/static/images/sit-go.png');
+                    $('#sit-go-img').attr('src','/static/images/tournament.png');
+                    $("#tournament_bg").hide();
+                    $("#join-game").show();
+                    $(".game-table").show();
+                    $("#join-waiting-list").show()
+                    $("#games").css('pointer-events','all');
+                    $("#sit_go_text").css("color","#4d4d4d");
+                    $("#tournament_text").css("color","#989898");
+                    $("#hexa_slider").show();
+                    $("#tournament_sec_img img").hide();
+                    $("#game-room").show();
+/*
+                    $("#games tbody tr:first-child td").css({'background-color':'#1b60f9','color':'rgb(255, 255, 255) !important'});
+*/
+
+                });
+
+                $("#games tbody tr").on('click', function () {
+                    $(this).addClass('highlight').siblings().removeClass('highlight');
+                    $("#tournament_sec_img img").hide();
+                    $(".join-game").show();
+
+                })
+
+
+/*            $('#games tbody tr').on('click', function(event) {
+
+
+            });*/
+            $('#caret').click(function () {
+               $(".logout-sec").toggle();
+            });
+
+        });
+
+        function enable_join_button(noOfUsers){
+            // Setting buttons according to number of players
+                   if(parseInt(noOfUsers) > 1 && parseInt(noOfUsers) <10){
+                       $("#join-game").prop('disabled',false);
+                       $("#join-waiting-list").prop('disabled',true);
+                   } else if(parseInt(noOfUsers) >=10){
+                       $("#join-game").prop('disabled',true);
+                       $("#join-waiting-list").prop('disabled',false);
+                   } else {
+                       $("#join-game").prop('disabled',true);
+                       $("#join-waiting-list").prop('disabled',true);
+                   }
+
+        }
+
+        function enable_join(){
+            $("#join-game").prop('disabled',false);
+        }
+
+        //Dynamically changes values in css classes
+        function changeCSS(className, classValue) {
+            // we need invisible container to store additional css definitions
+            var cssMainContainer = $('#css-modifier-container');
+            if (cssMainContainer.length == 0) {
+                var cssMainContainer = $('<div id="css-modifier-container"></div>');
+                cssMainContainer.hide();
+                cssMainContainer.appendTo($('body'));
+            }
+
+            // and we need one div for each class
+            classContainer = cssMainContainer.find('div[data-class="' + className + '"]');
+            if (classContainer.length == 0) {
+                classContainer = $('<div data-class="' + className + '"></div>');
+                classContainer.appendTo(cssMainContainer);
+            }
+
+            // append additional style
+            classContainer.html('<style>' + className + ' {' + classValue + '}</style>');
+        }
+
+        function openWS(game_room_id) {
+            ws = new WebSocket("ws://{{ host }}:8080/Websocket/" + game_room_id );
+            var count;
+            ws.onmessage = async function(e) {
+                var data = JSON.parse(e.data);
+                switch (data.game_key) {
+
+                    case '2':
+                        if ((document.getElementById(data.seat_no).src = "{{ static_url('images/takethisseat_boy.png') }}") || (document.getElementById(data.seat_no).src = "{{ static_url('images/takethisseat_girl.png') }}")){
+                            document.getElementById(data.seat_no).src = "{{ static_url('images/background-blue-hex.png') }}";
+                            document.getElementById(data.seat_no + '-profile').style.visibility = 'visible';
+                            document.getElementById(data.seat_no + '-profile').src = "/static/images/"+data.profile;
+                            document.getElementById(data.seat_no + '-name').innerHTML = data.user_name;
+                            if(data.user_amount !== undefined)
+                            document.getElementById(data.seat_no +'-money').innerHTML = data.user_amount;
+
+                        }
+                        break;
+
+                    case '3':
+                        document.getElementById(data.seat_no).src = "{{ static_url('images/takethisseat_girl.png') }}";
+                        document.getElementById(data.seat_no + '-profile').style.visibility = 'hidden';
+                        document.getElementById(data.seat_no + '-name').innerHTML = '';
+                        document.getElementById(data.seat_no +'-money').innerHTML = '';
+                        break;
+
+                    case '10': {
+                        console.log(data);
+                        console.log(data.sitted_clients);
+                        count =0;
+                        for (i = 1; i <= 10; i++) {
+                            if (data.sitted_clients['seat_' + i] !== '-1') {
+                                document.getElementById('seat_' + i).src = "{{ static_url('images/background-blue-hex.png') }}";
+                                document.getElementById('seat_' + i + '-profile').style.visibility = 'visible';
+                                document.getElementById('seat_' + i + '-name').innerHTML = data.sitted_clients['seat_' + i];
+                                document.getElementById('seat_' + i + '-profile').src = "/static/images/"+data.profile['seat_' + i];
+                                if(data.total_amount['seat_' + i] !==undefined)
+                                document.getElementById('seat_' + i + '-money').innerHTML = data.total_amount['seat_' + i];
+                                count++;
+                            }
+
+                        }
+                        //enable_join_button(count);
+                    }
+                        break;
+
+//                    case 'update_wallet':{
+//						document.getElementById('title-amount').innerHTML = data.balance[{{player_id}}];
+//						}
+//                  	break;
+
+                    case 'update_pot': {
+                        document.getElementById('pot-money').innerHTML = data.pot_amount;
+                        }
+                    break;
+
+                    default:
+                        break;
+                }
+            };
+
+
+//        ws.onclose = function(e) {
+//            openWS();
+//        };
+        }
+
+        function sit_here(seat_no) {
+            $("#buyInModal").modal('show');
+
+            if(document.getElementById(seat_no + '-name').innerHTML===''){
+                var image_link = "{{ profile_photo }}";
+                var data = {
+                    game_key: '2',
+                    user_name: '{{user_name}}',
+                    message: 'has taken ' + seat_no,
+                    seat_no: seat_no,
+                    action: 'nil',
+                    dealer_seat: 'nil',
+                    game_room_id: id,
+                    con_id: 'nil',
+                    con: 'nil',
+                    ans: 'nil',
+                    opt: ['nil', 'nil', 'nil', 'nil'],
+                    profile: image_link
+                    };
+                if (data.user_name && data.seat_no && user_taken == 0 && data.game_key) {
+                    ws.send(JSON.stringify(data));
+                    user_taken = 1;
+                    document.getElementById("active_players"+data.game_room_id).innerHTML = parseInt(document.getElementById("active_players"+data.game_room_id).innerHTML) + 1;
+                    user_seat_no = data.seat_no;
+                    enable_join();
+                    }
+                }
+            else{
+                if(document.getElementById(seat_no + '-name').innerHTML==='{{user_name}}'){
+                    sit_out();
+                    }
+                else{
+                    alert('sit already taken!');
+                    }
+                }
+        }
+
+        function buyin(){
+            $.ajax({
+                 type: "POST",
+                 url: "http://{{ host }}:8080/user/view_games",
+                 data: {
+                    "Game_Room_id": id,
+                    "seat": user_seat_no.slice(5),
+                    "buy_in": user_buy_in
+                    },
+                 xhrFields: {
+                    withCredentials: true
+                    },
+                 success: function(response){
+                    window.location.href = "http://{{ host }}:8080/user/view_games/Game_Room/"+id+"/"+user_seat_no.slice(5);
+                    }
+                });
+            }
+
+        function cancle_buyin(){
+            sit_out();
+            $("#buyInModal").modal('hide');
+            }
+
+        function sit_out() {
+         	console.log('sit_out called');
+         	console.log(user_seat_no);
+        	var data = {
+        		game_key: '3',
+            	user_name: '{{user_name}}',
+                message: 'has left ' + user_seat_no,
+                seat_no: user_seat_no,
+                action: 'nil',
+                dealer_seat: 'nil',
+                game_room_id: id,
+                con_id: 'nil',
+                con: 'nil',
+                ans: 'nil',
+                opt: ['nil','nil','nil','nil'],
+                answer_time: 'nil'
+                };
+			if(data.user_name && data.seat_no && user_taken == 1 && data.game_key) {
+				ws.send(JSON.stringify(data));
+				user_taken = 0;
+                document.getElementById("active_players"+data.game_room_id).innerHTML = parseInt(document.getElementById("active_players"+data.game_room_id).innerHTML) - 1;
+				}
+			}
+/*			function activate_row(value) {
+                $("data-value["+this.value+"]").addClass('active_row');
+
+            }*/
+
+
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<!--		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				  	</button>
+				</div>
+				<a href="#"><img  class="nav-image" src="{{ static_url('images/logo.png') }}"></a>
+				<div class="collapse navbar-collapse">
+				  	<ul class="nav navbar-nav">
+						<li>
+							<a class="navbar-brand" href="#">GAME ROOM</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-credit-card"></span></a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-euro"></span></a>
+						</li>
+						<li>
+							<a id="title-amount" href="#">{{user_balance}}</a>
+						</li>
+				  	</ul>
+				  	<ul class="nav navbar-nav navbar-right">
+						&lt;!&ndash;<li><a href="#">MY OPTIONS</a></li>&ndash;&gt;
+						&lt;!&ndash;<li><a id="logout-btn">LOGOUT</a></li>&ndash;&gt;
+				  	</ul>
+				</div>
+		  	</div>
+		</nav>-->
+    <!--Header-->
+    <div id="main-section">
+    <div class="grey_rect container">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="col1">
+            <img src="{{static_url('images/creditcard.png')}}">
+            <img src="{{static_url('images/coin.png')}}">
+            <div id="amount">{{user_balance}}</div>
+<!--
+            <img src="{{static_url('images/cash.png')}}">
+            <div id="cash">13400&euro;</div>
+-->
+
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="col2">
+            <img src="{{static_url('images/logo.png')}}" class="img-responsive" id="quizzycash_logo">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="col3">
+            <div class="my-option">
+                <button class="my-option-btn"><img src="{{static_url('images/myoptions.png')}}" id="caret"></button>
+                <div class="logout-sec">
+                    <a id="logout-btn">LOGOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blue_rect">
+        <img src="{{static_url('images/header.png')}}" class="img-responsive">
+<!--       <div class="stars col-lg-5 col-md-4 col-sm-4 col-xs-12"><img src="{{ static_url('images/stars.png') }}" alt="">
+        <p id="game_statics">ONLINE NOW: 4,180 PLAYERS | 859 TOURNAMENTS <span>18:20 CEST</span></p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12" id="game_room_text">GAME ROOM</div>
+        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12"></div>-->
+    </div>
+    <!-- Content -->
+        <div class="white_rect row">
+ <!--           <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6" id="tournament">
+                <img src="{{static_url('images/tournament.png')}}" class="img-responsive" id="tournament-img">
+                <p id="tournament_text">TOURNAMENT</p>
+            </div>
+            <div class="col-md-6 col-xs-6" id="sit-go">
+                <img src="{{static_url('images/sit-go.png')}}" class="img-responsive" id="sit-go-img">
+                <p id="sit_go_text">SIT & GO</p>
+            </div>-->
+            <div class="">
+                <div class="row row-right no-margin">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="tournament">
+                        <div class="pull-left">
+                            <img src="{{static_url('images/tournament.png')}}" class="img-responsive" id="tournament-img">
+                            <p id="tournament_text">TOURNAMENT</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="sit-go">
+                        <div class="pull-right">
+                            <img src="{{static_url('images/sit-go.png')}}" class="img-responsive" id="sit-go-img">
+                            <p id="sit_go_text">SIT&GO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sit and Go content-->
+            <div id="sit-go-content">
+                <img src="{{static_url('images/tournament_bg.png')}}" id="tournament_bg" class="img-responsive">
+                <img src="{{static_url('images/scroll-hexagon.png')}}" id="hexa_slider" class="img-responsive">
+                <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 game-table">
+                    <table id="games" class="table-striped table" cellpadding="0px" cellspacing="0px">
+                        <thead>
+                        <tr>
+                            <th>CATEGORY&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true" style="color: #666666"></i></th>
+                            <th>THEME</th>
+                            <th>PLAYERS</th>
+                            <th>BUY-IN       </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for Game_Room in Active_Game_Rooms %}
+                        <tr value="{{ Game_Room['game_room_id'] }}">
+                            <td><img src="/static/images/category_icons/{{ Game_Room['game_category'] }}.png"/></td>
+                            <td class="td-left">{{ Game_Room['game_theme'] }}</td>
+                            <td id="active_players{{ str(Game_Room['game_room_id']) }}">{{ players[str(Game_Room['game_room_id'])] }}</td>
+                            <!--<td>5</td>-->
+                            <td style="width: 110px;">{{ Game_Room['min_buy_in'] }}&nbsp;&euro;</td>
+                            <td style="display: none;">{{ Game_Room['max_buy_in'] }}&nbsp;&euro;</td>
+                        </tr>
+                        {% end %}
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        <!--<tr value="1">-->
+                        <!--<td class="td-left">Sports</td>-->
+                        <!--<td class="td-left">Soccer world cup</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>40&euro;</td>-->
+                        <!--</tr>-->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="game-room-content" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+                    <!-- Message displayed if user balance is too low to join a game room -->
+                    <p id="balance-low">
+                        BALANCE IS TOO LOW TO ENTER!
+                    </p>
+
+                    <!--
+                    #Users in this game room are from 1 to 10
+                    #The user position classes in the css are named from 0 to 9 and are changed due to animation
+                    #User position css classes do not affect any of the actions conducted by user and are purely used for positioning and animation
+                    -->
+<!--
+                    <div id="tournament_sec_img"><img src="{{ static_url('images/tournament_sec_img.png') }}"></div>
+-->
+
+                    <div id="game-room">
+                        <!-- User 1 -->
+                        <span onclick="sit_here('seat_1')">
+                                <img class="position5 img-responsive" id="seat_1" src="{{ static_url('images/takethisseat_boy.png') }}">
+                                <img class="profile-img position5-profile img-responsive" id="seat_1-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position5-name" id="seat_1-name"></p>
+                                <p class="position5-money" id="seat_1-money"></p>
+<!--                                <img class="position5-star-1"  src="{{ static_url('images/star.png') }}">
+                                <img class="position5-star-2"  src="{{ static_url('images/star.png') }}">-->
+                        </span>
+
+                        <!-- User 2 -->
+                        <span onclick="sit_here('seat_2')">
+                                <img class="position6 " id="seat_2" src="{{ static_url('images/takethisseat_girl.png') }}">
+                                <img class="profile-img position6-profile img-responsive" id="seat_2-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position6-name" id="seat_2-name"></p>
+<!--                                <p class="position6-money" id="seat_2-money"></p>
+                                <img class="position6-star-1" src="{{ static_url('images/star.png') }}">
+                                <img class="position6-star-2"  src="{{ static_url('images/star.png') }}">
+                                <img class="position6-star-3"  src="{{ static_url('images/star.png') }}">-->
+
+                        </span>
+
+                        <!-- User 3 -->
+                        <span onclick="sit_here('seat_3')">
+                                <img class="position7 img-responsive" id="seat_3" src="{{ static_url('images/takethisseat_boy.png') }}">
+                                <img class="profile-img position7-profile img-responsive" id="seat_3-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position7-name" id="seat_3-name"></p>
+                                <p class="position7-money" id="seat_3-money"></p>
+<!--                                <img class="position7-star-1" src="{{ static_url('images/star.png') }}">
+                                <img class="position7-star-2"  src="{{ static_url('images/star.png') }}">
+                                <img class="position7-star-3"  src="{{ static_url('images/star.png') }}">
+                                <img class="position7-star-4"  src="{{ static_url('images/star.png') }}">-->
+                        </span>
+
+                        <!-- User 4 -->
+                        <span onclick="sit_here('seat_4')">
+                                <img class="position8 img-responsive" id="seat_4" src="{{ static_url('images/takethisseat_girl.png') }}">
+                                <img class="profile-img position8-profile img-responsive" id="seat_4-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position8-name" id="seat_4-name"></p>
+                                <p class="position8-money" id="seat_4-money"></p>
+<!--                                <img class="position8-star-1" src="{{ static_url('images/star.png') }}">
+                                <img class="position8-star-2"  src="{{ static_url('images/star.png') }}">
+                                <img class="position8-star-3"  src="{{ static_url('images/star.png') }}">
+                                <img class="position8-star-4"  src="{{ static_url('images/star.png') }}">
+                                <img class="position8-star-5"  src="{{ static_url('images/star.png') }}">-->
+                        </span>
+
+                        <!-- User 5 -->
+                        <span onclick="sit_here('seat_5')">
+                                <img class="position9 img-responsive" id="seat_5" src="{{ static_url('images/takethisseat_boy.png') }}">
+                                <img class="profile-img position9-profile img-responsive" id="seat_5-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position9-name" id="seat_5-name"></p>
+                                <p class="position9-money" id="seat_5-money"></p>
+                        </span>
+
+                        <!-- User 6 -->
+                        <span onclick="sit_here('seat_6')">
+                                <img class="position0 img-responsive" id="seat_6" src="{{ static_url('images/takethisseat_girl.png') }}">
+                                <img class="profile-img position0-profile img-responsive" id="seat_6-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position0-name" id="seat_6-name"></p>
+                                <p class="position0-money" id="seat_6-money"></p>
+<!--
+                                <img class="position0-star-1"  src="{{ static_url('images/star.png') }}">
+-->
+
+                        </span>
+
+                        <!-- User 7 -->
+                        <span onclick="sit_here('seat_7')">
+                                <img class="position1 img-responsive" id="seat_7" src="{{ static_url('images/takethisseat_boy.png') }}">
+                                <img class="profile-img position1-profile img-responsive" id="seat_7-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position1-name" id="seat_7-name"></p>
+                                <p class="position1-money" id="seat_7-money"></p>
+                        </span>
+
+                        <!-- User 8 -->
+                        <span onclick="sit_here('seat_8')">
+                                <img class="position2 img-responsive" id="seat_8" src="{{ static_url('images/takethisseat_girl.png') }}">
+                                <img class="profile-img position2-profile img-responsive" id="seat_8-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position2-name" id="seat_8-name"></p>
+                                <p class="position2-money" id="seat_8-money"></p>
+                        </span>
+
+                        <!-- User 9 -->
+                        <span onclick="sit_here('seat_9')">
+                                <img class="position3 img-responsive" id="seat_9" src="{{ static_url('images/takethisseat_boy.png') }}">
+                                <img class="profile-img position3-profile img-responsive" id="seat_9-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position3-name" id="seat_9-name"></p>
+                                <p class="position3-money" id="seat_9-money"></p>
+                        </span>
+
+                        <!-- User 10 -->
+                        <span onclick="sit_here('seat_10')">
+                                <img class="position4 img-responsive" id="seat_10" src="{{ static_url('images/takethisseat_girl.png') }}">
+                                <img class="profile-img position4-profile img-responsive" id="seat_10-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position4-name" id="seat_10-name"></p>
+                                <p class="position4-money" id="seat_10-money"></p>
+                        </span>
+
+                        <!-- Game Details -->
+                        <div class="pot-images">
+                            <img id="hint-image" src="{{ static_url('images/pot.png') }}" class="img-responsive">
+                            <img class="hint-box-display img-responsive" id="hint-box" src="{{ static_url('images/yellowbar.png') }}">
+<!--
+                            <img class="img-responsive" id="score-stand" src="{{ static_url('images/pot_leader.png') }}">
+-->
+<!--
+                            <p class="hint-number-display" id="hint-number">HINT</p>
+-->
+                            <p class="hint-text-display" id="hint-text">SPORTS</p>
+                            <p id="pot">POT</p>
+                            <p id="pot-coin-sec"><span id="pot-money"></span><span id="pot-coin"><img src="{{static_url('images/single-coin.png')}}"></span></p>
+                        </div>
+                    </div>
+                    <div class="row join-game">
+<!--
+                        <button id="join-game" class="btn btn-default pull-left" disabled>Join Game</button>
+-->
+                            <img class="img-responsive pull-right" src="{{ static_url('images/join_waiting_list.png') }}" id="join-waiting-list-img">
+<!--
+                            <p id="join-waiting-list-text">JOIN WAITING LIST</p>
+-->
+                    </div>
+                </div>
+            </div>
+            <div>
+<!--                <div id="join-game-buttons" class="join-buttons">
+                    <button id="join-game" class="btn btn-default pull-left" disabled>Join Game</button>
+                    <button id="join-waiting-list" class="btn btn-default pull-right"  disabled>Join Waiting list</button>
+                </div>-->
+            </div>
+<!--
+            <button id="join_game_btn">HI</button>
+-->
+        </div>
+
+            <!--&lt;!&ndash; Table in form &ndash;&gt;-->
+            <!--<form method="post" class="join-game-form">-->
+
+                <!-- Sit and Go content-->
+                <!--<div class="row" id="sit-go-content">
+                    <div class="col-md-4 game-table">
+                        <table id="games" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>CATEGORY</th>
+                                    <th>THEME</th>
+                                    <th>PLAYERS</th>
+                                    <th>BUYIN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for Game_Room in Active_Game_Rooms %}
+                                    <tr value="{{ Game_Room['game_room_id'] }}">
+                                        <td class="td-left">{{ Game_Room['game_category'] }}</td>
+                                        <td class="td-left">{{ Game_Room['game_theme'] }}</td>
+                                        <td id="active_players{{ str(Game_Room['game_room_id']) }}">{{ players[str(Game_Room['game_room_id'])] }}</td>
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        <td>{{ Game_Room['min_buy_in'] }}&euro;</td>
+                                        <td>{{ Game_Room['max_buy_in'] }}&euro;</td>
+                                    </tr>
+                            {% end %}
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                    &lt;!&ndash;<tr value="1">&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Sports</td>&ndash;&gt;
+                                        &lt;!&ndash;<td class="td-left">Soccer world cup</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>5</td>&ndash;&gt;
+                                        &lt;!&ndash;<td>40&euro;</td>&ndash;&gt;
+                                    &lt;!&ndash;</tr>&ndash;&gt;
+                                </tbody>
+                        </table>
+                    </div>
+                    <div id="game-room-content" class="col-md-6">
+
+                        &lt;!&ndash; Message displayed if user balance is too low to join a game room &ndash;&gt;
+                        <p id="balance-low">BALANCE IS TOO LOW TO ENTER!</p>
+
+                        &lt;!&ndash;
+                        #Users in this game room are from 1 to 10
+                        #The user position classes in the css are named from 0 to 9 and are changed due to animation
+                        #User position css classes do not affect any of the actions conducted by user and are purely used for positioning and animation
+                        &ndash;&gt;
+                        <div id="game-room">
+
+                            &lt;!&ndash; User 1 &ndash;&gt;
+                            <span onclick="sit_here('seat_1')">
+                                <img class="position5" id="seat_1" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position5-profile" id="seat_1-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position5-name" id="seat_1-name"></p>
+                                <p class="position5-money" id="seat_1-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 2 &ndash;&gt;
+                            <span onclick="sit_here('seat_2')">
+                                <img class="position6" id="seat_2" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position6-profile" id="seat_2-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position6-name" id="seat_2-name"></p>
+                                <p class="position6-money" id="seat_2-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 3 &ndash;&gt;
+                            <span onclick="sit_here('seat_3')">
+                                <img class="position7" id="seat_3" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position7-profile" id="seat_3-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position7-name" id="seat_3-name"></p>
+                                <p class="position7-money" id="seat_3-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 4 &ndash;&gt;
+                            <span onclick="sit_here('seat_4')">
+                                <img class="position8" id="seat_4" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position8-profile" id="seat_4-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position8-name" id="seat_4-name"></p>
+                                <p class="position8-money" id="seat_4-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 5 &ndash;&gt;
+                            <span onclick="sit_here('seat_5')">
+                                <img class="position9" id="seat_5" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position9-profile" id="seat_5-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position9-name" id="seat_5-name"></p>
+                                <p class="position9-money" id="seat_5-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 6 &ndash;&gt;
+                            <span onclick="sit_here('seat_6')">
+                                <img class="position0" id="seat_6" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position0-profile" id="seat_6-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position0-name" id="seat_6-name"></p>
+                                <p class="position0-money" id="seat_6-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 7 &ndash;&gt;
+                            <span onclick="sit_here('seat_7')">
+                                <img class="position1" id="seat_7" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position1-profile" id="seat_7-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position1-name" id="seat_7-name"></p>
+                                <p class="position1-money" id="seat_7-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 8 &ndash;&gt;
+                            <span onclick="sit_here('seat_8')">
+                                <img class="position2" id="seat_8" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position2-profile" id="seat_8-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position2-name" id="seat_8-name"></p>
+                                <p class="position2-money" id="seat_8-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 9 &ndash;&gt;
+                            <span onclick="sit_here('seat_9')">
+                                <img class="position3" id="seat_9" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position3-profile" id="seat_9-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position3-name" id="seat_9-name"></p>
+                                <p class="position3-money" id="seat_9-money"></p>
+                            </span>
+
+                            &lt;!&ndash; User 10 &ndash;&gt;
+                            <span onclick="sit_here('seat_10')">
+                                <img class="position4" id="seat_10" src="{{ static_url('images/background-empty-hex.png') }}">
+                                <img class="profile-img position4-profile" id="seat_10-profile" src="{{ static_url('images/profile-default.png') }}" style="visibility:hidden">
+                                <p class="position4-name" id="seat_10-name"></p>
+                                <p class="position4-money" id="seat_10-money"></p>
+                            </span>
+
+                            &lt;!&ndash; Game Details &ndash;&gt;
+                            <img id="hint-image" src="{{ static_url('images/hint-background.png') }}">
+                            <img class="hint-box-display" id="hint-box" src="{{ static_url('images/hint-yellow-box.png') }}">
+                            <p class="hint-number-display" id="hint-number">THEME</p>
+                            <p class="hint-text-display" id="hint-text">SPORTS</p>
+                            <p id="pot">POT</p>
+                            <p id="pot-money"></p>
+
+                        </div>
+                    </div>
+                    <div id="join-game-buttons" class="join-buttons">
+                                <button id="join-game" class="btn btn-default pull-left" disabled>Join Game</button>
+                                <button id="join-waiting-list" class="btn btn-default pull-right"  disabled>Join Waiting list</button>
+                    </div>
+                </div>-->
+            <!--<button id="join_game_btn">HI</button>-->
+            <!--</form>-->
+        </div>
+
+    <!-- Modal for Buy-in -->
+    <div class="modal fade" id="buyInModal" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Select Amount To Buy-In</h5>
+          </div>
+          <div class="modal-body">
+<!--
+              <div class="hexagon-buy-in pull-left"><span></span></div>
+-->
+              <span id="min-buy" ><span>Min-Buy</span><br/><span id="min_buyin_text">10 &euro;</span></span>
+<!--
+              <div class="hexagon-buy-in pull-right"><span></span></div>
+-->
+              <span id="max-buy"><span class="pull-right">Max-Buy</span><br/><span id="max_buyin_text" class="pull-right">100 &euro;</span></span>
+
+              <br>
+              <center>
+<!--
+                  <div class="hexagon"><span></span></div>
+-->
+                  <span id="buy-in">
+                      <span>Buy-In:</span>
+                      <span id="buyin_text">100 &euro;</span>
+                  </span>
+              </center>
+              <br><br>
+            <div id="buyin-slider" style="width: 100%;"></div>
+          </div>
+          <div class="modal-footer">
+            <button id="back-button" onclick="cancle_buyin()" type="button" class="btn btn-secondary">Back</button>
+            <button id="buy-in-button" onclick="buyin()" type="button" class="btn btn-primary">Buy In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

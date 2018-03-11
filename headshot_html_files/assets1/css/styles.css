@@ -1,0 +1,166 @@
+body{font-family:'Open Sans', sans-serif;color:#666;}
+.no_pd_mg{margin:0;padding:0;}
+.highlight_subheading{font-weight:100;color:#2761cc;}
+header{position:fixed;z-index:1000;width:100%;}
+.header_background{background:rgba(0, 0, 0, 0.5);color:white;border-radius:0 0 4px 4px;box-shadow:0px 5px 7px -2px black;height:100%;position:absolute;}
+.site_logo{margin:1% 0 0 0;}
+.navbar{margin-bottom:0;}
+.site_menu{}
+.site_menu .site_menu_item a{color:white;font-size:13px;padding:19px 0;display:block;text-align:center;}
+.site_menu .site_menu_item a:hover, .site_menu .site_menu_item a:focus{background-color:transparent;color:#f2ff00;text-decoration:none;outline:none;}
+.carousel-inner>.item{-webkit-transition:1.5s ease-in-out left;transition:1.5s ease-in-out left;-webkit-transition:1.5s, ease-in-out, left;-moz-transition:1.5s, ease-in-out, left;-o-transition:1.5s, ease-in-out, left;transition:1.5s, ease-in-out, left;}
+#cquiz_carousel{box-shadow:0 7px 10px 6px gray;}
+.highlights_section strong{color:#2761cc;}
+.highlights_section{margin:4% 0;}
+.highlights_section_part_container{padding:0 10%;}
+.highlight_title{font-weight:bold;font-size:46px;margin:0 0 2% 0;color:#2761cc;}
+.highlight_list_title{font-size:30px;font-weight:bold;padding:0;color:#585757;}
+.highlight_list_img{max-height:100px;}
+.highlights_section_part div{margin:5% 0 0 0;color:#989191;}
+.highlights_section_part ul li{margin:0 0 6% 0;line-height:28px;font-size:19px;}
+.highlights_section_part ul{padding:0;text-align:justify;}
+.crowdfunding_section{background-color:#062640;text-align:center;color:#fff;}
+.crowdfunding_section_container .crowdfunding_content{margin:3% 0;}
+.theme_color{color:#2761cc;}
+.crowdfunding_txt1{font-size:46px;}
+.crowdfunding_txt2{font-size:24px;padding:0 20%;}
+.crowdfunding_txt1 strong{color:#f2ff00;}
+.crowdfunding_btn:hover{background-color:#f2ff00;color:#2761cc;}
+.crowdfunding_btn{color:#fff;font-size:35px;font-weight:600;padding:3%;background-color:#2761cc;border:1px solid #6e6d6c;}
+.crowdfunding_section_container{padding:4% 5%;}
+.navbar-toggle .icon-bar{background-color:#fff !important;}
+.btn{border:0;border-radius:0;}
+.btn.btn-primary:hover{background-color:#017fb5;}
+nav{position:fixed !important}
+a{text-decoration:none;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms;}
+a:focus,
+a:hover{text-decoration:none;outline:none}
+.caption strong.title{font-size:46px;line-height:52px;}
+.caption strong span{color:#2761cc;}
+.caption{font-size:23px;margin-left:45%;position:absolute;z-index:10;margin-top:18%;padding:2%;text-align:center;color:white;}
+.caption .btn-start{color:#fff;font-size:35px;font-weight:600;padding:14px 40px;background-color:#2761cc;border:1px solid #6e6d6c;}
+.caption .btn-start:hover{background-color:#f2ff00;color:#2761cc;}
+.caption div{margin:1% 0;}
+.advantage_section{background-color:#062640;padding:0 7%;}
+.advantage_section .list{margin:4% 0 0 0;padding:0;padding:0 7%;}
+.adv_section{background-color:white;}
+.experience_section{}
+.adv_section_container{padding:0;box-shadow:0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);}
+.adv_section ul li{line-height:17px;margin:2% 0;}
+.blue_section{box-shadow:0px 5px 7px 0 gray;}
+.profile_container{padding:0 6%;}
+.profile_container .img{border-radius:50%;border:2px solid #0F4061;padding:4%;}
+.profile_container .info_block{padding:5% 0;}
+.profile_container .img img{border-radius:50%;width:100%;}
+.profile_container .txt1,.profile_container .txt2{font-size:17px;color:grey;}
+.team_section .title{font-weight:bold;font-size:46px;margin:2% 0;color:#2761cc;}
+.profile_container_container{padding:0 6%;}
+body{}
+.contactus_section{background-color:#001976;color:white;margin:4% 0 0 0;box-shadow:0px 5px 7px 0 gray;}
+.contactus_section .contactus_heading{font-weight:bold;font-size:46px;margin:5% 0 2% 0;color:#fff;}
+.contactus_section label{visibility:hidden;}
+.parallax{background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;}
+.contactus_section .form-control{background-color:transparent;border-width:0 0 1px 0;resize:none;border-radius:0;font-size:24px;}
+.btnsbmt{color:#fff;font-size:35px;font-weight:600;padding:14px 40px;background-color:#2761cc;border:1px solid #6e6d6c;margin-top:30px;}
+.btnsbmt:hover{background-color:#f2ff00;color:#2761cc;}
+.experience_section, .team_section{margin:4% 0 0 0;}
+#twitter.parallax{margin:6% 0 0 0;}
+.experience_section .title{font-weight:bold;font-size:46px;margin:0 0 2% 0;color:#2761cc;}
+.adv_sec2{padding-bottom:14.7%;}
+.adv_title{background-color:#4f5b77;z-index:1;color:white;font-size:36px;font-weight:bold;text-align:center;}
+.success{color:green;}
+.home_section{margin-right:0;margin-left:0;}
+@media (max-width:1367px){.caption strong.title{font-size:44px;}
+.caption{font-size:19px;}
+}
+@media (max-width:575px){.caption{position:relative !important;margin:16% 0 0 0;background-image:url('../images/QuizzyCash_-_Cover_Page_300x500_4.png');background-size:100%;}
+.caption strong.title{font-size:33px;line-height:34px;}
+.caption div{margin:9% 0;}
+.highlight_title{font-size:40px;}
+.crowdfunding_txt1{font-size:39px;}
+.experience_section .title{font-size:40px;}
+.twitter-icon strong{font-size:29px !important;}
+#twitter p{font-size:20px;}
+.team_section .title{font-size:40px;}
+.contactus_section .contactus_heading{font-size:40px;}
+.contactus_section .form-control{font-size:20px;}
+.twitter-left-control{left:0 !important;}
+.twitter-right-control{right:0 !important;}
+}
+@media (max-width:767px){.caption{position:relative !important;margin:7% 0 0 0;background-image:url('../images/QuizzyCash_-_Cover_Page_300x500_4.png');background-size:100%;}
+.caption strong.title{font-size:39px;line-height:36px;}
+.highlight_title{font-size:43px;}
+.highlight_list_img{max-height:200px;}
+.profile_container .txt1, .profile_container .txt2, .profile_container .link{font-size:27px;}
+.contactus_section .contactus_heading{font-size:43px;}
+.contactus_section .form-control{font-size:22px;}
+}
+@media (max-width:991px){}
+@media (max-width:1199px){}
+.social_icons a{color:white;}
+.social_icons, .copyright{margin:2% 0;}
+.adv_title_txt{margin:6% 0 0 0;padding:0;background-color:#4f5b77;}
+#twitterbiz{background-image:url(../images/biz1.jpg);background-size:cover;overflow:hidden;}
+#twitterplayers{background-image:url(../images/pz.jpg);background-size:cover;overflow:hidden;}
+#textdata{}
+#twitter > div{vertical-align:center;position:relative;}
+#twitter-carousel{position:relative;z-index:15}
+.twitter-icon{position:relative;z-index:15;color:#fff;}
+.twitter-icon .fa-twitter{font-size:24px;height:64px;width:64px;line-height:65px;position:relative;}
+#twitter-carousel .item{padding:4% 11%;overflow:hidden;-webkit-transition:1.5s ease-in-out left;transition:1.5s ease-in-out left;-webkit-transition:1.5s, ease-in-out, left;-moz-transition:1.5s, ease-in-out, left;-o-transition:1.5s, ease-in-out, left;transition:1.5s, ease-in-out, left;}
+#twitter-carousel .item a{color:#fff;}
+#twitter p{font-size:22px;margin-top:25px;}
+#twitter p span{color:#2761cc;}
+.twitter-icon{text-transform:uppercase;margin-top:25px;margin-bottom:25px;color:#fff;}
+.twitter-icon strong{font-size:46px;}
+.twitter-icon strong b{color:#f2ff00;}
+.twitter-left-control i,
+.twitter-right-control i{margin:33%;color:#fff;}
+.twitter-left-control i:hover,
+.twitter-right-control i:hover{margin:33%;color:#f2ff00;}
+.twitter-left-control,
+.twitter-right-control{position:absolute;top:50%;color:#fff;border:1px solid #fafafa;height:59px;width:59px;line-height:31px;margin-top:-17px;font-size:18px;border-radius:50%;z-index:15;text-align:center;border-color:#fff;}
+.twitter-left-control:hover, .twitter-left-control:hover *, .twitter-right-control:hover, .twitter-right-control:hover *{border-color:#f2ff00;color:#f2ff00;}
+.twitter-left-control{left:80px;}
+.twitter-right-control{right:80px}
+.hexagon{position:relative;width:98px;height:56.58px;background-color:#2761cc;margin:28.29px 0;border-left:solid 5px #f2ff00;border-right:solid 5px #f2ff00;color:#fff;padding:5% 0;}
+.hexagon:before,
+.hexagon:after{content:"";position:absolute;z-index:1;width:69.30px;height:69.30px;-webkit-transform:scaleY(0.5774) rotate(-45deg);-ms-transform:scaleY(0.5774) rotate(-45deg);transform:scaleY(0.5774) rotate(-45deg);background-color:inherit;left:9.3518px;}
+.hexagon:before{top:-34.6482px;border-top:solid 7.0711px #f2ff00;border-right:solid 7.0711px #f2ff00;}
+.hexagon:after{bottom:-34.6482px;border-bottom:solid 7.0711px #f2ff00;border-left:solid 7.0711px #f2ff00;}
+.parallax{background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;}
+.parallax,
+.parallax h1,
+.parallax h2,
+.parallax h3,
+.parallax h4,
+.parallax h5,
+.parallax h6{color:#fff;}
+.parallax input[type="text"],
+.parallax input[type="text"]:hover,
+.parallax input[type="email"],
+.parallax input[type="email"]:hover,
+.parallax input[type="url"],
+.parallax input[type="url"]:hover,
+.parallax input[type="password"],
+.parallax input[type="password"]:hover,
+.parallax textarea,
+.parallax textarea:hover{font-weight:300;color:#fff;}
+.dot{color:#f2ff00 !important;margin:0 1% 0 0;}
+.y_container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.y_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.y_item{
+	z-index:20;
+}

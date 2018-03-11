@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QuizzyCash</title>
+		<link rel="icon" href="{{ static_url('images/favicon.jpg')}}" type="image/png">
+		<link rel="stylesheet" href="{{ static_url('lib/bootstrap/css/bootstrap.min.css')}}">
+ 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Libre+Baskerville|Patua+One|Prompt|Spectral+SC" rel="stylesheet">
+		<script type="text/javascript" src="{{ static_url('lib/jquery/jquery.min.js')}}"></script>
+		<script type="text/javascript" src="{{ static_url('js/game_page.js')}}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ static_url('css/game_page.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{ static_url('css/navbar.css')}}">
+		<script type="text/javascript" src="{{ static_url('lib/jquery-ui.min.js')}}"></script>
+ 		<script type="text/javascript" src="{{ static_url('lib/bootstrap/js/bootstrap.min.js')}}"></script>
+		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Boogaloo|Courgette|Merienda|Permanent+Marker|Quattrocento|Satisfy" rel="stylesheet">
+		<script src="https://use.fontawesome.com/9309e82b92.js"></script>
+        <script src="{{ static_url('js/log4javascript.js') }}" type="text/javascript"></script>
+        <script type="text/javascript">
+		var ws, user_seat_no = "seat_"+{{ seat }}, user_taken = 1, ans, user_animation = 0, pause = 1, fold =0, user_buy_in, all_in_counter;
+		var q_no =(Math.floor(Math.random()*100000)+1), small_blind_seat ="", big_blind_seat="", folded_seat_no="";
+        var logger = log4javascript.getDefaultLogger();
+
+        $(document).ready(function(){
+			// increase click count of banner
+			// $("#position_whatever").click(function(){
+            document.getElementById('question-number').innerHTML = q_no;
+				$.ajax({
+					type: 'POST',
+					url: 'http://{{ host }}:8080/user/view_games/Game_Room/'+'{{ game_room_id }}'+'/'+'{{ seat }}',
+					data: {"click": '{{ player_id }}' },
+					success: function(response) {
+						console.log('done');
+						}
+					});
+			// 	});
+
+			// Logout
+            $("#logout-btn").click(function(){
+//            	sit_out();
+                $.ajax({
+                 	type: "POST",
+                 	url: "http://{{ host }}:8080/user/logout",
+                 	data: {"username" : '{{ user_name }}'},
+                 	success: function(response){
+						location.href = "http://{{ host }}:8080/user/login";
+                       }
+                	});
+            	});
+           var game_room ={{game_room_id}};
+            console.log(game_room);
+
+            if(game_room ==10){
+                console.log("/static/images/football/football-"+Math.floor(Math.random() * 10 + 1)+".jpeg");
+                document.getElementById('question-image').src = "/static/images/football/football-"+Math.floor(Math.random() * 10 + 1)+".jpeg";
+
+            }
+            else if(game_room == 1){
+                document.getElementById('question-image').src = "/static/images/science/science-"+Math.floor(Math.random() * 10 + 1)+".jpeg";
+
+            }
+            else if(game_room==3){
+                document.getElementById('question-image').src = "/static/images/social_science/social-science-"+Math.floor(Math.random() * 10 + 1)+".jpeg";
+
+            }
+            else if (game_room = 2){
+                document.getElementById('question-image').src = "/static/images/tennis/tennis-"+Math.floor(Math.random() * 10 + 1)+".jpeg";
+
+            }
+
+            $('#caret').click(function () {
+                $(".logout-sec").toggle();
+            });
+            $("#buy-in-button").on('click', function () {
+                document.getElementById('hint-box').src = "/static/images/yellowbar.png";
+                document.getElementById('hint-number').style.color = "#4d4d4d";
+                document.getElementById('hint-text').style.color = "#4d4d4d";
+                document.getElementById('hint-number').style.textAlign = "center";
+                document.getElementById('hint-number').style.fontSize = "15px";
+                rebuyin();
+            });
+
+        });
+
+		function activateUser(seat){
+			console.log("activate"+seat);
+			if((document.getElementById(seat).src !="{{ static_url('images/big-blind.png') }}") &&
+				(document.getElementById(seat).src !="{{ static_url('images/small-blind.png') }}")) {
+                document.getElementById(seat).src = "{{ static_url('images/active-user-background.png') }}";
+            }
+			}
+
+		function deactivateUser(seat){
+			console.log("deactivate"+seat);
+            if((document.getElementById(seat).src !="{{ static_url('images/big-blind.png') }}") &&
+                (document.getElementById(seat).src !="{{ static_url('images/small-blind.png') }}")) {
+                document.getElementById(seat).src = "{{ static_url('images/background-blue-hex.png') }}";
+            }
+			}
+
+        function createEntry(username, message){
+            // alert(message);
+            var entry = document.createElement("p");
+
+            if(message.indexOf("Blind")>-1){
+                $(entry).css('color','#1b60f9');
+            }
+            else if(message.indexOf("fold")>-1){
+                $(entry).css('color','#A0A09F)');
+            }
+            else if(message.indexOf("wins")>-1){
+                $(entry).css('color','#9CD940');
+            }
+            else if(message.indexOf("called")>-1){
+                $(entry).css('color','#000000');
+            }
+            else if(message.indexOf("all_in")>-1){
+                $(entry).css('color','#FC5130');
+            }
+            else if(message.indexOf("QUESTION")>-1){
+                $(entry).css('color','#1b60f9');
+            }
+            else
+                $(entry).css('color','#2e2e2e');
+
+            var boldtext = document.createElement("span");
+            boldtext.className = "_boldtext";
+
+            var dom_uname = document.createElement("span");
+            dom_uname.className = "_username";
+            dom_uname.style.textTransform = "capitalize";
+
+            dom_uname.innerHTML = username+" ";
+            boldtext.appendChild(dom_uname);
+            entry.appendChild(boldtext);
+
+            var dom_msg = document.createElement("small");
+            dom_msg.className = "_message";
+            dom_msg.innerHTML = message;
+            entry.appendChild(dom_msg);
+
+/*
+            updateScroll();
+    */
+
+
+            return entry;
+            }
+
+
+
+        function show_correct_answer(real_answer){
+            if(real_answer == 0)
+                $(".correct-option").text('A');
+            else if(real_answer == 1)
+                $(".correct-option").text('B');
+            else if(real_answer == 2)
+                $(".correct-option").text('C');
+            else if(real_answer == 3)
+                $(".correct-option").text('D');
+        }
+
+		function openWS(messageContainer){
+        	ws = new WebSocket("ws://{{ host }}:8080/Websocket/" + {{ game_room_id }});
+
+
+			if(user_animation === 0){
+				//startUserSeatAnimation("seat_"+{{ seat }});
+				changeView("seat_"+{{ seat }});
+				user_animation = 1;
+				}
+
+			//var started = 0;
+
+        	ws.onmessage = async function(e){
+        		var data = JSON.parse(e.data);
+        		// alert(data.game_key);
+				switch(data.game_key){
+					case '1':
+
+                        console.log("this is case 1");
+                        console.log( data );
+                  	messageContainer.appendChild(createEntry(data.user_name, data.message));
+
+
+
+                  	break;
+
+            		case '2':
+                  	//messageContainer.appendChild(createEntry(data.user_name, data.message));
+                  	messageContainer.appendChild(createEntry(data.user_name, "Has Joined."));
+
+                  	if(document.getElementById(data.seat_no).src="{{ static_url('images/background-empty-hex.png') }}"){
+                  		document.getElementById(data.seat_no).src="{{ static_url('images/background-blue-hex.png') }}";
+                  		document.getElementById(data.seat_no + '-profile').style.visibility = 'visible';
+                  		document.getElementById(data.seat_no + '-name').innerHTML = data.user_name;
+    	              	}
+                    break;
+
+            		case '3':
+                    //messageContainer.appendChild(createEntry(data.user_name, data.message));
+                  	messageContainer.appendChild(createEntry(data.user_name, "Has Left."));
+                    document.getElementById(data.seat_no).src="{{ static_url('images/wait_for_players.png') }}";
+                        document.getElementById(data.seat_no + '-profile').src= "{{ static_url('images/profile-default.png') }}";
+                        document.getElementById(data.seat_no + '-profile').style.visibility = 'hidden';
+    				document.getElementById(data.seat_no + '-name').innerHTML = '';
+					document.getElementById(data.seat_no +'-money').innerHTML = '';
+    				break;
+
+            		case '4':
+
+
+                  	messageContainer.appendChild(createEntry("THE GAME", "Has Started."));
+					$("#question_no").text(data.question_no);
+					$("#hint-box").attr('src','/static/images/yellowbar.png');
+					$("#hint-text").css('color', '#4d4d4d');
+					$("#"+folded_seat_no).css('opacity','1');
+                    console.log("data inside case 4:"+data);
+					//started = 1;
+					console.log("This Is Case4:" ,data);
+					console.log("dealer " + data.dealer_seat);
+					console.log("seat " + user_seat_no);
+					console.log(data.user_amount,"THis is user-amount 4");
+                    all_in_counter = 0;
+					deactivateUser(user_seat_no);
+					activateUser(data.dealer_seat);
+/*                        if(data.user_amount != undefined){
+                            console.log("This called 1");
+                            console.log(data.user_amount);
+                            document.getElementById(data.seat_no+'-money').innerHTML = data.user_amount;
+                        }*/
+                    if(data.call_amount == 0){
+                        document.getElementById("current-user-text2").innerText = "CHECK";
+                        document.getElementById("call-amount").innerText = "";
+                    }
+                    else
+                        document.getElementById("current-user-text2").innerText = "CALL";
+                        document.getElementById('call-amount').innerHTML = data.call_amount + "\u20ac";
+
+                                if(data.dealer_seat ==  user_seat_no){
+        						opt_timer();
+/*
+						countdown_timer();
+*/
+
+						console.log("This is dealer Seat:",data.dealer_seat);
+						console.log("This is opt_timer:",opt_count);
+						if(data.bet_amount >= data.next_user_amount){
+	                        if(data.call_amount >= data.next_user_amount){
+    	                    	showAllinButtons();
+    	                    	if(all_in_counter == 1){
+        	                		game_action('all_in');
+            	            		}
+	                        	}
+							else{
+								showAllinAndCallButtons();
+								}
+							}
+						else{
+							$("#game-slider").slider({
+								range: "min",
+								value: 0,
+								min: data.bet_amount,
+								max: data.next_user_amount,
+                                step:0.01 ,
+                                offset: "0, 1",
+								slide: function(event, ui) {
+									$("#current-user-number-text3").text(ui.value + "\u20ac");
+									// $("#current-user-number-text3").text(ui.value);
+									money = ui.value;
+									}
+								});
+							showUserButtons();
+                            opt_timer();
+
+							}
+						}
+						else{
+                        act_opt_timer();
+					    console.log("This is user seat",user_seat_no);
+					    console.log("THis is timer count:",opt_count);
+						document.getElementById(data.dealer_seat).src="{{static_url('images/timer-background.png')}}";
+					}
+
+
+                    //set the user's fold variable to 0
+                    fold =0;
+
+
+                  	break;
+
+            		case '5':
+					messageContainer.appendChild(createEntry(data.user_name, data.message));
+                  	console.log("action 5:");
+                  	console.log("seat_no: "+ data.seat_no );
+					console.log("user_seat_no: "+user_seat_no);
+                  	console.log("curr_seat_no: "+data.curr_seat_no);
+					$("#"+folded_seat_no).css('opacity','1');
+
+
+					if(data.user_amount != undefined){
+                        console.log("This called 1");
+                        console.log(data.user_amount);
+                        document.getElementById(data.seat_no+'-money').innerHTML = data.user_amount;
+                    }
+
+                    if(data.call_amount == 0){
+                        document.getElementById("current-user-text2").innerText = "CHECK";
+                        document.getElementById("call-amount").innerText = "";
+                    }
+                    else
+                        document.getElementById("current-user-text2").innerText = "CALL";
+                        document.getElementById('call-amount').innerHTML = data.call_amount + "\u20ac";
+
+                        document.getElementById('pot-money').innerHTML = data.pot_amount;
+					console.log("change player : ");
+
+					deactivateUser(data.seat_no);
+					activateUser(data.curr_seat_no);
+					console.log("changed.");
+
+					//if(data.seat_no == user_seat_no ){
+                  	//	hideUserButtons();
+                    //	}
+
+                    if (data.curr_seat_no == user_seat_no){
+						opt_timer();
+/*
+                        countdown_timer();
+*/
+						console.log('Opt timer called');
+						if(data.bet_amount >= data.next_user_amount){
+	                        if(data.call_amount >= data.next_user_amount){
+								showAllinButtons();
+								if(all_in_counter == 1){
+									game_action('all_in');
+                                }
+								}
+							else{
+								document.getElementById('call-amount').innerHTML = data.call_amount + "\u20ac";
+								showAllinAndCallButtons();
+								}
+							}
+
+						else{
+							$("#game-slider").slider({
+								range: "min",
+								value: 0,
+								min: data.bet_amount,
+								max: data.next_user_amount,
+								step: 1,
+								slide: function(event, ui) {
+									// $("#current-user-number-text3").text(ui.value + "\u20ac");
+									$("#current-user-number-text3").text(ui.value + "\u20ac");
+									money = ui.value;
+									}
+								});
+							//change the call and bet amount
+							document.getElementById('call-amount').innerHTML = data.call_amount + "\u20ac";
+							document.getElementById('current-user-number-text3').innerHTML = data.bet_amount + "\u20ac";
+							showUserButtons();
+                            opt_timer();
+							}
+						}
+                    else{
+                        act_opt_timer();
+                        console.log("This is user seat",user_seat_no);
+                        console.log("THis is timer count:",opt_count);
+                        document.getElementById(data.curr_seat_no).src="{{static_url('images/timer-background.png')}}";
+                    }
+
+                 	break;
+
+            		case '6':
+
+                    setButtonSelected('4');
+                    
+					if(data.con_id != 'question'){
+
+                    messageContainer.appendChild(createEntry("HINT #" + data.con_id.slice(4), data.con));
+                    }
+                    document.getElementById('pot-money').innerHTML = data.pot_amount;
+
+                  	if(data.con_id == 'question' && fold == 0){
+                  	//if(data.con_id == 'question' && fold == 0 && started == 1){
+                        q_no = q_no +1;
+                        document.getElementById('question-no').innerHTML = "QUESTION # " + q_no;
+                        hideUserButtons();
+                        document.getElementById('question').innerHTML = data.con;
+                    	document.getElementById('opt1').innerHTML = "A."+data.opt[0];
+                      	document.getElementById('opt2').innerHTML = "B."+data.opt[1];
+                      	document.getElementById('opt3').innerHTML = "C."+data.opt[2];
+                      	document.getElementById('opt4').innerHTML = "D."+data.opt[3];
+						$("#quiz").show();
+    					$("#quiz-popup-container").show();
+    					$("#clock-image").show();
+    					$("#clock").show();
+						$("#clock").text("10");
+                        //timer
+						timer();
+                  	}
+                    else if(data.con_id != 'question'){
+
+                        document.getElementById('hint-number').innerHTML = "HINT #" + data.con_id.slice(4);
+
+                        if (data.con_id.slice(4)==1){
+                            var category_name = "images/"+data.con.toLocaleLowerCase()+".png";
+                            $("#category_icon").attr("src","{{static_url('+category_name+')}}");
+
+                        }
+                        var len = data.con.length;
+                        if(len>10 && len<30){
+							changeCSS(".hint-text-display","font-size: 20px; line-height: 22px");
+							changeCSS(".hint-text-animate","font-size: 29px; line-height: 32px");
+						} else if(len>30){
+                            changeCSS(".hint-text-display","font-size: 15px; line-height: 16px");
+							changeCSS(".hint-text-animate","font-size: 24px; line-height: 25px");
+						}
+                        document.getElementById('hint-text').innerHTML = data.con;
+                        animateHint();
+                    }
+                  	break;
+
+            		case '8':
+
+                        var button1 = getButtonSelected();
+
+                        console.log(data, 'In Case 8');
+                        console.log(button1, 'user answer');
+
+						if(data.seat_no == user_seat_no){
+
+                            $('#option' + data.correct_answer).attr("src", "/static/images/option-g.png");
+
+							$("#quiz-response-correct").show();
+                            show_correct_answer(data.correct_answer);
+
+                            await sleep(6000);
+                            
+							$("#response").text("");
+							$("#quiz-response-correct").hide();
+							$("#quiz").hide();
+    						$("#quiz-popup-hide").hide();
+                            
+
+                            prev_amount = $("#"+ data.seat_no+"-money").text();
+                            total_amount = parseInt(prev_amount) + parseInt(data.pot_won);
+                            console.log(total_amount, "tttttttttttttttttt");
+                            $("#"+ data.seat_no+"-money").text(total_amount);
+
+						}
+                    break;
+
+            		case '9':
+
+                        var button2 = getButtonSelected();
+
+                        console.log(data, 'In Case 9');
+                        console.log(button2, 'user answer');
+                        console.log(user_seat_no);
+
+						if(data.seat_no == user_seat_no){
+
+							$("#quiz-response").show();
+                            show_correct_answer(data.correct_answer);
+
+                            $('#option'+data.correct_answer).attr("src","/static/images/option-g.png");
+                            $('#option' + (parseInt(button2))).attr("src", "/static/images/option-r.png");
+
+                            await sleep(6000);
+
+							$("#response").text("");
+							$("#quiz-response").hide();
+							$("#quiz").hide();
+    						$("#quiz-popup-hide").hide();
+
+						}
+                  	break;
+
+                    case '10':{
+
+                        small_blind_seat = data.small_blind;
+                        big_blind_seat = data.big_blind;
+
+                        for ( i = 1;i<=10;i++){
+
+                            if(data.sitted_clients['seat_'+i] != '-1'
+                             && !( 'seat_'+i == data.big_blind 
+                                || 'seat_'+i == data.small_blind )) {
+
+                                document.getElementById('seat_'+i).src="{{ static_url('images/background-blue-hex.png') }}";
+                                document.getElementById('seat_' + i + '-profile').style.display = 'block';
+                                document.getElementById('seat_' + i + '-profile').src = "/static/images/"+data.profile['seat_' + i];
+                  		        document.getElementById('seat_' + i + '-name').innerHTML = data.sitted_clients['seat_'+i];
+
+                                if(data.total_amount['seat_'+i]!= undefined){
+
+                                    document.getElementById('seat_'+ i +'-money').innerHTML = data.total_amount['seat_'+i];
+
+                                }
+
+                            }
+                        }
+
+                        if(data.big_blind != undefined && data.small_blind != undefined) {
+                            document.getElementById(data.big_blind).src = "{{ static_url('images/big-blind.png') }}";
+                            document.getElementById(data.small_blind).src = "{{ static_url('images/small-blind.png') }}";
+                            document.getElementById(data.small_blind).style.width = "138px";
+                            document.getElementById(data.small_blind).style.height = "134px";
+                            document.getElementById(data.big_blind).style.width = "138px";
+                            document.getElementById(data.big_blind).style.height = "134px";
+							$('#'+data.big_blind +'-money').css('color','#4d4d4d !important');
+							$('#'+data.small_blind +'-money').css('color','#4d4d4d !important');
+							var bb_blind_amount = document.createElement("p");
+							var sb_blind_amount = document.createElement("p");
+
+                            // big-blind
+                            var position_value_bb = document.getElementById(data.big_blind).className;
+                            document.getElementById(data.big_blind).classList.add('blind-' + position_value_bb);
+                            bb_blind_amount.id = position_value_bb + "-bb-money";
+                            document.getElementById(data.big_blind).parentElement.appendChild(bb_blind_amount);
+                            document.getElementById(bb_blind_amount.id).innerHTML = data.bb_amount+ "&nbsp;&euro;";
+
+                            //small-blind
+                            var position_value_sb = document.getElementById(data.small_blind).className;
+                            document.getElementById(data.small_blind).classList.add('blind-'+position_value_sb);
+                            	sb_blind_amount.id = position_value_sb + "-sb-money";
+                                document.getElementById(data.small_blind).parentElement.appendChild(sb_blind_amount);
+                                document.getElementById(sb_blind_amount.id).innerHTML = data.sb_amount+ "&nbsp;&euro;";
+
+                        }
+					}
+					break;
+
+					case 'update_call_bet':{
+                        //change the initial call and bet amount
+                        document.getElementById('call-amount').innerHTML = data.call_amount + "\u20ac";
+                        document.getElementById('current-user-number-text3').innerHTML = data.bet_amount + "\u20ac";
+                    }
+                    break;
+
+					case 'hide_buttons':{
+						hideUserButtons();
+                    }
+                    break;
+
+                    case '11':{
+                        //display winners
+                        console.log("Display Winners Here 11");
+                        console.log(data);
+
+                        document.getElementById('hint-text').innerHTML = '';
+                        document.getElementById('hint-number').innerHTML = '';
+
+                        if(data.right_ans_usr.length > 0) {
+
+                            document.getElementById('hint-box').src = "/static/images/green-bar.png";
+
+
+                            document.getElementById('hint-text').innerHTML = data.right_ans_usr;
+                            document.getElementById('hint-text').style.color ="#ffffff";
+                            document.getElementById('hint-text').style.textAlign = "center";
+                        }
+                        else{
+
+                            document.getElementById('hint-box').src = "/static/images/red-bar.png";
+                            document.getElementById('hint-number').innerHTML = "";
+                        }
+
+                        await sleep(3000);
+
+
+                        var len = data.con.length;
+                        
+                        if(len>10 && len<30){
+                            changeCSS(".hint-text-display","font-size: 20px; line-height: 22px");
+                            changeCSS(".hint-text-animate","font-size: 29px; line-height: 32px");
+                        } else if(len>30){
+                            changeCSS(".hint-text-display","font-size: 15px; line-height: 16px");
+                            changeCSS(".hint-text-animate","font-size: 24px; line-height: 25px");
+                        }
+
+
+                        animateHint();
+                    }
+                    break;
+
+					case 'buyin_check':{
+						if(data.player_for_buyin.includes("{{player_id}}")){
+							document.getElementById('min_buyin_text').innerHTML = data.min_buy_in + "\u20ac";
+							document.getElementById('max_buyin_text').innerHTML = data.max_buy_in + "\u20ac";
+		                    document.getElementById('buyin_text').innerHTML = data.max_buy_in + "\u20ac";
+							user_buy_in = parseFloat(data.max_buy_in);
+							$("#buyin-slider").slider({
+								range: "min",
+								value: parseFloat(data.max_buy_in),
+								min: parseFloat(data.min_buy_in),
+								max: parseFloat(data.max_buy_in),
+                                step:0.01 ,
+                                offset: "0, 1",
+								slide: function(event, ui) {
+								user_buy_in = ui.value;
+			                    document.getElementById('buyin_text').innerHTML = (user_buy_in + "\u20ac");
+								}
+							});
+							await sleep(5000);
+							$("#buyInModal").modal('show');
+							}
+                    	}
+                    	break;
+
+                    case 'update_wallet':{
+						if(data.balance[{{player_id}}] !=undefined)
+						document.getElementById('amount').innerHTML = data.balance[{{player_id}}];
+						}
+                  	break;
+
+                  	case 'exit':{
+						exit_gameroom();
+						}
+                  	break;
+
+					case 'banner_check':{
+						document.getElementById(data.position).innerHTML = data.link;
+						}
+                  	break;
+
+                    case '12':{
+                    	exit_gameroom();
+                        //console.log('End_Game');
+                        //window.location.href = "http://{{ host }}:8080/user/view_games";
+                    }
+                        break;
+            		default:
+                  	break;
+				}
+        	};
+
+
+
+        	ws.onclose = function(e) {
+               /* var wtf = $('#log-body');
+                var height = wtf[0].scrollHeight;
+                wtf.scrollTop(height);*//*
+                $('#log-body').animate({scrollTop: $('#log-body').prop("scrollHeight")}, 500);*/
+                openWS(messageContainer);
+
+          		};
+    		}
+
+
+
+
+    	window.onload = function(){
+			var messageContainer = document.getElementById("log-body");
+/*
+			$("messageContainer p:last-child").append("<p>You have reached at the bottom.</p>");
+*/
+        	openWS(messageContainer);
+
+		}
+
+
+		function sendMessage() {
+        	var data = {
+        		game_key: '1',
+                user_name: document.getElementById("username").value,
+                message: document.getElementById("message").value,
+                seat_no: 'nil',
+                action: 'nil',
+                dealer_seat: 'nil',
+                game_room_id: 'nil',
+                con_id: 'nil',
+                con: 'nil',
+                ans: 'nil',
+                opt: ['nil','nil','nil','nil'],
+                answer_time: 'nil'
+        	};
+
+        	if(data.user_name && data.message && data.game_key) {
+          		ws.send(JSON.stringify(data));
+        	}
+	    }
+
+     	function sit_here(seat_no){
+			if(document.getElementById(seat_no + '-name').innerHTML===''){
+				var data ={
+					game_key: '2',
+					user_name: '{{user_name}}',
+					message: 'Has Taken ' + seat_no,
+					seat_no: seat_no,
+					action: 'nil',
+					dealer_seat: 'nil',
+					game_room_id: {{ game_room_id }},
+					con_id: 'nil',
+					con: 'nil',
+					ans: 'nil',
+					opt: ['nil','nil','nil','nil'],
+					answer_time: 'nil'
+				};
+
+				if(data.user_name && data.seat_no && user_taken == 0 && data.game_key) {
+					ws.send(JSON.stringify(data));
+					user_taken = 1;
+					user_seat_no =  data.seat_no;
+				}
+			}
+      	}
+
+     	function sit_out() {
+         	console.log('sit_out called');
+         	console.log(user_seat_no);
+        	var data = {
+        		game_key: '3',
+            	user_name: '{{user_name}}',
+                message: 'Has Left ' + user_seat_no,
+                seat_no: user_seat_no,
+                action: 'nil',
+                dealer_seat: 'nil',
+                game_room_id: {{ game_room_id }},
+                con_id: 'nil',
+                con: 'nil',
+                ans: 'nil',
+                opt: ['nil','nil','nil','nil'],
+                answer_time: 'nil'
+                };
+			if(data.user_name && data.seat_no && user_taken == 1 && data.game_key) {
+				ws.send(JSON.stringify(data));
+				user_taken = 0;
+				}
+			}
+
+/*            var sb_class = document.getElementById(small_blind_seat).className;
+            var bb_class = document.getElementById(big_blind_seat).className;
+            alert(sb_class);
+            if(!(sb_class == "position-user" || bb_class =="position-user")) {
+                var sb_new_class = sb_class.substring(6);
+                var bb_new_class = bb_class.substring(6);
+                alert(sb_new_class);
+                document.getElementById(small_blind_seat).classList.remove(sb_class);
+                document.getElementById(small_blind_seat).classList.add(sb_new_class);
+                document.getElementById(big_blind_seat).classList.remove(bb_class);
+                document.getElementById(big_blind_seat).classList.add(bb_new_class);
+            }*/
+            function unset_blinds(){
+                for (var i = 1; i <= 10; i++) {
+                    $("img").removeClass("blind-position" + i);
+                    $("#position"+i+"-bb-money").hide();
+                    $("#position"+i+"-sb-money").hide();
+                    $("#position-user").hide();
+                }
+            }
+
+
+            function game_action(action_value){
+                opt_timer();
+                hideUserButtons();
+
+                var message = 'Has ' + action_value;
+                var call_value = 'nil';
+                var bet_value = 'nil';
+
+                opt_count = -1;
+                if(action_value == 'all_in'){
+                    all_in_counter = 1;
+                }
+                else if(action_value == 'bet'){
+                    bet_value = parseInt(document.getElementById("current-user-number-text3").innerHTML);
+                    message = message + ' ' + bet_value + "\u20ac";
+                }
+                else if(action_value == 'call'){
+                    call_value = parseInt(document.getElementById('call-amount').innerHTML);
+                    message =  message + 'ed ' + call_value + "\u20ac";
+                }
+                else if(action_value == 'fold'){
+
+                    folded_seat_no = user_seat_no;
+                    $("#"+user_seat_no).css('opacity','0.1');
+                    fold = 1;
+                    opt_timer();
+
+                }
+                var data ={
+                    game_key: '5',
+                    user_name: '{{user_name}}',
+                    message: message,
+                    seat_no: user_seat_no,
+                    action: action_value,
+                    dealer_seat: 'nil',
+                    game_room_id: {{ game_room_id }},
+                    curr_seat_no: 'nil',
+                    con_id: 'nil',
+                    con: 'nil',
+                    ans: 'nil',
+                    user_amount: 'nil',
+                    pot_amount: 'nil',
+                    call_amount: call_value,
+                    bet_amount: bet_value,
+                    ans: 'nil',
+                    opt: ['nil','nil','nil','nil'],
+                    answer_time: 'nil'
+            };
+
+                if(data.user_name && data.seat_no && data.game_key && data.action) {
+                    // alert("Ws data sent");
+                    ws.send(JSON.stringify(data));
+                }
+
+
+            }
+        async function timer(){
+            var count = 10;
+            while(count>0){
+                if(count >= 4 && count<=7){
+                    $("#clock-image").attr("src","{{ static_url('images/timer-o.png')}}");
+				}
+				else if(count >7 && count <=10){
+                    $("#clock-image").attr("src","{{ static_url('images/timer.png') }}");
+
+                }
+                else{
+                    $("#clock-image").attr("src","{{ static_url('images/timer-r.png') }}");
+
+                }
+                await sleep(1000);
+                count = count - 1;
+                if(count===0){
+                    submit_opt(getButtonSelected(), getAnswerTime());
+                    $("#clock-image").hide();
+                    $("#clock").hide();
+                }
+                $("#clock").text("0"+count);
+            }
+        }
+		var opt_count=0;
+		async function opt_timer(){
+            opt_count = 30;
+            while(opt_count>0){
+                await sleep(1000);
+/*
+                console.log("Inside countdown_timer");
+*/
+                opt_count = opt_count - 1;
+/*
+                console.log(opt_count + 'This is count');
+*/
+
+
+                if(opt_count===0){
+                    var data ={
+					game_key: '5',
+					user_name: '{{user_name}}',
+					message: 'Has Fold' ,
+					seat_no: user_seat_no,
+					action: 'fold',
+					dealer_seat: 'nil',
+					game_room_id: {{ game_room_id }},
+					curr_seat_no: 'nil',
+					con_id: 'nil',
+					con: 'nil',
+					ans: 'nil',
+					user_amount: 'nil',
+					pot_amount: 'nil',
+					call_amount: 'nil',
+					bet_amount: 'nil',
+					ans: 'nil',
+					opt: ['nil','nil','nil','nil'],
+					answer_time: 'nil'
+					};
+                ws.send(JSON.stringify(data));
+				hideUserButtons();
+                }
+                if(opt_count>=27 && opt_count<30){
+                    $(".progress").removeClass("none");
+                    $(".progress").addClass("ten");
+                }
+                else if(opt_count >= 24 && opt_count < 27){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("twenty");
+                }
+                else if(opt_count >= 21 && opt_count < 24){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("thirty");
+                }
+                else if(opt_count >= 18 && opt_count < 21){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("forty");
+                }
+                else if(opt_count >= 15 && opt_count < 18){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("sixty");
+                }
+                else if(opt_count >= 12 && opt_count < 15){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("seventy");
+                }
+                else if(opt_count >= 9 && opt_count < 12){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("eighty");
+                }
+                else if(opt_count >= 6 && opt_count < 9){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("ninty");
+                }
+                else if(opt_count>3 && opt_count<6){
+                    $(".progress").removeClass("ten");
+                    $(".progress").addClass("one-hundred");
+
+                }
+                else if(opt_count>0 && opt_count<3){
+                    $(".progress").removeClass("none");
+                    $(".progress").addClass("one-hundred");
+                }
+                $("#opt_clock").text("0"+opt_count);
+
+
+            }
+            $(".progress").addClass("none");
+
+
+        }
+        async function act_opt_timer() {
+			var count =10;
+			while(count>0){
+			    await sleep(1000);
+/*
+			    console.log("This is act_opt_timer",count);
+*/
+			    count=count-1;
+			}
+        }
+
+      	function submit_opt(option, count_value) {
+			$('#opt'+(parseInt(option)+1)).css('color' ,"#000000");
+            console.log("before option send");
+            console.log(option);
+            user_ans = option;
+
+        	var data = {
+        		game_key: '7',
+                user_name: '{{user_name}}',
+                message: 'nil',
+                seat_no: user_seat_no,
+                action: 'nil',
+                dealer_seat: 'nil',
+                game_room_id: {{ game_room_id }},
+                curr_dno: 'nil',
+                con_id: 'nil',
+                con: 'nil',
+                ans: option,
+                opt: ['nil','nil','nil','nil'],
+                right_ans_usr: [],
+                answer_time: '5',
+//                answer_time : count_value
+
+            };
+        	ans = option;
+            console.log(data);
+        	if(data.user_name && data.seat_no && user_taken ==1 && data.game_key) {
+          		ws.send(JSON.stringify(data));
+                console.log("option send");
+                console.log(option);
+       		}
+     	}
+
+     	// async function start_game_animation(){
+          //   $("#hint-image").attr("src","{{ static_url('images/pot.png') }}");
+     	//     $("#next-question").show();
+			// $("#next-question-count").show();
+			// $("#next-question-count").text("4");
+			// var count = 4;
+			// while(count >= 0){
+			// 	await sleep(1000);
+			// 	$("#next-question-count").text(count);
+			// 	console.log("This is question timer",count);
+			// 	count = count - 1;
+			// 	if(count === 0){
+			// 	    await sleep(1000);
+			// 		$("#hint-image").attr("src","{{ static_url('images/pot.png') }}");
+			// 		$("#next-question").hide();
+			// 		$("#next-question-count").hide();
+			// 		}
+			// 	}
+			// }
+
+		function rebuyin(){
+            console.log('re-buyin', user_buy_in);
+            var data ={
+        		game_key: 'rebuyin',
+                user_name: '{{user_name}}',
+                seat_no: user_seat_no,
+                game_room_id: {{ game_room_id }},
+                rebuyin : user_buy_in
+            	};
+			ws.send(JSON.stringify(data));
+			$("#buyInModal").modal('hide');
+            }
+
+        function exit_gameroom(){
+            $("#buyInModal").modal('hide');
+            sit_out();
+            window.location.href = "http://{{ host }}:8080/user/view_games";
+            }
+/*        function countdown_timer(){
+            console.log("Inside countdown_timer");
+            setTimeout(function(e){
+                $(".progress").removeClass("none");
+                $(".progress").addClass("one-hundred");
+            },6000);
+        }*/
+
+    </script>
+	</head>
+
+	<body>
+
+		<!-- Navbar -->
+<!--
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				  	</button>
+				</div>
+				<a href="#"><img  class="nav-image" src="{{ static_url('images/logo.png') }}"></a>
+				<div class="collapse navbar-collapse">
+				  	<ul class="nav navbar-nav">
+						<li>
+							<a class="navbar-brand" href="#">GAME ROOM</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-credit-card"></span></a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-euro"></span></a>
+						</li>
+						<li>
+							<a id="title-amount" href="#"></a>
+						</li>
+				  	</ul>
+				  	<ul class="nav navbar-nav navbar-right">
+						&lt;!&ndash;<li><a href="#">MY OPTIONS</a></li>&ndash;&gt;
+						&lt;!&ndash;<li><a id="logout-btn">LOGOUT</a></li>&ndash;&gt;
+				  	</ul>
+				</div>
+		  	</div>
+		</nav>
+
+		<div>
+			<div id="position_1">Banner 1</div>
+			<div id="position_2">Banner 2</div>
+			<div id="position_3">Banner 3</div>
+		</div>
+-->
+
+<!--		<div class="grey_rect">
+			<div id="logo"><img src="{{static_url('images/logo.png')}}"></div>
+			<div class="creditcard_ellipse"><img src="{{static_url('images/hint-final.png')}}"></div>
+			<div class="coin_ellipse"><img src="{{static_url('images/hint.png')}}"></div>
+			<div class="coin_ellipse" id="amount"></div>
+			<div class="dropdown">
+				<button class="dropbtn">MY OPTION <img src="{{static_url('images/caret.png')}}" id="caret"></button>
+				<div class="dropdown-content">
+					<a id="logout-btn">LOGOUT</a>
+				</div>
+			</div>
+		</div>-->
+		<div class="grey_rect container">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="col1">
+				<img src="{{static_url('images/creditcard.png')}}">
+				<img src="{{static_url('images/coin.png')}}">
+				<div id="amount"></div>
+				<!--
+                            <img src="{{static_url('images/cash.png')}}">
+                            <div id="cash">13400&euro;</div>
+                -->
+
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="col2">
+				<img src="{{static_url('images/logo.png')}}" class="img-responsive" id="quizzycash_logo">
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="col3">
+				<div class="my-option">
+					<button class="my-option-btn"><img src="{{static_url('images/myoptions.png')}}" id="caret"></button>
+					<div class="logout-sec">
+						<a id="logout-btn">LOGOUT</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--
+		<div class="blue_rect"></div>
+-->
+		<!--Game Page-->
+		<div class="row">
+
+			 <!--Log Board-->
+			<!--Log Board-->
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<div id="log-board">
+					<div><span id="question-no">QUESTION # <span id="question-number"></span></span>
+					</div>
+					<div id="log-body">
+<!--
+						<div class="vr">&nbsp;</div>
+-->
+					</div>
+				</div>
+				<br>
+				<button id="button-sit-out" class="btn btn-danger button-log-board btn-sm" type="button"  onclick="sit_out()">SIT OUT NEXT QUESTION</button>
+				<!--				<div id="banner-left">
+                                    <img src="{{ static_url('images/banner1.jpg') }}"/>
+                                </div>-->
+
+			</div>
+
+			<!--
+			#Users in this game room are from 1 to 10
+			#The user position classes in the css are named from 0 to 9 and are changed due to animation
+			#User position css classes do not affect any of the actions conducted by user and are purely used for positioning and animation
+            -->
+			<div id="game" class="col-lg-9 col-md-9 col-sm-9 col-xs-9" >
+				<div  id="countdown_timer" class='progress none'><span class='status'></span>
+				</div>
+				<!-- User 1 -->
+				<!--<span onclick="sit_here('seat_1')">-->
+<!--				<img class="position5" id="seat_1" src="{{ static_url('images/join_this_game_girl.png') }}">
+				<img class="profile-img position5-profile" id="seat_1-profile"  style="visibility: hidden;" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position5-name" id="seat_1-name"></p>
+				<p class="position5-money" id="seat_1-money"></p>-->
+				<div id="pos5">
+				<img class="position5" id="seat_1" src="{{ static_url('images/join_this_game_boy.png') }}">
+				<img class="profile-img position5-profile" id="seat_1-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position5-name" id="seat_1-name"></p>
+				<p class="position5-money" id="seat_1-money"></p>
+				</div>
+				<!--</span>-->
+
+				<!-- User 2 -->
+				<!--<span onclick="sit_here('seat_2')">-->
+                <div id="pos6">
+                <img class="position6" id="seat_2" src="{{ static_url('images/join_this_game_boy.png') }}">
+				<img class="profile-img position6-profile" id="seat_2-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position6-name" id="seat_2-name"></p>
+				<p class="position6-money" id="seat_2-money"></p>
+                </div>
+				<!--</span>-->
+				<!-- User 3 -->
+				<!--<span onclick="sit_here('seat_3')">-->
+                <div id="pos7">
+                <img class="position7" id="seat_3" src="{{ static_url('images/join_this_game_girl.png') }}">
+				<img class="profile-img position7-profile" id="seat_3-profile"  style="display:none " src="{{ static_url('images/profile-default.png') }}">
+				<p class="position7-name" id="seat_3-name"></p>
+				<p class="position7-money" id="seat_3-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 4 -->
+				<!--<span onclick="sit_here('seat_4')">-->
+                <div id="pos8">
+                <img class="position8" id="seat_4" src="{{ static_url('images/join_this_game_boy.png') }}">
+				<img class="profile-img position8-profile" id="seat_4-profile" style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position8-name" id="seat_4-name"></p>
+				<p class="position8-money" id="seat_4-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 5 -->
+				<!--<span onclick="sit_here('seat_5')">-->
+                <div id="pos9">
+				<img class="position9" id="seat_5" src="{{ static_url('images/join_this_game_girl.png') }}">
+				<img class="profile-img position9-profile" id="seat_5-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position9-name" id="seat_5-name"></p>
+				<p class="position9-money" id="seat_5-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 6 -->
+				<!--<span onclick="sit_here('seat_6')">-->
+                <div id="pos0">
+                <img class="position0" id="seat_6" src="{{ static_url('images/join_this_game_boy.png') }}">
+				<img class="profile-img position0-profile" id="seat_6-profile" style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position0-name" id="seat_6-name"></p>
+				<p class="position0-money" id="seat_6-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 7 -->
+				<!--<span onclick="sit_here('seat_7')">-->
+                <div id="pos1">
+                <img class="position1" id="seat_7" src="{{ static_url('images/join_this_game_girl.png') }}">
+				<img class="profile-img position1-profile" id="seat_7-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position1-name" id="seat_7-name"></p>
+				<p class="position1-money" id="seat_7-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 8 -->
+				<!--<span onclick="sit_here('seat_8')">-->
+                <div id="pos2">
+                <img class="position2" id="seat_8" src="{{ static_url('images/join_this_game_boy.png') }}">
+				<img class="profile-img position2-profile" id="seat_8-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position2-name" id="seat_8-name"></p>
+				<p class="position2-money" id="seat_8-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 9 -->
+<!--
+				&lt;!&ndash;<span onclick="sit_here('seat_9')">&ndash;&gt;
+-->				<div id="pos3">
+                <img class="position3" id="seat_9" src="{{ static_url('images/join_this_game_girl.png') }}">
+				<img class="profile-img position3-profile" id="seat_9-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position3-name" id="seat_9-name"></p>
+				<p class="position3-money" id="seat_9-money"></p>
+                </div>
+				<!--</span>-->
+
+				<!-- User 10 -->
+				<!--<span onclick="sit_here('seat_10')">-->
+                <div id="pos4">
+                <img class="position4" id="seat_10" src="{{ static_url('images/join_this_game_boy.png') }}">
+				<img class="profile-img position4-profile" id="seat_10-profile"  style="display:none" src="{{ static_url('images/profile-default.png') }}">
+				<p class="position4-name" id="seat_10-name"></p>
+				<p class="position4-money" id="seat_10-money"></p>
+                </div>
+
+				<!--</span>-->
+
+				<!-- Current User -->
+				<div id="current_user_actions" style="visibility:hidden">
+					<img class="position-user-profile" style="z-index: -10" src="{{ static_url('images/button-fold.png') }}" onclick="game_action('fold')" id="current-user-button-1">
+					<img class="position-user-profile" style="z-index: -10" src="{{ static_url('images/button-call.png') }}" onclick="game_action('call')" id="current-user-button-2">
+					<img class="position-user-profile" style="z-index: -10" src="{{ static_url('images/bet.png') }}" onclick="game_action('bet')" id="current-user-button-3">
+					<img class="position-user-profile" style="z-index: -10" src="{{ static_url('images/button-all-in.png') }}" onclick="game_action('all_in')" id="current-user-button-4">
+					<p class="position-user-profile" style="z-index: -5;" onclick="game_action('fold')" id="current-user-text1">FOLD</p>
+					<p class="position-user-profile" style="z-index: -5;" onclick="game_action('call')" id="current-user-text2">CALL</p>
+					<p class="position-user-profile" style="z-index: -5;" onclick="game_action('bet')" id="current-user-text3">BET</p>
+					<p class="position-user-profile" style="z-index: -5;" onclick="game_action('all_in')" id="current-user-text4">ALL IN</p>
+					<p class="position-user-profile" style="z-index: -5;" id="current-user-number-text3">bet </p>
+					<div class="position-user-profile" style="z-index: -5;" id="game-slider"></div>
+					<p class="position-user-profile" style="z-index: -5;" id="call-amount">call </p>
+				</div>
+
+
+				<!-- Game Details -->
+				<img id="hint-image" src="{{ static_url('images/pot.png') }}">
+				<!--
+                                <img src="" id="category_icon">
+                -->
+				<img class="hint-box-display" id="hint-box" src="{{ static_url('images/yellowbar.png') }}">
+				<p class="hint-number-display" id="hint-number">HINT</p>
+				<p class="hint-text-display" id="hint-text"></p>
+				<p id="pot">POT</p>
+				<p id="pot-coin-sec"><span id="pot-money">0.00</span></p>
+				<span id="pot-coin"><img src="{{static_url('images/single-coin.png')}}"></span>
+				<p id="next-question">NEXT QUESTION IN</p>
+				<p id="next-question-count">4</p>
+				<!--				<div id="banner-right">
+                                    <img src="{{ static_url('images/banner1.jpg') }}"/>-->
+				<!--					<div class="share">
+                                        <span>SHARE ON:&nbsp;&nbsp;
+                                            <span><i class="fa fa-facebook fa" aria-hidden="true"></i></span>&nbsp;
+                                            <span><i class="fa fa-twitter fa-" aria-hidden="true"></i></span>&nbsp;
+
+                                            <span><i class="fa fa-google-plus fa" aria-hidden="true"></i></span>&nbsp;
+                                            <span><i class="fa fa-pinterest-p fa" aria-hidden="true"></i></span>&nbsp;
+                                        </span>
+                                    </div>-->
+				<!--
+                                </div>
+                -->
+			</div></div>
+
+		</div>
+
+		<!-- Modal for Buy-in -->
+		<div class="modal fade" id="buyInModal" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Select Amount to Buy In</h5>
+			  </div>
+			  <div class="modal-body">
+				<span><strong>Min Buy</strong></span>
+				<span class="pull-right"><strong>Max Buy</strong></span>
+				<br>
+				<span id="min_buyin_text">10 &euro;</span>
+	            <span id="max_buyin_text" class="pull-right">100 &euro;</span>
+    	          	<center>
+        	          	<span><strong>Buy In Value : </strong></span>
+            	      	<span id="buyin_text">100 &euro;</span>
+              		</center>
+              	<br><br>
+            	<div id="buyin-slider" style="width: 100%;"></div>
+			  </div>
+			  <div class="modal-footer">
+				<button id="back-button" onclick="exit_gameroom()" type="button" class="btn btn-secondary">BACK</button>
+				<button id="buy-in-button" type="button" class="btn btn-primary">BUY IN</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<!--div for quiz question-->
+		<div id="quiz" class="dark-opacity-provider">
+			<div id="quiz-popup-container">
+				<img id="clock-image" src="{{ static_url('images/timer.png') }}">
+				<p id="clock">10</p>
+				<div id="question-content">
+					<div id="question-header">
+						<p id="question">Who won the fifa world cup blah blah blah blah blah blah?</p>
+					</div>
+					<div id="question-body">
+						<img id="question-image">
+					</div>
+				</div>
+				<div id="answer-content">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="{{ static_url('images/option-w.png') }}" onclick="setButtonSelected('0')" class="options options0" id="option0">
+							<p id="opt1" onclick="setButtonSelected('0')">A.  </p>
+						</div>
+						<div class="col-md-6">
+							<img src="{{ static_url('images/option-w.png') }}" onclick="setButtonSelected('1')" class="options options1" id="option1">
+							<p id="opt2" onclick="setButtonSelected('1')">B. &nbsp;&nbsp;</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<img src="{{ static_url('images/option-w.png') }}" onclick="setButtonSelected('2')" class="options options2" id="option2">
+							<p id="opt3" onclick="setButtonSelected('2')">C. &nbsp;&nbsp;</p>
+						</div>
+						<div class="col-md-6">
+							<img src="{{ static_url('images/option-w.png') }}" onclick="setButtonSelected('3')" class="options options3" id="option3">
+							<p id="opt4" onclick="setButtonSelected('3')">D. &nbsp;&nbsp;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="quiz-response" class="light-opacity-provider">
+			<img src="{{static_url('images/wrong-option.png')}}" id="wrong-answer">
+			<div class="correct-option" style="position: absolute;top: 344px;left: 53%;font-size: 17px;font-weight: bold;"></div>
+		</div>
+		<div id="quiz-response-correct" class="light-opacity-provider">
+			<img src="{{static_url('images/correct-option.png')}}" id="correct-answer">
+			<div class="correct-option" style="position: absolute;top: 344px;left: 53%;font-size: 17px;font-weight: bold;"></div>
+		</div>
+
+		<!-- Modal for Quiz Question -->
+		<!--<div class="modal fade" id="quizQuestionModal" aria-hidden="true" data-backdrop="static" data-keyboard="false">-->
+			<!--<div class="modal-dialog">-->
+				<!--<div class="modal-content">-->
+					<!--<div class="modal-header row" style="align-content: center;">-->
+						<!--<div class="col-md-2">-->
+							<!--<p class="pull-left" id="clock">10</p>-->
+						<!--</div>-->
+						<!--<div class="col-md-10">-->
+							<!--<p id="question" class="modal-title pull-right">Que</p>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div style="align-content: center;" class="modal-body quiz-modal-background">-->
+						<!--<center><img  src="{{ static_url('images/football.jpg') }}"></center>-->
+					<!--</div>-->
+					<!--<div class="modal-footer">-->
+						<!--<button id="opt1" onclick="setButtonSelected('0')" type="button" class="btn btn-primary" style="width:48%;">A</button>-->
+						<!--<button id="opt2" onclick="setButtonSelected('1')" type="button" class="btn btn-primary" style="width:48%;">B</button>-->
+					<!--</div>-->
+					<!--<div class="modal-footer">-->
+						<!--<button id="opt3" onclick="setButtonSelected('2')" type="button" class="btn btn-primary" style="width:48%;">C</button>-->
+						<!--<button id="opt4" onclick="setButtonSelected('3')" type="button" class="btn btn-primary" style="width:48%;">D</button>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	</body>
+
+</html>
+

@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>QuizzyCash</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="assets/vendor/pace/themes/orange/pace-theme-minimal.css">
+		<link rel="stylesheet" href="assets/css/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+		<link rel="stylesheet" href="assets/vendor/x-editable/bootstrap3-editable/css/bootstrap-editable.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap-tour/css/bootstrap-tour.min.css">
+		<link rel="stylesheet" href="assets/vendor/jqvmap/jqvmap.min.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/skins/sidebar-nav-darkgray.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/skins/navbar3.css" type="text/css">
+		<!-- FOR DEMO PURPOSES ONLY. You should/may remove this in your project -->
+		<link rel="stylesheet" href="assets/css/demo.css">
+		<link rel="stylesheet" href="demo-panel/style-switcher.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+
+		<script language="javascript">
+			function getRndInteger(min, max) {
+ 			   return Math.floor(Math.random() * (max - min + 1) ) + min;
+			}
+
+			window.onload = function(){
+				document.getElementById('online_users').innerHTML = getRndInteger(45000, 50000);
+				document.getElementById('active_gamerooms').innerHTML = getRndInteger(1000, 1200);
+				document.getElementById('total_pot_amount').innerHTML = getRndInteger(145000, 250000);
+				document.getElementById('active_campaigns').innerHTML = getRndInteger(2000, 2700);
+				<!--document.getElementById('weekly_campaign').innerHTML = 4*getRndInteger(2000, 2700);-->
+				<!--document.getElementById('new_users').innerHTML = getRndInteger(200, 300);-->
+				<!--document.getElementById('games_played').innerHTML = getRndInteger(15000, 20000);-->
+				<!--document.getElementById('unique_questions').innerHTML = getRndInteger(150000, 2000000);-->
+				document.getElementById('viewed').innerHTML = getRndInteger(25000, 30000);
+				document.getElementById('shared').innerHTML = getRndInteger(1500, 2000);
+				document.getElementById('clicked').innerHTML = getRndInteger(15000, 20000);
+
+			}
+		</script>
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="index.html">
+						<!--<img src="assets/img/logo-white.png" alt="Klorofil Pro Logo" class="img-responsive logo">-->
+						<img src="assets/img/logo.jpg" alt="QuizzyCash Logo" class="img-responsive logo" style="hieght:70%;width:70%;">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth"><i class="ti-arrow-circle-left"></i></button>
+					</div>
+					<form class="navbar-form navbar-left search-form">
+						<input type="text" value="" class="form-control" placeholder="Search dashboard...">
+						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</form>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="assets/img/user.png" alt="Avatar">
+									<span>Samuel</span>
+								</a>
+								<ul class="dropdown-menu logged-user-menu">
+									<li><a href="#"><i class="ti-user"></i> <span>My Profile</span></a></li>
+									<li><a href="appviews-inbox.html"><i class="ti-email"></i> <span>Message</span></a></li>
+									<li><a href="#"><i class="ti-settings"></i> <span>Settings</span></a></li>
+									<li><a href="page-lockscreen.html"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">
+						<li class="menu-group">Main</li>
+						<li class="panel">
+							<li><a href="admin_panel.html" ><i class="flaticon-man-with-tie"></i>Admin</a></li>
+						</li>
+
+						<!--li class="panel">
+							<li><a href="index.html" class="active"><i class="ti-dashboard"></i>Dashboard</a></li>
+						</li-->
+						<li class="panel" class="collapse ">
+							<!--li><a href="index.html" class="active"><i class="ti-dashboard"></i>Dashboard</a></li-->
+							<a href="general_dashboard.html" class="active"><!--a href="#dashboard" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed"--><i class="ti-dashboard"></i> <span class="title">Dashboard</span> <!--i class="icon-submenu ti-angle-left"></i--></a>
+							<div id="dashboard" >
+								<ul class="submenu">
+									<li><a href="general_dashboard.html">Gaming</a></li>
+									<li><a href="marketing_dashboard.html" class="active">Marketing</a></li>
+									
+								</ul>
+							</div>
+						</li>
+						
+						<li class="panel">
+							<li><a href="questions.html" ><i class="flaticon-question"></i>Questions</a></li>
+						</li>
+						<li class="panel">
+							<li><a href="user_page.html" ><i class="ti-user"></i>User</a></li>
+						</li>
+						<li class="panel">
+							<li><a href="session.html" ><i class="flaticon-login-1"></i>Session</a></li>
+						</li>
+						<!--<li class="panel">-->
+							<!--<li><a href="#" ><i class="ti-calendar"></i>Events</a></li>-->
+						<!--</li>-->
+						<li class="panel">
+							<li><a href="qr_shares.html" ><i class="flaticon-blackberry-qr-code-variant"></i>QR shares</a></li>
+						</li>
+
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="content-heading clearfix">
+						<div class="heading-left">
+							<h1 class="page-title">Welcome to Admin Panel</h1>
+							<p class="page-subtitle">Admin dashboard for QuizzyCash</p>
+						</div>
+						<ul class="breadcrumb">
+							<li><a href="admin_panel.html"><i class="fa fa-home"></i> Home</a></li>
+							<li class="active"><a href="general_dashboard.html">Dashboards</a></li>
+							<li class="active"><a href="marketing_dashboard.html">Marketing</a></li>
+						</ul>
+					</div>
+
+					<!-- TOP METRICS -->
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<a href="user_page.html" ><div class="widget widget-metric_1 animate">
+									<span class="icon-wrapper custom-bg-orange"><i class="fa fa-user"></i></span>
+									<div class="right">
+										<span class="value" id="online_users"></span><i class="change-icon change-up fa fa-sort-up text-indicator-green"></i>
+										<span class="title">Online Users <span class="change text-indicator-green">+234</span></span>
+									</div>
+								</div>
+							</div>
+							</a>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-metric_1 animate">
+									<span class="icon-wrapper custom-bg-lightseagreen"><i class="fa fa-users"></i></span>
+									<div class="right">
+										<span class="value" id="active_gamerooms"></span><i class="change-icon change-up fa fa-sort-up text-indicator-green"></i>
+										<span class="title">New Users <span class="change text-indicator-green">+364</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-metric_1 animate">
+									<span class="icon-wrapper custom-bg-blue2"><i class="fa fa-balance-scale"></i></span>
+									<div class="right">
+										<span class="value" id="total_pot_amount"></span><i class="change-icon change-up fa fa-sort-up text-indicator-green"></i>
+										<span class="title">Total Shares <span class="change text-indicator-green"> +203</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-metric_1 animate">
+									<span class="icon-wrapper custom-bg-purple"><i class="fa fa-archive"></i></span>
+									<div class="right">
+										<span class="value" id="active_campaigns"></span><i class="change-icon change-up fa fa-sort-up text-indicator-green"></i>
+										<span class="title">Benefits For Customer <span class="change text-indicator-green">+420</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					<!----------------->
+					<div class="row sortable-grid">
+
+                            <div class="container-fluid">
+							<!-- CHAT SUPPORT -->
+							<div class="col-md-12 sortable-item">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">New Customer Engagement</h3>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-4">
+												<div id="online-visitors-dashboard" class="online-visitors">
+													<div class="count" id="tour-online-count">
+														<span class="number">70</span>
+														<span>Visitors online</span>
+													</div>
+													<div class="progress traffic-sources">
+														<div class="progress-bar source referral" style="width: 10%">
+															<span>10%</span>
+														</div>
+														<div class="progress-bar source organic" style="width: 40%">
+															<span>40%</span>
+														</div>
+														<div class="progress-bar source direct" style="width: 27%">
+															<span>27%</span>
+														</div>
+														<div class="progress-bar source email" style="width: 23%">
+															<span>23%</span>
+														</div>
+													</div>
+													<div class="square-legend">
+														<ul class="list-unstyled list-inline">
+															<li>
+																<span class="referral"></span> Referral</li>
+															<li>
+																<span class="organic"></span> Coupons</li>
+															<li>
+																<span class="direct"></span> Banner</li>
+															<li>
+																<span class="email"></span> Qr Codes</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-8">
+												<table class="table table-minimal table-chat-support datatable">
+													<thead>
+														<tr>
+															<th>Visitor</th>
+															<th>Source</th>
+															<th>Device</th>
+															<th>Browser</th>
+															<th>Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover" data-visitor-name="Bruce Evans" data-visitor-img="assets/img/people/male1.png"><i class="fa fa-vcard-o"></i></span> Bruce</td>
+															<td>
+																<!--<span class="page-tooltip" data-title="https://myonlineshop.com/men/shoes">Coupon </span>-->
+																<span class="page-tooltip">Coupon </span>
+															</td>
+															<td><i class="fa fa-desktop"></i></td>
+															<td><i class="fa fa-firefox firefox-color"></i> Firefox</td>
+															<td>
+																<button class="btn btn-success btn-xs">Coupon Scanned</button>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
+															<td>
+																<!--<span class="page-tooltip" data-title="https://myonlineshop.com/how-to/shop">How to shop | FAQ | Help</span>-->
+																<span class="page-tooltip" > Banner</span>
+															</td>
+															<td><i class="fa fa-desktop"></i></td>
+															<td><i class="fa fa-edge edge-color"></i> Edge</td>
+															<td>
+																<button class="btn btn-default btn-xs">Got Offer </button>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover" data-visitor-name="Joey Felicia" data-visitor-img="assets/img/people/female1.png"><i class="fa fa-vcard-o"></i></span> Joey</td>
+															<td>
+																<span class="page-tooltip">Game Room </span>
+															</td>
+															<td><i class="fa fa-mobile"></i></td>
+															<td><i class="fa fa-chrome chrome-color"></i> Chrome</td>
+															<td>
+																<button class="btn btn-danger btn-xs">Low Balance In Wallet</button>
+															</td>
+														</tr>
+
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
+                                                            <td>
+																<span class="page-tooltip">Game Room </span>
+															</td>
+															<td><i class="fa fa-mobile"></i></td>
+															<td><i class="fa fa-chrome chrome-color"></i> Chrome</td>
+															<td>
+																<button class="btn btn-danger btn-xs">Low Balance In Wallet</button>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
+
+                                                            <td>
+																<!--<span class="page-tooltip" data-title="https://myonlineshop.com/men/shoes">Coupon </span>-->
+																<span class="page-tooltip">Coupon </span>
+															</td>
+															<td><i class="fa fa-desktop"></i></td>
+															<td><i class="fa fa-firefox firefox-color"></i> Firefox</td>
+															<td>
+																<button class="btn btn-success btn-xs">Coupon Scanned</button>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover" data-visitor-name="Joey Felicia" data-visitor-img="assets/img/people/female1.png"><i class="fa fa-vcard-o"></i></span> Joey</td>
+
+                                                            <td>
+																<!--<span class="page-tooltip" data-title="https://myonlineshop.com/men/shoes">Coupon </span>-->
+																<span class="page-tooltip">Coupon </span>
+															</td>
+															<td><i class="fa fa-desktop"></i></td>
+															<td><i class="fa fa-firefox firefox-color"></i> Firefox</td>
+															<td>
+																<button class="btn btn-success btn-xs">Coupon Scanned</button>
+															</td>
+
+
+														</tr>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
+                                                            <td>
+																<span class="page-tooltip">Game Room </span>
+															</td>
+															<td><i class="fa fa-mobile"></i></td>
+															<td><i class="fa fa-chrome chrome-color"></i> Chrome</td>
+															<td>
+																<button class="btn btn-danger btn-xs">Low Balance In Wallet</button>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="popover-profile" data-toggle="popover"><i class="fa fa-vcard-o"></i></span> Guest</td>
+                                                            <td>
+																<span class="page-tooltip">Game Room </span>
+															</td>
+															<td><i class="fa fa-mobile"></i></td>
+															<td><i class="fa fa-chrome chrome-color"></i> Chrome</td>
+															<td>
+																<button class="btn btn-danger btn-xs">Low Balance In Wallet</button>
+															</td>
+
+
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END CHAT SUPPORT -->
+
+					
+
+						<div class="row sortable-grid">
+							<div class="col-md-3">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">Total Campaigns</h3>
+									</div>
+									<div class="panel-body no-padding">
+										<ul class="list-unstyled list-widget-vertical" id="last-campaign-metric">
+											<li>
+												<div class="widget-metric_2 animate">
+													<i class="fa fa-eye icon"></i>
+													<div class="right">
+														<span class="title">VIEWED</span>
+														<span class="value" id="viewed"></span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="widget-metric_2 animate">
+													<i class="fa fa-envelope-open-o icon"></i>
+													<div class="right">
+														<span class="title">SHARED</span>
+														<span class="value" id="shared"></span>
+														<span class="percentage custom-text-orange2">44.15%</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="widget-metric_2 animate">
+													<i class="fa fa-hand-pointer-o icon"></i>
+													<div class="right">
+														<span class="title">CLICKED</span>
+														<span class="value" id="clicked"></span>
+														<span class="percentage custom-text-orange2">14.86%</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">Total Customers </h3>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-3">
+												<strong>Top Countries</strong>
+												<table class="table table-minimal table-no-border">
+													<thead>
+														<tr>
+															<th>COUNTRY</th>
+															<th>USERS</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>United States</td>
+															<td>2936</td>
+														</tr>
+														<tr>
+															<td>Algeria</td>
+															<td>2812</td>
+														</tr>
+														<tr>
+															<td>Russia</td>
+															<td>2735</td>
+														</tr>
+														<tr>
+															<td>France</td>
+															<td>2674</td>
+														</tr>
+														<tr>
+															<td>Mexico</td>
+															<td>2584</td>
+														</tr>
+														<tr>
+															<td>Germany</td>
+															<td>1986</td>
+														</tr>
+														<tr>
+															<td>Brazil</td>
+															<td>1921</td>
+														</tr>
+														<tr>
+															<td>Canada</td>
+															<td>1865</td>
+														</tr>
+														<tr>
+															<td>Indonesia</td>
+															<td>1352</td>
+														</tr>
+														<tr>
+															<td>China</td>
+															<td>1322</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="col-md-9">
+												<div id="map-email-opens" style="height: 400px;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+                            <div class="row">
+
+							<div class="col-md-6">
+								<!-- donut chart -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h2 class="panel-title">Total Customers</h2>
+									</div>
+									<div class="panel-body">
+										<canvas id="pie-chart" height="150"></canvas>
+										<form class="margin-top-30">
+											<p class="text-muted">Get Data By Category </p>
+											<span class="fancy-checkbox custom-bgcolor-blue">
+												<label>
+													<input type="checkbox" id="addRemovePieDataset">
+													<span>More Options</span>
+												</label>
+											</span>
+										</form>
+									</div>
+								</div>
+								<!-- end donut chart -->
+							</div>
+
+
+                        <div class="col-md-6">
+							<!-- bar chart -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h2 class="panel-title">Customers Benefits</h2>
+									</div>
+									<div class="panel-body">
+										<canvas id="bar-chart" height="150"></canvas>
+										<form class="margin-top-30">
+											<p class="text-muted">Get Resent Data</p>
+											<span class="fancy-checkbox custom-bgcolor-blue">
+												<label>
+													<input type="checkbox" id="addRemoveBarDataset">
+													<span>More Options</span>
+												</label>
+											</span>
+										</form>
+									</div>
+								</div>
+								<!-- end bar chart -->
+							</div>
+
+
+                            </div>
+
+
+
+                            <!-- MINI BAR CHARTS -->
+						    <div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-mini-bar">
+									<div id="mini-bar-chart1" class="mini-bar-chart">38,28,45,30,42,70,100</div>
+									<span>5323 LIKES</span>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-mini-bar">
+									<div id="mini-bar-chart2" class="mini-bar-chart">43,45,78,23,80,100,90</div>
+									<span>65K FOLLOWERS</span>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-mini-bar">
+									<div id="mini-bar-chart3" class="mini-bar-chart">22,42,65,53,77,44,80</div>
+									<span>20K SUBSCRIBERS</span>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="widget widget-mini-bar">
+									<div id="mini-bar-chart4" class="mini-bar-chart">43,76,34,55,86,45,77</div>
+									<span>500K USERS</span>
+								</div>
+							</div>
+						</div>
+						    <!-- END MINI BAR CHARTS -->
+
+
+
+                    <!--</div>-->
+
+				</div>
+                        </div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+
+			<!--<footer>-->
+				<!--<div class="container-fluid">-->
+					<!--<p class="copyright">&copy; 2017 <a href="http://www.myraatechnologies.com/" target="_blank">Myraa Technologies</a>. All Rights Reserved.</p>-->
+				<!--</div>-->
+			<!--</footer>-->
+		</div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/pace/pace.min.js"></script>
+		<script src="assets/vendor/bootstrap-progressbar/js/bootstrap-progressbar.min.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.resize.js"></script>
+		<script src="assets/vendor/Flot/jquery.flot.time.js"></script>
+		<script src="assets/vendor/flot.tooltip/jquery.flot.tooltip.js"></script>
+		<script src="assets/vendor/x-editable/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+		<script src="assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+		<script src="assets/vendor/moment/min/moment.min.js"></script>
+		<script src="assets/vendor/jquery-sparkline/js/jquery.sparkline.min.js"></script>
+		<script src="assets/vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widget.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/data.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/scroll-parent.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/disable-selection.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+		<script src="assets/vendor/jquery-ui/ui/widgets/sortable.js"></script>
+		<script src="assets/vendor/datatables/js-main/jquery.dataTables.min.js"></script>
+		<script src="assets/vendor/datatables/js-bootstrap/dataTables.bootstrap.min.js"></script>
+		<script src="assets/vendor/jquery-appear/jquery.appear.min.js"></script>
+		<script src="assets/vendor/jqvmap/jquery.vmap.min.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.usa.js"></script>
+		<script src="assets/vendor/chart-js/Chart.min.js"></script>
+		<script src="assets/vendor/raphael/raphael.min.js"></script>
+		<script src="assets/vendor/justgage-toorshia/justgage.js"></script>
+		<script src="assets/scripts/klorofilpro-common.js"></script>
+
+		<!-- DEMO PANEL -->
+		<!-- for demo purpose only, you should remove it on your project directory -->
+		<script type="text/javascript">
+		var toggleDemoPanel = function(e)
+		{
+			e.preventDefault();
+			var panel = document.getElementById('demo-panel');
+			if (panel.className) panel.className = '';
+			else panel.className = 'active';
+		}
+		// fix each iframe src when back button is clicked
+		$(function()
+		{
+
+            Chart.defaults.global.defaultFontColor = '#a0aeba';
+			var chartLabels = ['Share', 'Banner', 'Qr Codes', 'Coupons', 'Other'];
+			var chartData = [12325, 24800, 16590, 21450, 12500];
+			var chartData8 = [5000, 4050, 8026, 6987, 3689];
+			<!--var chartData2 = [125, 127, 123, 132, 129, 138, 144];-->
+			var chartData2 = [125, 127, 123];
+			var chartData3 = [25, 36, 55, 65, 50, 70, 90];
+			var chartData4 = [-20, -50, -20, 15, 30, 50, 70];
+			var questionDifficulty = ['High', 'Medium', 'Low']
+			var questionBank = [25000, 63000, 45000]
+		    // Bootstrap tour
+			var tour = new Tour(
+			{
+				steps: [
+				{
+					element: '#tour-help',
+					placement: 'bottom',
+					title: 'Welcome to Klorofil Pro',
+					content: 'Hello, welcome to Klorofil Pro. Use this tour feature to guide new users to your website or show existing users new features.',
+					onShow: function()
+					{
+						var popupSound = new Audio();
+						if (navigator.userAgent.match("Firefox/"))
+						{
+							popupSound.src = "assets/audio/popup.ogg";
+						}
+						else
+						{
+							popupSound.src = "assets/audio/popup.mp3";
+						}
+						// sound setting saved on localStorage as 0 or 1, by default sound on (null value on localStorage)
+						$globalVolume = localStorage.getItem('global-volume');
+						if (($globalVolume == null || $globalVolume == '1'))
+						{
+							popupSound.play();
+						}
+					}
+				},
+				{
+					element: '#tour-sales-stat',
+					title: 'Backdrop Container',
+					backdrop: true,
+					content: 'Add backdrop container to give focus on the step. It can be added to all steps or certain step you choose.'
+				},
+				/*{
+					element: '#tour-online-count',
+					placement: 'top',
+					title: 'Anywhere on page',
+					content: 'You can target specific element on the page like this one. You can also determine the placement either right (default), bottom, left, top or auto.'
+				},
+				{
+					element: '#tour-fullwidth',
+					placement: 'bottom',
+					title: 'Layout',
+					content: 'This toggle button will make the layout at fullwidth mode. More space, more content. Try now!'
+				},*/ ],
+				template: "<div class='popover tour'> " +
+					"<div class='arrow'></div> " +
+					"<h3 class='popover-title'></h3>" +
+					"<div class='popover-content'></div>" +
+					"<div class='popover-navigation'>" +
+					"<button class='btn btn-default btn-sm' data-role='prev'>« Prev</button>" +
+					"<button class='btn btn-primary btn-sm' data-role='next'>Next »</button>" +
+					"<button class='btn btn-default btn-sm' data-role='end'>End tour</button>" +
+					"</div>" +
+					"</div>",
+			});
+
+			tour.init();
+			tour.start();
+			if (tour.ended())
+			{
+				tour.restart();
+			}
+			$('.sortable-grid .sortable-item').sortable(
+			{
+				connectWith: '.sortable-grid .sortable-item',
+				handle: '.panel-heading',
+				forcePlaceholderSize: true,
+			}).disableSelection();
+			// online visitor, demo purpose
+			setInterval(function()
+			{
+				$('.online-visitors .number').text(Math.floor(Math.random() * 100));
+			}, 3000);
+			// live chat support
+			$('.table-chat-support').dataTable(
+			{
+				scrollX: false,
+				scrollY: "300px",
+				ordering: false,
+				searching: false,
+				info: false,
+				scrollCollapse: true,
+				paging: false,
+			});
+			$('.table-chat-support .page-tooltip').tooltip(
+			{
+				placement: 'bottom',
+			});
+			$('[data-toggle="popover"]').popover(
+			{
+				trigger: 'hover',
+				container: 'body',
+				html: true,
+				content: function()
+				{
+					var visitorContent, visitorImgPath;
+					var visitorName = 'Guest';
+					if ($(this).attr('data-visitor-img') === undefined)
+					{
+						visitorContent = '<i class="fa fa-user picture guest-avatar"></i>';
+					}
+					<!--else-->
+					<!--{-->
+						<!--visitorName = $(this).attr('data-visitor-name');-->
+						<!--visitorImgPath = $(this).attr('data-visitor-img');-->
+						<!--visitorContent = '<img src="' + visitorImgPath + '" class="picture img-circle">';-->
+					<!--}-->
+					<!--console.log($(this).attr('data-visitor'));-->
+					<!--return '<div class="online-visitor-data">' + '<div class="left">' + visitorContent + '<a href="#">Details</a>' + '</div>' + '<div class="right">' + '<div class="data">' + '<span class="label-data">Name :</span>' + '<span>' + visitorName + '</span>' + '</div>' + '<div class="data">' + '<span class="label-data">IP :</span>' + '<span><a href="#">123.111.101.76</a></span>' + '</div>' + '<div class="data">' + '<span class="label-data">Type :</span>' + '<span>Returning</span>' + '</div>' + '</div>' + '</div>';-->
+				}
+			});
+            // pie chart
+			var ctxPieChart = document.getElementById("pie-chart").getContext("2d");
+
+			var pieChart = new Chart(ctxPieChart,
+
+			{
+				type: 'pie',
+				data:
+				{
+					labels: chartLabels,
+					datasets: [
+					{
+						data: chartData,
+						backgroundColor: ['#4A90E2', '#7CAC25', '#FF4402', '#AB7DF6', '#F3BB23', '#20B2AA', '#1DBB8E'],
+					}]
+				},
+				options:
+				{
+					responsive: true,
+					legend:
+					{
+						position: 'left',
+					},
+				}
+			});
+			$('#addRemovePieDataset').on('change', function()
+			{
+				var newDataset = {
+					data: chartData2,
+					backgroundColor: ['#4A90E2', '#7CAC25', '#FF4402', '#AB7DF6', '#F3BB23', '#20B2AA', '#1DBB8E'],
+				};
+				if ($(this).is(':checked'))
+				{
+					pieChart.data.datasets.push(newDataset);
+				}
+				else
+				{
+					pieChart.data.datasets.pop();
+				}
+				pieChart.update();
+			});
+			new JustGage(
+			{
+				id: "format-percentage",
+				value: getRandomInt(0, 100),
+				symbol: '%',
+				minTxt: '0%',
+				maxTxt: '100%',
+			});
+			var temperature = new JustGage(
+			{
+				id: "format-minmax",
+				value: getRandomInt(0, 100),
+				minTxt: "Easy",
+				maxTxt: "Hard",
+				symbol: "%",
+				levelColors: ["#3C9CEF", "#F5A623", "#D0021B"],
+				noGradient: true,
+				pointer: true,
+				pointerOptions:
+				{
+					color: '#5E6773'
+				}
+			});
+			var humanFriendlyGauge = new JustGage(
+			{
+				id: "friendly-value",
+				value: getRandomInt(0, 100000),
+				min: 0,
+				max: 1000000,
+				humanFriendly: true,
+				counter: true
+			});
+			var counterGauge = new JustGage(
+			{
+				id: "custom-interval",
+				value: getRandomInt(350, 950),
+				min: 350,
+				max: 950,
+				humanFriendly: true,
+				counter: true
+			});
+			setInterval(function()
+			{
+				temperature.refresh(getRandomInt(0, 100));
+				humanFriendlyGauge.refresh(getRandomInt(100000, 1000000));
+				counterGauge.refresh(getRandomInt(350, 950));
+			}, 2000);
+
+			var runProgressShareOnce = false;
+			$('#progress-share').bind('appear', function()
+			{
+				if (runProgressShareOnce) return false;
+				$(this).each(function()
+				{
+					var $bar = $(this).find(".bar");
+					var $val = $(this).find(".value");
+					var perc = parseInt($val.text(), 10);
+					var scale = 180 / parseInt($(this).attr('data-max'));
+					$(
+					{
+						p: 0
+					}).animate(
+					{
+						p: perc
+					},
+					{
+						duration: 3000,
+						easing: "swing",
+						step: function(p)
+						{
+							$bar.css(
+							{
+								transform: "rotate(" + (45 + (p * scale)) + "deg)",
+							});
+							$val.text(p | 0);
+						}
+					});
+				});
+				runProgressShareOnce = true;
+			});
+
+
+		    // mini bar charts
+			$('#mini-bar-chart1').sparkline('html',
+			{
+				type: 'bar',
+				barWidth: 8,
+				height: 45,
+				barColor: '#00B9EB',
+				chartRangeMin: 0,
+				chartRangeMax: 100
+			});
+			$('#mini-bar-chart2').sparkline('html',
+			{
+				type: 'bar',
+				barWidth: 8,
+				height: 45,
+				barColor: '#EB9700',
+				chartRangeMin: 0,
+				chartRangeMax: 100
+			});
+			$('#mini-bar-chart3').sparkline('html',
+			{
+				type: 'bar',
+				barWidth: 8,
+				height: 45,
+				barColor: '#72BB23',
+				chartRangeMin: 0,
+				chartRangeMax: 100
+			});
+			$('#mini-bar-chart4').sparkline('html',
+			{
+				type: 'bar',
+				barWidth: 8,
+				height: 45,
+				barColor: '#FB5021',
+				chartRangeMin: 0,
+				chartRangeMax: 100
+			});
+			// bar chart
+			var ctxBarChart = document.getElementById("bar-chart").getContext("2d");
+			var barChart = new Chart(ctxBarChart,
+			{
+				type: 'bar',
+				data:
+				{
+					labels: chartLabels,
+					datasets: [
+					{
+						data: chartData3,
+						label: 'Total Benefits',
+						borderColor: 'transparent',
+						backgroundColor: 'rgba(1,153,248,.50)'
+					}]
+				},
+				<!--options:-->
+				<!--{-->
+					<!--responsive: true,-->
+					<!--scales: scalesOptions,-->
+				<!--}-->
+			});
+			<!--$('#addRemoveBarDataset').on('change', function()-->
+			<!--{-->
+				<!--// console.log('adding');-->
+				<!--var newBarDataset = {-->
+					<!--data: chartData4,-->
+					<!--label: 'Last 24 hr Benefits',-->
+					<!--borderColor: 'transparent',-->
+					<!--backgroundColor: 'rgba(248,155,2,0.50)',-->
+				<!--};-->
+				<!--if ($(this).is(':checked'))-->
+				<!--{-->
+					<!--console.log('checked');-->
+					<!--barChart.data.datasets.push(newBarDataset);-->
+				<!--}-->
+				<!--else-->
+				<!--{-->
+					<!--barChart.data.datasets.pop();-->
+				<!--}-->
+				<!--barChart.update();-->
+			<!--});-->
+
+
+			var mapData = {'gw': '2028', 'gt': '1644', 'gr': '1225', 'gq': '1773', 'gy': '2078', 'ge': '1896', 'gd': '2769', 'gb': '1368', 'ga': '2983', 'gn': '2853', 'gm': '1113', 'gh': '2258', 'tz': '2947', 'lc': '1063', 'la': '2683', 'tw': '1342', 'tt': '2832', 'tr': '1517', 'lk': '2542', 'tn': '2586', 'to': '1735', 'tl': '2810', 'tm': '2104', 'tj': '2246', 'ls': '1471', 'th': '2341', 'tg': '1522', 'td': '1073', 'ly': '1141', 'do': '1994', 'dm': '2241', 'dj': '2588', 'dk': '2080', 'de': '2351', 'ye': '2475', 'dz': '1270', 'uy': '1778', 'vu': '1230', 'qa': '2366', 'zm': '2974', 'ee': '2804', 'eg': '1500', 'za': '1219', 'ec': '1338', 'us': '1234', 'et': '2036', 'zw': '1546', 'es': '1746', 'er': '2763', 'ru': '1686', 'rw': '2898', 'rs': '2488', 'ro': '1845', 'bd': '2225', 'be': '1843', 'bf': '1421', 'bg': '2716', 'ba': '2447', 'bb': '1273', 'bh': '2879', 'bn': '1911', 'bo': '2067', 'jp': '2601', 'bi': '2818', 'bj': '2893', 'bt': '1900', 'jm': '2698', 'jo': '2389', 'ws': '1160', 'br': '2536', 'bs': '1869', 'lb': '1694', 'by': '1242', 'bz': '2034', 'om': '2351', 'ua': '1332', 'lr': '1823', 'bw': '1284', 'ci': '2365', 'ch': '2161', 'co': '1436', 'cn': '2514', 'cm': '2699', 'cl': '1833', 'al': '1991', 'ca': '1153', 'cg': '1677', 'cf': '2594', 'cd': '1089', 'cz': '1062', 'cy': '2221', 'cr': '2240', 'cv': '1182', 'lv': '2890', 'pt': '2658', 'py': '2918', 'lt': '1759', 'at': '1123', 'pa': '2160', 'pg': '1942', 'pe': '1029', 'pk': '2311', 'ph': '1831', 'pl': '1079', 'hr': '2945', 'ht': '2366', 'hu': '2808', 'hk': '1694', 'lu': '2469', 'hn': '1601', 'ao': '2056', 'me': '2892', 'md': '1256', 'mg': '2295', 'ma': '2542', 'uz': '2006', 'mm': '2344', 'ml': '2797', 'mn': '1525', 'mk': '2874', 'mu': '2454', 'mt': '1653', 'mw': '2110', 'mv': '1332', 'mr': '2184', 'ug': '1497', 'my': '2489', 'mx': '1443', 'mz': '2891', 'vc': '2627', 'ae': '2044', 've': '1514', 'ag': '1912', 'af': '1677', 'iq': '1528', 'is': '1515', 'ir': '1380', 'am': '1481', 'it': '1098', 'vn': '1032', 'kn': '2184', 'ar': '1279', 'au': '1248', 'il': '2343', 'in': '1602', 'az': '1439', 'ie': '2333', 'id': '1274', 'ni': '1420', 'nl': '1981', 'no': '1709', 'na': '2663', 'ne': '2842', 'ng': '2209', 'nz': '1469', 'np': '2147', 'fr': '2151', 'kz': '1621', 'fi': '1030', 'fj': '1275', 'sz': '2026', 'sy': '2213', 'kg': '2045', 'undefined': '2266', 'ke': '1582', 'sr': '1491', 'ki': '2430', 'kh': '1460', 'sv': '2278', 'km': '2208', 'st': '2966', 'sk': '2661', 'kr': '1857', 'si': '2460', 'kw': '2575', 'sn': '2711', 'sl': '1616', 'sc': '2934', 'sb': '1137', 'sa': '1068', 'sg': '2961', 'se': '2600', 'sd': '2100'}
+
+			$('#map-email-opens').vectorMap(
+			{
+				map: 'world_en',
+				values: mapData,
+				backgroundColor: 'transparent',
+				color: '#f2f4f6',
+				borderColor: '#D1D4D7',
+				borderOpacity: 0.5,
+				scaleColors: ["#E7F5FF", "#9AA9B4"],
+				normalizeFunction: 'polynomial',
+				onLabelShow: function(event, label, code)
+				{
+					if (mapData[code] !== undefined)
+					{
+						label.text(code.toUpperCase() + ': ' + mapData[code]);
+					}
+				},
+			});
+
+			$('iframe').each(function()
+			{
+				this.src = this.src;
+			});
+
+		});
+		</script>
+
+		
+		<!-- END DEMO PANEL -->
+        <!---->
+	</body>
+</html>
