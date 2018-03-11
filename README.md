@@ -5,7 +5,7 @@
 ##### SAMPLE REQUEST  #####
 ##### END POINT #####
 ##### EXAMPLES #####
-##### DEMONSTRATIO N#####
+##### DEMONSTRATIO #####
 
 ## INTRODUCTION ##
 This is a website whose API's can be used as a open source platform to connect it features with different sites. A person will be able to register as a user and login with register and login API. They will able to use the feature of question generator to generate the question based on the hints.  Using this we have implemented a poker game in which multiple users can join a game room and start a game. The game will give three hints to every player and will ask to bet call or fold amount. According to preference of user t takes action and then shows the correct answer to everyone and person who selects the correct answer wins all the money. Many innovative ideas can be made using this API;s.
@@ -58,7 +58,7 @@ country	|Country at which the user belong.	|String	|NO
 On successful request return a question and its correct answer all four options and its hint according to difficulty level.
 
 Field Name	|Description	|Value Type	|Mandatory|
----|---|---|---|---|
+---|---|---|---|
 Game_room_id  	|Id of current game room with users in it.	|Multiple INT|Yes
 theme	|Theme of the question to show.	|String	|Yes
 Sample Json response:- 
@@ -103,7 +103,8 @@ Sample Json response:-
 4. Start_game 
 
 Start the game of all users connected in the game room.
-Field Name	Description	Value Type	Mandatory
+Field Name	|Description	|Value Type	|Mandatory
+---|---|---|---|
 Game_room_id  	Id of current game room with users in it.	Int	Yes
 
 4.  Bet
@@ -119,8 +120,8 @@ bet_amount	|Amount to bet 	|Int	|Yes
 5.  Call
 
 Match the current amount of the bet made by a previous player in the round .
-Field |Name	|Description	|Value |Type	|Mandatory
----|---|---|---|---|---|
+Field Name	|Description	|Value Type	|Mandatory
+---|---|---|---|
 User_id	|Id of current User loged in.|	Int	|Yes
 Game_room_id  	|Id of current game room with users in it.	|Int	|Yes
 
@@ -128,18 +129,18 @@ Game_room_id  	|Id of current game room with users in it.	|Int	|Yes
 6.  All_in
 
 Commits player entire stack(all money).
-Field Name|	Description	Value |Type	|Mandatory
+Field Name|	Description	 |Value Type	|Mandatory
 ---|---|---|---|
-User_id	|Id of current User loged in.	|Int	Yes
-Game_room_id  |	Id of current game room with users in it.|	Int	Yes
+User_id	|Id of current User loged in.	|Int	  |Yes
+Game_room_id  |	Id of current game room with users in it.|	Int	 |Yes
 
 7. All_in
 
 Ending participation in a hand. No more bets are required to go into the pot by someone once they fold.
-Field Name	|Description	Value Type|	Mandatory
----|---|---|
-User_id	|Id of current User loged in.	|Int	Yes
-Game_room_id  	|Id of current game room with users in it.	Int	Yes
+Field Name	|Description	 |Value Type|	Mandatory
+---|---|---|---|
+User_id	|Id of current User loged in.	|Int	 |Yes
+Game_room_id  	|Id of current game room with users in it.	 |Int	 | Yes
 
 ## EXAMPLES ###
 Screen Shot and basic example
