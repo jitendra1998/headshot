@@ -112,7 +112,7 @@ r.set('active_games', json.dumps({"game3": "3", "game2": "2", "game1": "1"}))
 ```
 
 
-#initial check
+17. initial check
 ```ruby
 r.get('active_players')
 r.get('user_session')
