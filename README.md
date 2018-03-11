@@ -7,7 +7,7 @@
 * [1. INTRODUCTION](#1-INTRODUCTION)
 * [2. INSTALLATION](#2-INSTALLATION)
 * [3. END POINT](#3-ENDPOINT)
-* [4. EXAMPLES ](#4-EXAMPLES )
+* [4. SCREENSHOTS ](#4-SCREENSHOTS )
 
 ## 1 INTRODUCTION ## 
 Headshot is a collection of 5 independent APIs with easy to integrate RESTful architecture .
@@ -249,7 +249,7 @@ Field Name	|Description	 |Value Type	|Mandatory
 User_id	|Id of current User loged in.	|Int	 |Yes
 Game_room_id  	|Id of current game room with users in it.	 |Int	 | Yes
 
-## 4 EXAMPLES ###
+## 4 SCREENSHOTS ###
 
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-32-56.png" alt="ss" />
 <img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-33-22.png" alt="ss" />
