@@ -118,7 +118,7 @@ r.get('active_players')
 r.get('user_session')
 r.get('active_games')
 ```
-# for deployment change host in statrting of file
+# For deployment change host in statrting of file
 ```ruby
 admin_func.js - 1
 game_room_api.py - 1
@@ -250,5 +250,6 @@ User_id	|Id of current User loged in.	|Int	 |Yes
 Game_room_id  	|Id of current game room with users in it.	 |Int	 | Yes
 
 ## 4 EXAMPLES ###
-Screen Shot and basic example
+
+<img src="https://github.com/jitendra1998/headshot/blob/master/screenshot/Screenshot%20from%202018-03-11%2010-32-56.png" alt="ss" />
 
